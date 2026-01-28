@@ -36,7 +36,7 @@ const Gallery = () => {
           <span className="inline-block text-sm font-medium text-cappuccino tracking-wider uppercase mb-4">
             @cappuccino.brunch
           </span>
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-6">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground mb-6">
             Momentos que Merecem Partilha
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -46,7 +46,7 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4 max-w-5xl mx-auto mb-8 sm:mb-12">
           {galleryImages.map((image, index) => (
             <a
               key={index}

@@ -36,7 +36,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2">
-            <span className="font-serif text-2xl md:text-3xl font-semibold text-foreground">
+            <span className="font-serif text-xl sm:text-2xl md:text-3xl font-semibold text-foreground">
               Cappuccino
             </span>
           </a>

@@ -155,7 +155,7 @@ const Menu = () => {
           <span className="inline-block text-sm font-medium text-cappuccino tracking-wider uppercase mb-4">
             O Nosso Menu
           </span>
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-6">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground mb-6">
             Pratos que Contam Histórias
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -165,13 +165,13 @@ const Menu = () => {
         </div>
 
         {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 mb-8 sm:mb-12 px-2">
           {menuData.map((category) => (
             <button
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
               className={cn(
-                "px-6 py-3 rounded-full text-sm font-medium transition-all duration-300",
+                "px-4 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm font-medium transition-all duration-300",
                 activeCategory === category.id
                   ? "bg-primary text-primary-foreground shadow-lg"
                   : "bg-cream text-foreground hover:bg-cappuccino/10"
@@ -183,34 +183,34 @@ const Menu = () => {
         </div>
 
         {/* Menu Items Grid */}
-        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto">
           {currentCategory?.items.map((item, index) => (
             <div
               key={index}
-              className="group bg-card rounded-2xl p-4 border border-border hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+              className="group bg-card rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-border hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
             >
-              <div className="flex gap-4">
-                <div className="w-24 h-24 rounded-xl overflow-hidden flex-shrink-0">
+              <div className="flex gap-3 sm:gap-4">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-lg sm:rounded-xl overflow-hidden flex-shrink-0">
                   <div 
                     className="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
                     style={{ backgroundImage: `url(${item.image})` }}
                   />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <div className="flex items-start justify-between gap-2 mb-2">
-                    <h3 className="font-serif text-xl font-semibold text-foreground truncate">
+                  <div className="flex items-start justify-between gap-2 mb-1 sm:mb-2">
+                    <h3 className="font-serif text-base sm:text-xl font-semibold text-foreground line-clamp-1">
                       {item.name}
                     </h3>
-                    <span className="text-lg font-semibold text-cappuccino flex-shrink-0">
+                    <span className="text-sm sm:text-lg font-semibold text-cappuccino flex-shrink-0">
                       {item.price}
                     </span>
                   </div>
                   {item.tag && (
-                    <span className="inline-block px-2 py-0.5 text-xs font-medium bg-berry/10 text-berry rounded-full mb-2">
+                    <span className="inline-block px-2 py-0.5 text-xs font-medium bg-berry/10 text-berry rounded-full mb-1 sm:mb-2">
                       {item.tag}
                     </span>
                   )}
-                  <p className="text-sm text-muted-foreground line-clamp-2">
+                  <p className="text-xs sm:text-sm text-muted-foreground line-clamp-2">
                     {item.description}
                   </p>
                 </div>
