@@ -15,8 +15,8 @@ const Footer = () => {
                                 href="#home"
                                 className="inline-flex items-center gap-2 mb-4"
                             >
-                                <Coffee className="w-8 h-8" />
-                                <span className="font-serif text-3xl font-semibold">
+                                <Coffee className="w-6 h-6 sm:w-8 sm:h-8" />
+                                <span className="font-serif text-2xl sm:text-3xl font-semibold">
                                     Cappuccino Brunch
                                 </span>
                             </a>

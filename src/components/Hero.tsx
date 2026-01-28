@@ -23,7 +23,7 @@ const Hero = () => {
 
                     {/* Main heading */}
                     <h1
-                        className="font-serif text-6xl md:text-7xl lg:text-8xl font-semibold tracking-tight mb-6 animate-fade-in"
+                        className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight mb-6 animate-fade-in"
                         style={{ animationDelay: "0.1s" }}
                     >
                         <span className="text-foreground">Cappuccino</span>
@@ -33,7 +33,7 @@ const Hero = () => {
 
                     {/* Tagline */}
                     <p
-                        className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in"
+                        className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed animate-fade-in px-2"
                         style={{ animationDelay: "0.2s" }}
                     >
                         Onde cada manhã se transforma numa experiência. Pratos
@@ -48,14 +48,15 @@ const Hero = () => {
                     >
                         <Button
                             size="lg"
-                            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                            className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
+                            asChild
                         >
-                            Ver Menu
+                            <a href="#menu">Ver Menu</a>
                         </Button>
                         <Button
                             variant="outline"
                             size="lg"
-                            className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg rounded-full transition-all duration-300"
+                            className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full transition-all duration-300 w-full sm:w-auto"
                             asChild
                         >
                             <a href="#contact">Reservar Mesa</a>

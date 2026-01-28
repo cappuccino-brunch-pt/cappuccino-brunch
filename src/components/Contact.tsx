@@ -35,7 +35,7 @@ const Contact = () => {
                     <span className="inline-block text-sm font-medium text-cappuccino tracking-wider uppercase mb-4">
                         Contacto
                     </span>
-                    <h2 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-6">
+                    <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground mb-6">
                         Vem Visitar-nos
                     </h2>
                     <p className="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
@@ -45,23 +45,23 @@ const Contact = () => {
                     </p>
 
                     {/* Contact Info Grid 2x2 */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-8 sm:mb-10">
                         {contactInfo.map((info, index) => (
                             <div
                                 key={index}
-                                className="bg-card rounded-2xl p-6 border border-border shadow-sm flex items-start gap-4 text-left"
+                                className="bg-card rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-border shadow-sm flex items-start gap-3 sm:gap-4 text-left"
                             >
-                                <div className="w-12 h-12 rounded-xl bg-cream flex items-center justify-center flex-shrink-0">
-                                    <info.icon className="w-5 h-5 text-cappuccino" />
+                                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-cream flex items-center justify-center flex-shrink-0">
+                                    <info.icon className="w-4 h-4 sm:w-5 sm:h-5 text-cappuccino" />
                                 </div>
-                                <div>
+                                <div className="min-w-0 flex-1">
                                     <span className="text-xs text-muted-foreground uppercase tracking-wide">
                                         {info.label}
                                     </span>
-                                    <p className="font-semibold text-foreground">
+                                    <p className="font-semibold text-foreground text-sm sm:text-base break-words">
                                         {info.value}
                                     </p>
-                                    <p className="text-sm text-muted-foreground">
+                                    <p className="text-xs sm:text-sm text-muted-foreground break-words">
                                         {info.subvalue}
                                     </p>
                                 </div>

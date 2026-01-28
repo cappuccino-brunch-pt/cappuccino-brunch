@@ -51,12 +51,12 @@ const About = () => {
                                 </div>
                             </div>
                             {/* Floating badge */}
-                            <div className="absolute -bottom-6 -right-6 bg-background rounded-2xl p-6 shadow-xl border border-border">
+                            <div className="absolute -bottom-4 -right-2 sm:-bottom-6 sm:-right-6 bg-background rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-xl border border-border">
                                 <div className="text-center">
-                                    <span className="block text-4xl font-serif font-bold text-cappuccino">
+                                    <span className="block text-2xl sm:text-4xl font-serif font-bold text-cappuccino">
                                         {yearsOfExperience}+
                                     </span>
-                                    <span className="text-sm text-muted-foreground">
+                                    <span className="text-xs sm:text-sm text-muted-foreground">
                                         Anos de Sabor
                                     </span>
                                 </div>
@@ -68,7 +68,7 @@ const About = () => {
                             <span className="inline-block text-sm font-medium text-cappuccino tracking-wider uppercase mb-4">
                                 A Nossa História
                             </span>
-                            <h2 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-6 leading-tight">
+                            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground mb-6 leading-tight">
                                 Onde o Café Encontra a Arte
                             </h2>
                             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
