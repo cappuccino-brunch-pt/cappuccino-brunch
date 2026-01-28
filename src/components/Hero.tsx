@@ -56,8 +56,9 @@ const Hero = () => {
                             variant="outline"
                             size="lg"
                             className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-6 text-lg rounded-full transition-all duration-300"
+                            asChild
                         >
-                            Reservar Mesa
+                            <a href="#contact">Reservar Mesa</a>
                         </Button>
                     </div>
 

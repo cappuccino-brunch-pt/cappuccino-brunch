@@ -65,8 +65,8 @@ const Navigation = () => {
             >
               <Instagram className="w-5 h-5" />
             </a>
-            <Button className="rounded-full px-6">
-              Reservar
+            <Button className="rounded-full px-6" asChild>
+              <a href="#contact">Reservar</a>
             </Button>
           </div>
 
@@ -112,8 +112,8 @@ const Navigation = () => {
                 >
                   <Instagram className="w-5 h-5 text-foreground" />
                 </a>
-                <Button className="rounded-full flex-1">
-                  Reservar Mesa
+                <Button className="rounded-full flex-1" asChild>
+                  <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>Reservar Mesa</a>
                 </Button>
               </div>
             </div>
