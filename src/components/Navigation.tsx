@@ -35,10 +35,12 @@ const Navigation = () => {
             <div className="container mx-auto px-4">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
-                    <a href="#home" className="flex items-center gap-2">
-                        <span className="font-serif text-xl sm:text-2xl md:text-3xl font-semibold text-foreground">
-                            Cappuccino
-                        </span>
+                    <a href="#home" className="flex items-center">
+                        <img 
+                            src="/cappuccinoPretoBranco.jpeg" 
+                            alt="Cappuccino Brunch Logo" 
+                            className="h-10 sm:h-12 md:h-14 w-auto object-contain"
+                        />
                     </a>
 
                     {/* Desktop Navigation */}
