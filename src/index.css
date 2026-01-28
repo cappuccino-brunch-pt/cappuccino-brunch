@@ -1,142 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
-
 /* Cappuccino Brunch Design System */
 
 @layer base {
-  :root {
-    /* Warm, coffee-inspired palette */
-    --background: 40 30% 97%;
-    --foreground: 25 25% 15%;
+    :root {
+        /* Warm, coffee-inspired palette */
+        --background: 40 30% 97%;
+        --foreground: 25 25% 15%;
 
-    --card: 40 25% 95%;
-    --card-foreground: 25 25% 15%;
+        --card: 40 25% 95%;
+        --card-foreground: 25 25% 15%;
 
-    --popover: 40 30% 97%;
-    --popover-foreground: 25 25% 15%;
+        --popover: 40 30% 97%;
+        --popover-foreground: 25 25% 15%;
 
-    /* Rich espresso brown */
-    --primary: 25 45% 25%;
-    --primary-foreground: 40 30% 97%;
+        /* Rich espresso brown */
+        --primary: 25 45% 25%;
+        --primary-foreground: 40 30% 97%;
 
-    /* Creamy latte */
-    --secondary: 35 30% 85%;
-    --secondary-foreground: 25 25% 15%;
+        /* Creamy latte */
+        --secondary: 35 30% 85%;
+        --secondary-foreground: 25 25% 15%;
 
-    /* Soft beige */
-    --muted: 35 20% 90%;
-    --muted-foreground: 25 15% 45%;
+        /* Soft beige */
+        --muted: 35 20% 90%;
+        --muted-foreground: 25 15% 45%;
 
-    /* Berry accent */
-    --accent: 350 55% 55%;
-    --accent-foreground: 40 30% 97%;
+        /* Berry accent */
+        --accent: 350 55% 55%;
+        --accent-foreground: 40 30% 97%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
 
-    --border: 35 25% 85%;
-    --input: 35 25% 85%;
-    --ring: 25 45% 25%;
+        --border: 35 25% 85%;
+        --input: 35 25% 85%;
+        --ring: 25 45% 25%;
 
-    --radius: 0.75rem;
+        --radius: 0.75rem;
 
-    /* Custom tokens */
-    --cappuccino: 25 35% 45%;
-    --cream: 40 40% 92%;
-    --espresso: 25 50% 18%;
-    --sage: 120 15% 60%;
-    --berry: 350 55% 55%;
-    --gold: 40 70% 50%;
+        /* Custom tokens */
+        --cappuccino: 25 35% 45%;
+        --cream: 40 40% 92%;
+        --espresso: 25 50% 18%;
+        --sage: 120 15% 60%;
+        --berry: 350 55% 55%;
+        --gold: 40 70% 50%;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
+        --sidebar-background: 0 0% 98%;
+        --sidebar-foreground: 240 5.3% 26.1%;
+        --sidebar-primary: 240 5.9% 10%;
+        --sidebar-primary-foreground: 0 0% 98%;
+        --sidebar-accent: 240 4.8% 95.9%;
+        --sidebar-accent-foreground: 240 5.9% 10%;
+        --sidebar-border: 220 13% 91%;
+        --sidebar-ring: 217.2 91.2% 59.8%;
+    }
 
-  .dark {
-    --background: 25 25% 10%;
-    --foreground: 40 30% 92%;
+    .dark {
+        --background: 25 25% 10%;
+        --foreground: 40 30% 92%;
 
-    --card: 25 25% 12%;
-    --card-foreground: 40 30% 92%;
+        --card: 25 25% 12%;
+        --card-foreground: 40 30% 92%;
 
-    --popover: 25 25% 10%;
-    --popover-foreground: 40 30% 92%;
+        --popover: 25 25% 10%;
+        --popover-foreground: 40 30% 92%;
 
-    --primary: 35 40% 75%;
-    --primary-foreground: 25 25% 10%;
+        --primary: 35 40% 75%;
+        --primary-foreground: 25 25% 10%;
 
-    --secondary: 25 20% 20%;
-    --secondary-foreground: 40 30% 92%;
+        --secondary: 25 20% 20%;
+        --secondary-foreground: 40 30% 92%;
 
-    --muted: 25 20% 18%;
-    --muted-foreground: 35 15% 60%;
+        --muted: 25 20% 18%;
+        --muted-foreground: 35 15% 60%;
 
-    --accent: 350 50% 60%;
-    --accent-foreground: 25 25% 10%;
+        --accent: 350 50% 60%;
+        --accent-foreground: 25 25% 10%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
 
-    --border: 25 20% 20%;
-    --input: 25 20% 20%;
-    --ring: 35 40% 75%;
+        --border: 25 20% 20%;
+        --input: 25 20% 20%;
+        --ring: 35 40% 75%;
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
+        --sidebar-background: 240 5.9% 10%;
+        --sidebar-foreground: 240 4.8% 95.9%;
+        --sidebar-primary: 224.3 76.3% 48%;
+        --sidebar-primary-foreground: 0 0% 100%;
+        --sidebar-accent: 240 3.7% 15.9%;
+        --sidebar-accent-foreground: 240 4.8% 95.9%;
+        --sidebar-border: 240 3.7% 15.9%;
+        --sidebar-ring: 217.2 91.2% 59.8%;
+    }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+    * {
+        @apply border-border;
+    }
 
-  body {
-    @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
-  }
+    body {
+        @apply bg-background text-foreground;
+        font-family: "Inter", sans-serif;
+    }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', serif;
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Cormorant Garamond", serif;
+    }
 }
 
 @layer utilities {
-  .font-serif {
-    font-family: 'Cormorant Garamond', serif;
-  }
-  
-  .font-sans {
-    font-family: 'Inter', sans-serif;
-  }
+    .font-serif {
+        font-family: "Cormorant Garamond", serif;
+    }
 
-  .text-gradient {
-    background: linear-gradient(135deg, hsl(var(--cappuccino)), hsl(var(--espresso)));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
+    .font-sans {
+        font-family: "Inter", sans-serif;
+    }
 
-  .bg-gradient-warm {
-    background: linear-gradient(135deg, hsl(var(--cream)), hsl(var(--secondary)));
-  }
+    .text-gradient {
+        background: linear-gradient(
+            135deg,
+            hsl(var(--cappuccino)),
+            hsl(var(--espresso))
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
 
-  .bg-gradient-hero {
-    background: linear-gradient(180deg, hsl(var(--cream)) 0%, hsl(var(--background)) 100%);
-  }
+    .bg-gradient-warm {
+        background: linear-gradient(
+            135deg,
+            hsl(var(--cream)),
+            hsl(var(--secondary))
+        );
+    }
+
+    .bg-gradient-hero {
+        background: linear-gradient(
+            180deg,
+            hsl(var(--cream)) 0%,
+            hsl(var(--background)) 100%
+        );
+    }
 }

@@ -23,7 +23,7 @@ const Contact = () => {
         {
             icon: Mail,
             label: "Email",
-            value: "hello@cappuccinobrunch.pt",
+            value: "cappuccino.brunch@gmail.com",
             subvalue: "Respondemos em 24h",
         },
     ];
