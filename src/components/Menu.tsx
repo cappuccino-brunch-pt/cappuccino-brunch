@@ -12,6 +12,7 @@ type MenuItem = {
 type MenuCategory = {
   id: string;
   label: string;
+  type: "food" | "drink";
   items: MenuItem[];
 };
 
@@ -19,6 +20,7 @@ const menuData: MenuCategory[] = [
   {
     id: "signatures",
     label: "Assinaturas",
+    type: "food",
     items: [
       {
         name: "Cappuccino Royale",
@@ -51,6 +53,7 @@ const menuData: MenuCategory[] = [
   {
     id: "salty",
     label: "Salgados",
+    type: "food",
     items: [
       {
         name: "Croissant Presunto & Queijo",
@@ -82,6 +85,7 @@ const menuData: MenuCategory[] = [
   {
     id: "sweet",
     label: "Doces",
+    type: "food",
     items: [
       {
         name: "French Toast",
@@ -113,6 +117,7 @@ const menuData: MenuCategory[] = [
   {
     id: "drinks",
     label: "Bebidas",
+    type: "drink",
     items: [
       {
         name: "Specialty Cappuccino",
@@ -144,9 +149,19 @@ const menuData: MenuCategory[] = [
 ];
 
 const Menu = () => {
+  const [activeType, setActiveType] = useState<"food" | "drink">("food");
   const [activeCategory, setActiveCategory] = useState("signatures");
 
+  const filteredCategories = menuData.filter(cat => cat.type === activeType);
   const currentCategory = menuData.find(cat => cat.id === activeCategory);
+
+  const handleTypeChange = (type: "food" | "drink") => {
+    setActiveType(type);
+    const firstCategoryOfType = menuData.find(cat => cat.type === type);
+    if (firstCategoryOfType) {
+      setActiveCategory(firstCategoryOfType.id);
+    }
+  };
 
   return (
     <section id="menu" className="py-24 bg-background">
@@ -164,9 +179,35 @@ const Menu = () => {
           </p>
         </div>
 
+        {/* Type Tabs (Comida / Bebida) */}
+        <div className="flex justify-center gap-4 mb-6 sm:mb-8 px-2">
+          <button
+            onClick={() => handleTypeChange("food")}
+            className={cn(
+              "px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold transition-all duration-300 border-b-2",
+              activeType === "food"
+                ? "border-cappuccino text-cappuccino"
+                : "border-transparent text-muted-foreground hover:text-foreground hover:border-cappuccino/30"
+            )}
+          >
+            Comida
+          </button>
+          <button
+            onClick={() => handleTypeChange("drink")}
+            className={cn(
+              "px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold transition-all duration-300 border-b-2",
+              activeType === "drink"
+                ? "border-cappuccino text-cappuccino"
+                : "border-transparent text-muted-foreground hover:text-foreground hover:border-cappuccino/30"
+            )}
+          >
+            Bebida
+          </button>
+        </div>
+
         {/* Category Tabs */}
         <div className="flex flex-wrap justify-center gap-2 mb-8 sm:mb-12 px-2">
-          {menuData.map((category) => (
+          {filteredCategories.map((category) => (
             <button
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
