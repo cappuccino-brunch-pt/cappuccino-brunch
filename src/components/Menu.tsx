@@ -1,3 +1,4 @@
+import tostaCappuccino from "@/assets/tosta-cappuccino.jpg";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 
@@ -81,6 +82,12 @@ const foodCategories: MenuCategory[] = [
         id: "tostas",
         label: "Tostas",
         items: [
+            {
+                name: "Tosta Cappuccino",
+                description: "Abacate, ovos escalfados e sementes",
+                price: "N/A€",
+                image: tostaCappuccino,
+            },
             {
                 name: "Tosta Abacate",
                 description: "Abacate, ovos escalfados e sementes",
