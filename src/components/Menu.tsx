@@ -1,4 +1,4 @@
-import tostaCappuccino from "@/assets/tosta-cappuccino.jpg";
+import tostaCappuccino from "@/assets/tostaCappuccino.jpeg";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 
@@ -53,28 +53,31 @@ const foodCategories: MenuCategory[] = [
         items: [
             {
                 name: "Ovos Mexidos",
-                description: "C/ tosta e 1 acompanhamento",
-                price: "4.50€",
+                description: "C/ tosta e bacon",
+                price: "5.00€",
                 image: "",
             },
             {
                 name: "Ovos Benedict",
-                description: "Ovos escalfados, molho holandês e bacon",
-                price: "8.50€",
-                image: "",
-            },
-            {
-                name: "Ovos Royale",
-                description: "Ovos escalfados, molho holandês e salmão",
+                description:
+                    "C/ pão de forma brioche, manteiga de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita",
                 price: "9.00€",
                 image: "",
             },
             {
                 name: "Ovos Turkish (Çilbir)",
-                description: "Iogurte, ovos escalfados e manteiga picante",
+                description:
+                    "Creme de iogurte temperado com alho, ovos escalfados, azeite aromatizado com especiarias e tosta",
                 price: "8.50€",
-                tag: "BEST SELLER",
                 image: "",
+            },
+            {
+                name: "Ovos Royale",
+                description:
+                    "C/ pão de forma brioche, manteiga de alho e ervas, queijo creme, salmão fumado, ovos escalfados, molho holandês e cebola frita",
+                price: "10.00€",
+                image: "",
+                tag: "Mais Vendido",
             },
         ],
     },
@@ -84,8 +87,9 @@ const foodCategories: MenuCategory[] = [
         items: [
             {
                 name: "Tosta Cappuccino",
-                description: "Abacate, ovos escalfados e sementes",
-                price: "N/A€",
+                description:
+                    "C/ pão de forma brioche, manteiga de alho e ervas, bacon ingles, cogumelos, ovos escalfados, molho holandes trufado e cebola frita",
+                price: "10.00€",
                 image: tostaCappuccino,
             },
             {
