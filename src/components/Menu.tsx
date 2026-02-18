@@ -1,3 +1,5 @@
+import ovosRoyale from "@/assets/ovosRoyale.jpeg";
+import ovosTurkish from "@/assets/ovosTurkish.jpeg";
 import tostaAbacate from "@/assets/tostaAbacate.jpeg";
 import tostaBaconJam from "@/assets/tostaBaconJam.jpeg";
 import tostaCampestre from "@/assets/tostaCampestre.jpeg";
@@ -75,14 +77,14 @@ const foodCategories: MenuCategory[] = [
                 description:
                     "Creme de iogurte temperado com alho, ovos escalfados, azeite aromatizado com especiarias e tosta",
                 price: "8.50€",
-                image: "",
+                image: ovosTurkish,
             },
             {
                 name: "Ovos Royale",
                 description:
                     "C/ pão de forma brioche, manteiga de alho e ervas, queijo creme, salmão fumado, ovos escalfados, molho holandês e cebola frita",
                 price: "10.00€",
-                image: "",
+                image: ovosRoyale,
                 tag: "Mais Vendido",
             },
         ],
