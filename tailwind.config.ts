@@ -64,6 +64,7 @@ export default {
         sage: "hsl(var(--sage))",
         berry: "hsl(var(--berry))",
         gold: "hsl(var(--gold))",
+        salmon: "hsl(var(--salmon))",
       },
       borderRadius: {
         lg: "var(--radius)",

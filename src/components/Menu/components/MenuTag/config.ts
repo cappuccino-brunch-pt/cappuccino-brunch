@@ -11,8 +11,8 @@ export const MenuTagConfig: Record<
     },
     [MenuTagType.NEW]: {
         label: "Novo",
-        bgColor: "bg-sage/15",
-        textColor: "text-sage",
+        bgColor: "bg-salmon/15",
+        textColor: "text-salmon",
     },
     [MenuTagType.VEGAN]: {
         label: "Vegan",
