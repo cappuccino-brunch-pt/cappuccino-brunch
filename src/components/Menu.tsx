@@ -102,7 +102,7 @@ const foodCategories: MenuCategory[] = [
                 name: "Tosta Campestre",
                 description:
                     "Massa mãe, queijo creme, rúcula, frango e cogumelos salteados com manteiga de alho e ervas, granola salgada artesanal e creme balsâmico",
-                price: "9.50",
+                price: "9.50€",
                 tag: "Sugestão do Chef - Novo - Demorado",
                 image: tostaCampestre,
             },
@@ -110,7 +110,7 @@ const foodCategories: MenuCategory[] = [
                 name: "Tosta Seul",
                 description:
                     "Pão de forma com manteiga de alho e ervas, ovos mexidos, bacon, queijo cheddar, maionese de sriracha e molho coreano de maionese com leite condensado",
-                price: "9.00",
+                price: "9.00€",
                 tag: "Best Seller - Picante - Demorado",
                 image: tostaSeul,
             },
@@ -118,14 +118,14 @@ const foodCategories: MenuCategory[] = [
                 name: "Tosta Salmão",
                 description:
                     "Massa mãe, queijo creme, rúcula, salmão fumado e cebola frita",
-                price: "8.50",
+                price: "8.50€",
                 image: "",
             },
             {
                 name: "Tosta Tomato Jam",
                 description:
                     "Massa mãe, geleia de tomate, ovos mexidos, bacon, rúcula e abacate laminado",
-                price: "8.00",
+                price: "8.00€",
                 image: tostaTomatoJam,
             },
             {
@@ -166,14 +166,14 @@ const foodCategories: MenuCategory[] = [
                 name: "Salada Cappuccino",
                 description:
                     "Base: mix de folhas, tomate, cebola frita, pepino, mini mozzarella e croutons. Escolha a proteína: frango, camarão, ovos (escalfados/estrelados) ou salmão fumado (+2€). Escolha o molho: iogurte, vinagrete, balsâmico ou azeite piri-piri",
-                price: "8.00",
+                price: "8.00€",
                 image: "",
             },
             {
                 name: "Salada Vegan",
                 description:
                     "Base: mix de folhas, tomate, cebola frita, pepino, abacate e granola salgada artesanal. Escolha o molho: vinagrete, balsâmico ou azeite piri-piri",
-                price: "7.00",
+                price: "7.00€",
                 tag: "Vegan",
                 image: "",
             },
@@ -186,26 +186,26 @@ const foodCategories: MenuCategory[] = [
             {
                 name: "Croissant Bacon",
                 description: "Ovos mexidos e bacon",
-                price: "4.50",
+                price: "4.50€",
                 image: "",
             },
             {
                 name: "Croissant Mozzarella",
                 description: "Presunto, pesto e mini mozzarella",
-                price: "5.00",
+                price: "5.00€",
                 image: "",
             },
             {
                 name: "Croissant Salmão",
                 description: "Queijo creme, cebola frita e salmão fumado",
-                price: "5.50",
+                price: "5.50€",
                 image: "",
             },
             {
                 name: "Croissant Avocado",
                 description:
                     "Geleia de tomate, ovos mexidos, bacon, queijo e avocado",
-                price: "6.00",
+                price: "6.00€",
                 tag: "Best Seller - Demorado",
                 image: "",
             },
@@ -218,26 +218,246 @@ const foodCategories: MenuCategory[] = [
             {
                 name: "Croissant Nutella",
                 description: "Morangos e Nutella",
-                price: "4.50",
+                price: "4.50€",
                 image: "",
             },
             {
                 name: "Croissant Kinder Bueno",
                 description: "Framboesa e creme Kinder Bueno",
-                price: "4.50",
+                price: "4.50€",
                 image: "",
             },
             {
                 name: "Croissant Banoffee",
                 description: "Banana, doce de leite cremoso e bolacha Maria",
-                price: "4.50",
+                price: "4.50€",
                 tag: "Best Seller",
                 image: "",
             },
             {
                 name: "Croissant Pistachio",
                 description: "Framboesa, creme pistachio e pistachio triturado",
-                price: "5.00",
+                price: "5.00€",
+                image: "",
+            },
+        ],
+    },
+    {
+        id: "panquecas",
+        label: "Panquecas",
+        items: [
+            {
+                name: "Panqueca Clássica c/ Manteiga e Mel",
+                description: "Manteiga e mel",
+                price: "4.50€",
+                image: "",
+            },
+            {
+                name: "Panqueca Clássica c/ Maple Syrup",
+                description: "Manteiga e maple syrup",
+                price: "5.00€",
+                image: "",
+            },
+            {
+                name: "Panqueca Nutella",
+                description: "Morango, banana e Nutella",
+                price: "6.00€",
+                image: "",
+            },
+            {
+                name: "Panqueca Ananás Hortelã",
+                description: "Mirtilos e geleia de ananás e hortelã",
+                price: "6.00€",
+                image: "",
+            },
+            {
+                name: "Panqueca Banoffee",
+                description:
+                    "Banana, doce de leite cremoso, bolacha Maria e chantilly",
+                price: "6.00€",
+                image: "",
+            },
+            {
+                name: "Panqueca Oreo",
+                description: "Framboesa e creme Oreo",
+                price: "6.00€",
+                image: "",
+            },
+            {
+                name: "Panqueca Kinder Bueno",
+                description: "Creme Kinder Bueno e gelado de baunilha",
+                price: "7.00€",
+                image: "",
+            },
+            {
+                name: "Panqueca New York",
+                description:
+                    "Compota de mirtilo e caramelo de maple syrup aquecido",
+                price: "7.00€",
+                image: "",
+            },
+            {
+                name: "Panqueca Lotus",
+                description:
+                    "Mirtilo, framboesa, gelado de baunilha, creme Lotus e maple syrup",
+                price: "7.00€",
+                image: "",
+            },
+            {
+                name: "Panqueca Pistachio",
+                description:
+                    "Morango, gelado de baunilha, creme de pistachio e pistachio",
+                price: "8.00€",
+                tag: "Best Seller",
+                image: "",
+            },
+            {
+                name: "Panqueca Americana",
+                description:
+                    "Bacon, cheddar, ovo estrelado, cebola frita e maple syrup",
+                price: "7.50€",
+                image: "",
+            },
+        ],
+    },
+    {
+        id: "waffles",
+        label: "Waffles",
+        items: [
+            {
+                name: "Waffle Clássico c/ Manteiga e Mel",
+                description: "Manteiga e mel. Acompanha gelado de baunilha",
+                price: "4.50€",
+                image: "",
+            },
+            {
+                name: "Waffle Clássico c/ Maple Syrup",
+                description:
+                    "Manteiga e maple syrup. Acompanha gelado de baunilha",
+                price: "5.00€",
+                image: "",
+            },
+            {
+                name: "Waffle Nutella",
+                description: "Morango e Nutella. Acompanha gelado de baunilha",
+                price: "6.00€",
+                image: "",
+            },
+            {
+                name: "Waffle Kinder Bueno",
+                description: "Creme Kinder Bueno. Acompanha gelado de baunilha",
+                price: "6.00€",
+                image: "",
+            },
+            {
+                name: "Waffle Banoffee",
+                description:
+                    "Banana, doce de leite cremoso, bolacha Maria e chantilly. Acompanha gelado de baunilha",
+                price: "6.00€",
+                image: "",
+            },
+            {
+                name: "Waffle Lotus",
+                description:
+                    "Mirtilos, creme Lotus e bolacha. Acompanha gelado de baunilha",
+                price: "6.50€",
+                image: "",
+            },
+            {
+                name: "Waffle Pistachio",
+                description:
+                    "Coco e creme de pistachio. Acompanha gelado de baunilha",
+                price: "7.00€",
+                image: "",
+            },
+            {
+                name: "Waffle Americano",
+                description:
+                    "Salada, bacon, cheddar, ovo estrelado, cebola frita e maple syrup",
+                price: "7.00€",
+                tag: "Best Seller",
+                image: "",
+            },
+        ],
+    },
+    {
+        id: "french-toast",
+        label: "French Toast",
+        items: [
+            {
+                name: "French Toast Frutos do Bosque",
+                description:
+                    "Compota de frutos vermelhos, morangos, framboesas e mirtilos",
+                price: "7.00€",
+                image: "",
+            },
+            {
+                name: "French Toast Pistachio",
+                description:
+                    "Creme de pistachio, morangos, pistachio triturado e gelado",
+                price: "8.00€",
+                tag: "Sugestão do Chef",
+                image: "",
+            },
+        ],
+    },
+    {
+        id: "bowls-iogurte",
+        label: "Bowls Iogurte",
+        items: [
+            {
+                name: "Bowl de Fruta",
+                description: "Iogurte, granola artesanal, frutas e mel",
+                price: "5.00€",
+                image: "",
+            },
+            {
+                name: "Bowl de Fruta Vegan",
+                description: "Iogurte vegan, granola artesanal, frutas e agave",
+                price: "6.00€",
+                tag: "Vegan",
+                image: "",
+            },
+        ],
+    },
+    {
+        id: "menus-brunch",
+        label: "Menus Brunch",
+        items: [
+            {
+                name: "Menu Kids",
+                description:
+                    "Até 12 anos. À escolha: Bowl de Iogurte c/ compota de morango ou frutos vermelhos, ou Panqueca c/ Nutella, creme Kinder Bueno ou mel",
+                price: "6.50€",
+                image: "",
+            },
+            {
+                name: "Menu American Breakfast",
+                description:
+                    "Prato: panqueca clássica, 2 ovos estrelados, bacon e torrada. Bebida à escolha: Coca-Cola, Compal ou Ice Tea",
+                price: "8.50€",
+                image: "",
+            },
+            {
+                name: "Menu Cappuccino",
+                description:
+                    "Sumo à escolha. Panqueca Clássica c/ maple syrup. Tosta Bacon Jam ou Tosta Abacate (massa mãe, geleia de bacon e ovos mexidos ou massa mãe, pasta de abacate, ovos escalfados e sementes). Bebida quente: abatanado, café, cappuccino ou chá",
+                price: "12.50€",
+                image: "",
+            },
+            {
+                name: "Menu Green",
+                description:
+                    "Matcha Latte ou Iced Matcha. Tosta Abacate (massa mãe, pasta de abacate, ovos escalfados e sementes). Croissant Pistachio (framboesa e creme pistachio)",
+                price: "13.00€",
+                tag: "Vegan",
+                image: "",
+            },
+            {
+                name: "Menu Tábua Cappuccino",
+                description:
+                    "2 Bebidas quentes: abatanado, café, cappuccino ou chá. Jarra de Sumo 1L: laranja. 2 Croissants folhados simples. Torrada em pão chapata c/ geleia de ananás e hortelã ou geleia de mirtilo. Bowl de Fruta: iogurte, granola artesanal, frutas e mel. Panqueca Clássica: manteiga e mel ou maple syrup",
+                price: "33.00€",
                 image: "",
             },
         ],
