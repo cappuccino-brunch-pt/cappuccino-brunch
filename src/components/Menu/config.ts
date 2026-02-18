@@ -21,6 +21,7 @@ interface MenuItem {
 interface MenuCategory {
     id: string;
     label: string;
+    description?: string;
     items: MenuItem[];
 }
 
@@ -69,6 +70,8 @@ export const FOODS_MENU: MenuCategory[] = [
     {
         id: "ovos",
         label: "Ovos",
+        description:
+            "Acompanham mix de salada e sementes variadas (excepto Ovos Turkish)",
         items: [
             {
                 name: "Ovos Mexidos c/ Tosta",
@@ -124,6 +127,8 @@ export const FOODS_MENU: MenuCategory[] = [
     {
         id: "tostas",
         label: "Tostas",
+        description:
+            "Todas as tostas acompanham mix de salada e sementes variadas",
         items: [
             {
                 name: "Tosta Cappuccino",
@@ -238,6 +243,7 @@ export const FOODS_MENU: MenuCategory[] = [
     {
         id: "croissants-salgados",
         label: "Croissants Salgados",
+        description: "Acompanham mix de salada e sementes variadas",
         items: [
             {
                 name: "Croissant Bacon",
@@ -379,50 +385,48 @@ export const FOODS_MENU: MenuCategory[] = [
     {
         id: "waffles",
         label: "Waffles",
+        description: "Acompanham gelado de baunilha(exceto Waffle Americano)",
         items: [
             {
                 name: "Waffle Clássico c/ Manteiga e Mel",
-                description: "Manteiga e mel. Acompanha gelado de baunilha",
+                description: "Manteiga e mel",
                 price: "4.50€",
                 image: "",
             },
             {
                 name: "Waffle Clássico c/ Maple Syrup",
-                description:
-                    "Manteiga e maple syrup. Acompanha gelado de baunilha",
+                description: "Manteiga e maple syrup",
                 price: "5.00€",
                 image: "",
             },
             {
                 name: "Waffle Nutella",
-                description: "Morango e Nutella. Acompanha gelado de baunilha",
+                description: "Morango e Nutella",
                 price: "6.00€",
                 image: "",
             },
             {
                 name: "Waffle Kinder Bueno",
-                description: "Creme Kinder Bueno. Acompanha gelado de baunilha",
+                description: "Creme Kinder Bueno",
                 price: "6.00€",
                 image: "",
             },
             {
                 name: "Waffle Banoffee",
                 description:
-                    "Banana, doce de leite cremoso, bolacha Maria e chantilly. Acompanha gelado de baunilha",
+                    "Banana, doce de leite cremoso, bolacha Maria e chantilly",
                 price: "6.00€",
                 image: "",
             },
             {
                 name: "Waffle Lotus",
-                description:
-                    "Mirtilos, creme Lotus e bolacha. Acompanha gelado de baunilha",
+                description: "Mirtilos, creme Lotus e bolacha",
                 price: "6.50€",
                 image: "",
             },
             {
                 name: "Waffle Pistachio",
-                description:
-                    "Coco e creme de pistachio. Acompanha gelado de baunilha",
+                description: "Coco e creme de pistachio",
                 price: "7.00€",
                 image: "",
             },
@@ -479,6 +483,7 @@ export const FOODS_MENU: MenuCategory[] = [
     {
         id: "menus-brunch",
         label: "Menus Brunch",
+        description: "Não sujeito a alterações",
         items: [
             {
                 name: "Menu Kids",

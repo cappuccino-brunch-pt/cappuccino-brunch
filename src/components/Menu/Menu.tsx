@@ -80,6 +80,17 @@ const Menu = () => {
                     ))}
                 </div>
 
+                {/* Category Description Badge */}
+                {currentCategoryConfig?.description && (
+                    <div className="flex justify-center mb-6 sm:mb-8 px-2">
+                        <div className="bg-cream/50 border border-border rounded-lg sm:rounded-xl px-4 sm:px-6 py-3 sm:py-4 max-w-2xl text-center">
+                            <p className="text-sm sm:text-base text-muted-foreground">
+                                {currentCategoryConfig.description}
+                            </p>
+                        </div>
+                    </div>
+                )}
+
                 {/* Menu Items Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto">
                     {currentCategoryConfig?.items.map((item, index) => (
