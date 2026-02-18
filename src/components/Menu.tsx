@@ -462,6 +462,79 @@ const foodCategories: MenuCategory[] = [
             },
         ],
     },
+    {
+        id: "extras",
+        label: "Extras",
+        items: [
+            {
+                name: "Frutas ",
+                description: "Banana/Morango/Mirtilo/Framboesa",
+                price: "1.50€",
+                image: "",
+            },
+            {
+                name: "Gelado de Baunilha",
+                description: "",
+                price: "2.00€",
+                image: "",
+            },
+            {
+                name: "Toppings",
+                description:
+                    "Nutella, Creme Kinder Bueno, Creme Lotus, Compota de Mirtilo, Mel, Maple Syrup",
+                price: "2.50€",
+                image: "",
+            },
+            {
+                name: "Ovo",
+                description: "",
+                price: "1.50€",
+                image: "",
+            },
+            {
+                name: "Bacon",
+                description: "",
+                price: "2.00€",
+                image: "",
+            },
+            {
+                name: "Cogumelo Salteado",
+                description: "",
+                price: "2.00€",
+                image: "",
+            },
+            {
+                name: "Avocado",
+                description: "",
+                price: "3.00€",
+                image: "",
+            },
+            {
+                name: "Salmão Fumado",
+                description: "",
+                price: "3.00€",
+                image: "",
+            },
+            {
+                name: "Queijo Brie",
+                description: "",
+                price: "2.00€",
+                image: "",
+            },
+            {
+                name: "Waffle",
+                description: "",
+                price: "2.50€",
+                image: "",
+            },
+            {
+                name: "Pão Chapata",
+                description: "",
+                price: "1.50€",
+                image: "",
+            },
+        ],
+    },
 ];
 
 const drinkCategories: MenuCategory[] = [
