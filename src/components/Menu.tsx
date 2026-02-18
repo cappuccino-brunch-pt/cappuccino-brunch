@@ -159,31 +159,54 @@ const foodCategories: MenuCategory[] = [
         ],
     },
     {
+        id: "bowls-salada",
+        label: "Bowls Salada",
+        items: [
+            {
+                name: "Salada Cappuccino",
+                description:
+                    "Base: mix de folhas, tomate, cebola frita, pepino, mini mozzarella e croutons. Escolha a proteína: frango, camarão, ovos (escalfados/estrelados) ou salmão fumado (+2€). Escolha o molho: iogurte, vinagrete, balsâmico ou azeite piri-piri",
+                price: "8.00",
+                image: "",
+            },
+            {
+                name: "Salada Vegan",
+                description:
+                    "Base: mix de folhas, tomate, cebola frita, pepino, abacate e granola salgada artesanal. Escolha o molho: vinagrete, balsâmico ou azeite piri-piri",
+                price: "7.00",
+                tag: "Vegan",
+                image: "",
+            },
+        ],
+    },
+    {
         id: "croissants-salgados",
         label: "Croissants Salgados",
         items: [
             {
-                name: "Croissant Misto",
-                description: "Fiambre e queijo",
-                price: "4.00€",
+                name: "Croissant Bacon",
+                description: "Ovos mexidos e bacon",
+                price: "4.50",
                 image: "",
             },
             {
                 name: "Croissant Mozzarella",
-                description: "Mozzarella, tomate e pesto",
-                price: "4.50€",
+                description: "Presunto, pesto e mini mozzarella",
+                price: "5.00",
                 image: "",
             },
             {
                 name: "Croissant Salmão",
-                description: "Salmão fumado e queijo creme",
-                price: "5.50€",
+                description: "Queijo creme, cebola frita e salmão fumado",
+                price: "5.50",
                 image: "",
             },
             {
-                name: "Croissant Abacate",
-                description: "Abacate e ovo",
-                price: "6.00€",
+                name: "Croissant Avocado",
+                description:
+                    "Geleia de tomate, ovos mexidos, bacon, queijo e avocado",
+                price: "6.00",
+                tag: "Best Seller - Demorado",
                 image: "",
             },
         ],
@@ -192,150 +215,31 @@ const foodCategories: MenuCategory[] = [
         id: "croissants-doces",
         label: "Croissants Doces",
         items: [
-            { name: "Nutella", description: "", price: "4.50€", image: "" },
             {
-                name: "Kinder Bueno",
-                description: "",
-                price: "4.50€",
+                name: "Croissant Nutella",
+                description: "Morangos e Nutella",
+                price: "4.50",
                 image: "",
             },
             {
-                name: "Banoffee",
-                description: "Doce de leite, banana e chantilly",
-                price: "5.00€",
+                name: "Croissant Kinder Bueno",
+                description: "Framboesa e creme Kinder Bueno",
+                price: "4.50",
                 image: "",
             },
             {
-                name: "Pistachio",
-                description: "Creme de pistachio",
-                price: "5.00€",
-                image: "",
-            },
-        ],
-    },
-    {
-        id: "panquecas",
-        label: "Panquecas",
-        items: [
-            {
-                name: "Clássica",
-                description: "Xarope de ácer",
-                price: "4.50€",
+                name: "Croissant Banoffee",
+                description: "Banana, doce de leite cremoso e bolacha Maria",
+                price: "4.50",
+                tag: "Best Seller",
                 image: "",
             },
             {
-                name: "Nutella",
-                description: "Nutella e banana",
-                price: "6.00€",
+                name: "Croissant Pistachio",
+                description: "Framboesa, creme pistachio e pistachio triturado",
+                price: "5.00",
                 image: "",
             },
-            {
-                name: "Kinder Bueno",
-                description: "Kinder bueno e gelado de baunilha",
-                price: "6.00€",
-                image: "",
-            },
-            {
-                name: "Pistachio",
-                description: "Creme de pistachio",
-                price: "7.00€",
-                tag: "BEST SELLER",
-                image: "",
-            },
-        ],
-    },
-    {
-        id: "waffles",
-        label: "Waffles",
-        items: [
-            {
-                name: "Clássica",
-                description: "Xarope de ácer",
-                price: "5.50€",
-                image: "",
-            },
-            {
-                name: "Nutella",
-                description: "Nutella e morango",
-                price: "6.00€",
-                image: "",
-            },
-            {
-                name: "Kinder Bueno",
-                description: "Kinder bueno e gelado",
-                price: "6.00€",
-                image: "",
-            },
-            {
-                name: "Pistachio",
-                description: "Creme de pistachio",
-                price: "7.00€",
-                image: "",
-            },
-        ],
-    },
-    {
-        id: "bowls-iogurte",
-        label: "Bowls Iogurte",
-        items: [
-            {
-                name: "Bowl de Fruta",
-                description: "Granola, fruta da época e mel",
-                price: "5.00€",
-                image: "",
-            },
-            {
-                name: "Bowl de Fruta Vegan",
-                description: "Granola, fruta e agave",
-                price: "6.00€",
-                image: "",
-            },
-        ],
-    },
-    {
-        id: "menus-brunch",
-        label: "Menus Brunch",
-        items: [
-            {
-                name: "Menu Kids",
-                description: "Sumo + panqueca",
-                price: "6.50€",
-                image: "",
-            },
-            {
-                name: "Menu American Breakfast",
-                description: "Ovos, bacon e bebida",
-                price: "8.50€",
-                image: "",
-            },
-            {
-                name: "Menu Cappuccino",
-                description: "Panqueca + bebida",
-                price: "12.50€",
-                image: "",
-            },
-            {
-                name: "Menu Green",
-                description: "Matcha latte + tosta abacate",
-                price: "13.00€",
-                image: "",
-            },
-        ],
-    },
-    {
-        id: "extras",
-        label: "Extras",
-        items: [
-            { name: "Ovo", description: "", price: "1.00€", image: "" },
-            { name: "Bacon", description: "", price: "1.50€", image: "" },
-            { name: "Abacate", description: "", price: "2.00€", image: "" },
-            {
-                name: "Salmão Fumado",
-                description: "",
-                price: "2.50€",
-                image: "",
-            },
-            { name: "Gelado", description: "", price: "1.50€", image: "" },
         ],
     },
 ];
