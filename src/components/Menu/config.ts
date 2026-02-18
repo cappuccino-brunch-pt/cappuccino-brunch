@@ -5,7 +5,7 @@ import croissantMozzarella from "@/assets/croissantMozzarella.jpeg";
 import croissantPistachio from "@/assets/croissantPistachio.jpeg";
 import croissantSalmao from "@/assets/croissantSalmao.jpeg";
 import englishMuffinManteigaDeErvas from "@/assets/englishMuffinManteigaDeErvas.jpeg";
-// import menuTabuaCappuccino from "@/assets/menuTabuaCappuccino.jpeg";
+import menuTabuaCappuccino from "@/assets/menuTabuaCappuccino.jpeg";
 import nachosGuacamole from "@/assets/nachosGuacamole.jpeg";
 import ovosBenedictEnglishMuffin from "@/assets/ovosBenedictEnglishMuffin.jpeg";
 import ovosMexidosComBacon from "@/assets/ovosMexidosComBacon.jpeg";
@@ -543,7 +543,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 description:
                     "2 Bebidas quentes: abatanado, café, cappuccino ou chá. Jarra de Sumo 1L: laranja. 2 Croissants folhados simples. Torrada em pão chapata c/ geleia de ananás e hortelã ou geleia de mirtilo. Bowl de Fruta: iogurte, granola artesanal, frutas e mel. Panqueca Clássica: manteiga e mel ou maple syrup",
                 price: "33.00€",
-                image: "menuTabuaCappuccino",
+                image: menuTabuaCappuccino,
             },
         ],
     },
