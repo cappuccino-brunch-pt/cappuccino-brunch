@@ -1,4 +1,10 @@
+import tostaAbacate from "@/assets/tostaAbacate.jpeg";
+import tostaBaconJam from "@/assets/tostaBaconJam.jpeg";
+import tostaCampestre from "@/assets/tostaCampestre.jpeg";
 import tostaCappuccino from "@/assets/tostaCappuccino.jpeg";
+import tostaPresunto from "@/assets/tostaPresunto.jpeg";
+import tostaSeul from "@/assets/tostaSeul.jpeg";
+import tostaTomatoJam from "@/assets/tostaTomatoJam.jpeg";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 
@@ -93,29 +99,62 @@ const foodCategories: MenuCategory[] = [
                 image: tostaCappuccino,
             },
             {
-                name: "Tosta Abacate",
-                description: "Abacate, ovos escalfados e sementes",
-                price: "7.00€",
-                image: "",
+                name: "Tosta Campestre",
+                description:
+                    "Massa mãe, queijo creme, rúcula, frango e cogumelos salteados com manteiga de alho e ervas, granola salgada artesanal e creme balsâmico",
+                price: "9.50",
+                tag: "Sugestão do Chef - Novo - Demorado",
+                image: tostaCampestre,
+            },
+            {
+                name: "Tosta Seul",
+                description:
+                    "Pão de forma com manteiga de alho e ervas, ovos mexidos, bacon, queijo cheddar, maionese de sriracha e molho coreano de maionese com leite condensado",
+                price: "9.00",
+                tag: "Best Seller - Picante - Demorado",
+                image: tostaSeul,
             },
             {
                 name: "Tosta Salmão",
-                description: "Salmão fumado, cream cheese e rúcula",
-                price: "8.50€",
+                description:
+                    "Massa mãe, queijo creme, rúcula, salmão fumado e cebola frita",
+                price: "8.50",
                 image: "",
+            },
+            {
+                name: "Tosta Tomato Jam",
+                description:
+                    "Massa mãe, geleia de tomate, ovos mexidos, bacon, rúcula e abacate laminado",
+                price: "8.00",
+                image: tostaTomatoJam,
+            },
+            {
+                name: "Tosta Abacate",
+                description:
+                    "Massa mãe, pasta de abacate, ovos escalfados e sementes c/ salmão fumado",
+                price: "8.50€",
+                image: tostaAbacate,
             },
             {
                 name: "Tosta Presunto",
-                description: "Presunto, queijo e rúcula",
+                description:
+                    "Massa mãe, geleia de ananás e hortelã, rúcula, presunto e queijo brie maçaricado",
                 price: "8.00€",
-                image: "",
+                image: tostaPresunto,
             },
             {
                 name: "Tosta Vegan",
-                description: "Húmus, abacate e legumes grelhados",
+                description:
+                    "Massa mãe, pasta de abacate, tomate cherry, cogumelos, molho balsâmico e granola salgada artesanal",
                 price: "7.50€",
-                tag: "NEW",
+                tag: "Vegan",
                 image: "",
+            },
+            {
+                name: "Tosta Bacon Jam",
+                description: "Massa mãe, geleia de bacon e ovos mexidos",
+                price: "7.00€",
+                image: tostaBaconJam,
             },
         ],
     },
@@ -608,7 +647,7 @@ const drinkCategories: MenuCategory[] = [
 
 const Menu = () => {
     const [activeType, setActiveType] = useState<"food" | "drink">("food");
-    const [activeCategory, setActiveCategory] = useState("signatures");
+    const [activeCategory, setActiveCategory] = useState("para-partilhar");
 
     const categories = activeType === "food" ? foodCategories : drinkCategories;
     const currentCategory = categories.find((cat) => cat.id === activeCategory);
