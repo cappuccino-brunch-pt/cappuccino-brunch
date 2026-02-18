@@ -4,7 +4,7 @@ import ovosTurkish from "@/assets/ovosTurkish.jpeg";
 import tostaAbacate from "@/assets/tostaAbacate.jpeg";
 import tostaBaconJam from "@/assets/tostaBaconJam.jpeg";
 import tostaCampestre from "@/assets/tostaCampestre.jpeg";
-import tostaCappuccino from "@/assets/tostaCappuccino.jpeg";
+import tostaCappuccinoPaoBrioche from "@/assets/tostaCappuccinoPaoBrioche.jpeg";
 import tostaPresunto from "@/assets/tostaPresunto.jpeg";
 import tostaSeul from "@/assets/tostaSeul.jpeg";
 import tostaTomatoJam from "@/assets/tostaTomatoJam.jpeg";
@@ -124,14 +124,21 @@ const foodCategories: MenuCategory[] = [
             {
                 name: "Tosta Cappuccino",
                 description:
-                    "C/ pão de forma brioche, manteiga de alho e ervas, bacon ingles, cogumelos, ovos escalfados, molho holandes trufado e cebola frita",
-                price: "10.00€",
-                image: tostaCappuccino,
+                    "C/ English Muffin e manteiga de alho e ervas, bacon inglês, cogumelos, ovos escalfados, molho holandês triturado e cebola frita",
+                price: "9.00€",
+                image: "",
+            },
+            {
+                name: "Tosta Cappuccino C/ Pão de Forma Brioche",
+                description:
+                    "C/ Pão de Forma Brioche e manteiga de alho e ervas, bacon inglês, cogumelos, ovos escalfados, molho holandês triturado e cebola frita",
+                price: "9.00€",
+                image: tostaCappuccinoPaoBrioche,
             },
             {
                 name: "Tosta Campestre",
                 description:
-                    "Massa mãe, queijo creme, rúcula, frango e cogumelos salteados com manteiga de alho e ervas, granola salgada artesanal e creme balsâmico",
+                    "Massa mãe, queijo creme, rúcula, frango e cogumelos salteados com manteiga de alho e ervas, granola salgada artesanal e crème balsâmico",
                 price: "9.50€",
                 tag: "Sugestão do Chef - Novo - Demorado",
                 image: tostaCampestre,
@@ -148,7 +155,7 @@ const foodCategories: MenuCategory[] = [
                 name: "Tosta Salmão",
                 description:
                     "Massa mãe, queijo creme, rúcula, salmão fumado e cebola frita",
-                price: "8.50€",
+                price: "8.30€",
                 image: "",
             },
             {
@@ -161,15 +168,22 @@ const foodCategories: MenuCategory[] = [
             {
                 name: "Tosta Abacate",
                 description:
-                    "Massa mãe, pasta de abacate, ovos escalfados e sementes c/ salmão fumado",
-                price: "8.50€",
+                    "Massa mãe, pasta de abacate, ovos escalfados e sementes",
+                price: "7.00€",
                 image: tostaAbacate,
+            },
+            {
+                name: "Tosta Abacate c/ Salmão Fumado",
+                description:
+                    "Massa mãe, pasta de abacate, ovos escalfados, sementes e salmão fumado",
+                price: "8.50€",
+                image: "",
             },
             {
                 name: "Tosta Presunto",
                 description:
                     "Massa mãe, geleia de ananás e hortelã, rúcula, presunto e queijo brie maçaricado",
-                price: "8.00€",
+                price: "€",
                 image: tostaPresunto,
             },
             {
