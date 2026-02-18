@@ -1,4 +1,5 @@
-import ovosRoyale from "@/assets/ovosRoyale.jpeg";
+import ovosMexidosComBacon from "@/assets/ovosMexidosComBacon.jpeg";
+import ovosRoyalePaoBrioche from "@/assets/ovosRoyalePaoBrioche.jpeg";
 import ovosTurkish from "@/assets/ovosTurkish.jpeg";
 import tostaAbacate from "@/assets/tostaAbacate.jpeg";
 import tostaBaconJam from "@/assets/tostaBaconJam.jpeg";
@@ -31,8 +32,14 @@ const foodCategories: MenuCategory[] = [
         items: [
             {
                 name: "English Muffin",
-                description: "Manteiga de ervas",
+                description: "C/ manteiga de alho e ervas",
                 price: "3.50€",
+                image: "",
+            },
+            {
+                name: "English Muffin Gratinado",
+                description: "C/ manteiga de alho e ervas e queijo gratinado",
+                price: "4.00€",
                 image: "",
             },
             {
@@ -60,32 +67,53 @@ const foodCategories: MenuCategory[] = [
         label: "Ovos",
         items: [
             {
-                name: "Ovos Mexidos",
-                description: "C/ tosta e bacon",
-                price: "5.00€",
+                name: "Ovos Mexidos c/ Tosta",
+                description: "",
+                price: "4.50€",
                 image: "",
             },
             {
-                name: "Ovos Benedict",
+                name: "Ovos Mexidos c/ Tosta e Bacon",
+                description: "",
+                price: "5.00€",
+                image: ovosMexidosComBacon,
+            },
+            {
+                name: "Ovos Benedict c/ English Muffin",
                 description:
-                    "C/ pão de forma brioche, manteiga de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita",
+                    "Maçã de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita.  ",
+                price: "8.00€",
+                image: "",
+            },
+            {
+                name: "Ovos Benedict c/ Pão de Forma Brioche",
+                description:
+                    "Maçã de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita.  ",
                 price: "9.00€",
                 image: "",
             },
             {
                 name: "Ovos Turkish (Çilbir)",
                 description:
-                    "Creme de iogurte temperado com alho, ovos escalfados, azeite aromatizado com especiarias e tosta",
+                    "Creme de iogurte temperado com alho, ovos escalfados e azeite aromatizado com especiarias e tosta",
                 price: "8.50€",
                 image: ovosTurkish,
             },
             {
-                name: "Ovos Royale",
+                name: "Ovos Royale c/ English Muffin",
                 description:
-                    "C/ pão de forma brioche, manteiga de alho e ervas, queijo creme, salmão fumado, ovos escalfados, molho holandês e cebola frita",
+                    "Maçã de alho e ervas, salmão fumado, ovos escalfados, molho holandês e cebola frita. ",
+                price: "9.00€",
+                tag: "Best Seller",
+                image: "",
+            },
+            {
+                name: "Ovos Royale c/ Pão de Forma Brioche",
+                description:
+                    "Maçã de alho e ervas, salmão fumado, ovos escalfados, molho holandês e cebola frita. ",
                 price: "10.00€",
-                image: ovosRoyale,
-                tag: "Mais Vendido",
+                tag: "Best Seller",
+                image: ovosRoyalePaoBrioche,
             },
         ],
     },
