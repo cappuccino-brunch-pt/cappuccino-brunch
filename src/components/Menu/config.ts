@@ -1,6 +1,26 @@
+import bowlFruta from "@/assets/bowlFruta.jpeg";
+import croissantAvocado from "@/assets/croissantAvocado.jpeg";
+import croissantBacon from "@/assets/croissantBacon.jpeg";
+import croissantMozzarella from "@/assets/croissantMozzarella.jpeg";
+import croissantPistachio from "@/assets/croissantPistachio.jpeg";
+import croissantSalmao from "@/assets/croissantSalmao.jpeg";
+import englishMuffinManteigaDeErvas from "@/assets/englishMuffinManteigaDeErvas.jpeg";
+import menuTabuaCappuccino from "@/assets/menuTabuaCappuccino.jpeg";
+import nachosGuacamole from "@/assets/nachosGuacamole.jpeg";
+import ovosBenedictEnglishMuffin from "@/assets/ovosBenedictEnglishMuffin.jpeg";
 import ovosMexidosComBacon from "@/assets/ovosMexidosComBacon.jpeg";
 import ovosRoyalePaoBrioche from "@/assets/ovosRoyalePaoBrioche.jpeg";
 import ovosTurkish from "@/assets/ovosTurkish.jpeg";
+import panquecaAmericana from "@/assets/panquecaAmericana.jpeg";
+import panquecaAnanasHortela from "@/assets/panquecaAnanasHortela.jpeg";
+import panquecaBanoffee from "@/assets/panquecaBanoffee.jpeg";
+import panquecaKinder from "@/assets/panquecaKinder.jpeg";
+import panquecaLotus from "@/assets/panquecaLotus.jpeg";
+import panquecaNewYork from "@/assets/panquecaNewYork.jpeg";
+import panquecaNutella from "@/assets/panquecaNutella.jpeg";
+import panquecaOreo from "@/assets/panquecaOreo.jpeg";
+import saladaCappuccino from "@/assets/saladaCappuccino.jpeg";
+import shrimpBites from "@/assets/shrimpBites.jpeg";
 import tostaAbacate from "@/assets/tostaAbacate.jpeg";
 import tostaBaconJam from "@/assets/tostaBaconJam.jpeg";
 import tostaCampestre from "@/assets/tostaCampestre.jpeg";
@@ -8,6 +28,9 @@ import tostaCappuccinoPaoBrioche from "@/assets/tostaCappuccinoPaoBrioche.jpeg";
 import tostaPresunto from "@/assets/tostaPresunto.jpeg";
 import tostaSeul from "@/assets/tostaSeul.jpeg";
 import tostaTomatoJam from "@/assets/tostaTomatoJam.jpeg";
+import waffleAmericano from "@/assets/waffleAmericano.jpeg";
+import waffleBanoffee from "@/assets/waffleBanoffee.jpeg";
+import wafflePistachio from "@/assets/wafflePistachio.jpeg";
 import { MenuTagType } from "@/components/Menu/components/MenuTag";
 
 interface MenuItem {
@@ -39,7 +62,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 name: "English Muffin",
                 description: "C/ manteiga de alho e ervas",
                 price: "3.50€",
-                image: "",
+                image: englishMuffinManteigaDeErvas,
             },
             {
                 name: "English Muffin Gratinado",
@@ -48,22 +71,22 @@ export const FOODS_MENU: MenuCategory[] = [
                 image: "",
             },
             {
-                name: "Nachos",
-                description: "Guacamole e cheddar",
+                name: "Caprese",
+                description: "Tomate cherry, mini mozzarella e pesto",
                 price: "5.00€",
                 image: "",
             },
             {
                 name: "Nachos",
-                description: "Guacamole e camarão",
-                price: "6.50€",
-                image: "",
+                description: "Com guacamole",
+                price: "5.50€",
+                image: nachosGuacamole,
             },
             {
-                name: "Shakshuka",
-                description: "Ovos, tomate e especiarias",
+                name: "Shrimp Bites",
+                description: "Ships, guacamole e camarão",
                 price: "6.50€",
-                image: "",
+                image: shrimpBites,
             },
         ],
     },
@@ -90,7 +113,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 description:
                     "Maçã de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita.  ",
                 price: "8.00€",
-                image: "",
+                image: ovosBenedictEnglishMuffin,
             },
             {
                 name: "Ovos Benedict c/ Pão de Forma Brioche",
@@ -135,13 +158,15 @@ export const FOODS_MENU: MenuCategory[] = [
                 description:
                     "C/ English Muffin e manteiga de alho e ervas, bacon inglês, cogumelos, ovos escalfados, molho holandês triturado e cebola frita",
                 price: "9.00€",
+                tags: [MenuTagType.LONG_COOKING],
                 image: "",
             },
             {
                 name: "Tosta Cappuccino C/ Pão de Forma Brioche",
                 description:
                     "C/ Pão de Forma Brioche e manteiga de alho e ervas, bacon inglês, cogumelos, ovos escalfados, molho holandês triturado e cebola frita",
-                price: "9.00€",
+                price: "10.00€",
+                tags: [MenuTagType.LONG_COOKING],
                 image: tostaCappuccinoPaoBrioche,
             },
             {
@@ -172,7 +197,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 name: "Tosta Salmão",
                 description:
                     "Massa mãe, queijo creme, rúcula, salmão fumado e cebola frita",
-                price: "8.30€",
+                price: "8.50€",
                 image: "",
             },
             {
@@ -200,7 +225,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 name: "Tosta Presunto",
                 description:
                     "Massa mãe, geleia de ananás e hortelã, rúcula, presunto e queijo brie maçaricado",
-                price: "€",
+                price: "8.00€",
                 image: tostaPresunto,
             },
             {
@@ -228,7 +253,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 description:
                     "Base: mix de folhas, tomate, cebola frita, pepino, mini mozzarella e croutons. Escolha a proteína: frango, camarão, ovos (escalfados/estrelados) ou salmão fumado (+2€). Escolha o molho: iogurte, vinagrete, balsâmico ou azeite piri-piri",
                 price: "8.00€",
-                image: "",
+                image: saladaCappuccino,
             },
             {
                 name: "Salada Vegan",
@@ -249,19 +274,19 @@ export const FOODS_MENU: MenuCategory[] = [
                 name: "Croissant Bacon",
                 description: "Ovos mexidos e bacon",
                 price: "4.50€",
-                image: "",
+                image: croissantBacon,
             },
             {
                 name: "Croissant Mozzarella",
                 description: "Presunto, pesto e mini mozzarella",
                 price: "5.00€",
-                image: "",
+                image: croissantMozzarella,
             },
             {
                 name: "Croissant Salmão",
                 description: "Queijo creme, cebola frita e salmão fumado",
                 price: "5.50€",
-                image: "",
+                image: croissantSalmao,
             },
             {
                 name: "Croissant Avocado",
@@ -269,7 +294,7 @@ export const FOODS_MENU: MenuCategory[] = [
                     "Geleia de tomate, ovos mexidos, bacon, queijo e avocado",
                 price: "6.00€",
                 tags: [MenuTagType.BEST_SELLER, MenuTagType.LONG_COOKING],
-                image: "",
+                image: croissantAvocado,
             },
         ],
     },
@@ -300,7 +325,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 name: "Croissant Pistachio",
                 description: "Framboesa, creme pistachio e pistachio triturado",
                 price: "5.00€",
-                image: "",
+                image: croissantPistachio,
             },
         ],
     },
@@ -324,46 +349,46 @@ export const FOODS_MENU: MenuCategory[] = [
                 name: "Panqueca Nutella",
                 description: "Morango, banana e Nutella",
                 price: "6.00€",
-                image: "",
+                image: panquecaNutella,
             },
             {
                 name: "Panqueca Ananás Hortelã",
                 description: "Mirtilos e geleia de ananás e hortelã",
                 price: "6.00€",
-                image: "",
+                image: panquecaAnanasHortela,
             },
             {
                 name: "Panqueca Banoffee",
                 description:
                     "Banana, doce de leite cremoso, bolacha Maria e chantilly",
                 price: "6.00€",
-                image: "",
+                image: panquecaBanoffee,
             },
             {
                 name: "Panqueca Oreo",
                 description: "Framboesa e creme Oreo",
                 price: "6.00€",
-                image: "",
+                image: panquecaOreo,
             },
             {
                 name: "Panqueca Kinder Bueno",
                 description: "Creme Kinder Bueno e gelado de baunilha",
                 price: "7.00€",
-                image: "",
+                image: panquecaKinder,
             },
             {
                 name: "Panqueca New York",
                 description:
                     "Compota de mirtilo e caramelo de maple syrup aquecido",
                 price: "7.00€",
-                image: "",
+                image: panquecaNewYork,
             },
             {
                 name: "Panqueca Lotus",
                 description:
                     "Mirtilo, framboesa, gelado de baunilha, creme Lotus e maple syrup",
                 price: "7.00€",
-                image: "",
+                image: panquecaLotus,
             },
             {
                 name: "Panqueca Pistachio",
@@ -378,7 +403,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 description:
                     "Bacon, cheddar, ovo estrelado, cebola frita e maple syrup",
                 price: "7.50€",
-                image: "",
+                image: panquecaAmericana,
             },
         ],
     },
@@ -416,7 +441,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 description:
                     "Banana, doce de leite cremoso, bolacha Maria e chantilly",
                 price: "6.00€",
-                image: "",
+                image: waffleBanoffee,
             },
             {
                 name: "Waffle Lotus",
@@ -428,7 +453,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 name: "Waffle Pistachio",
                 description: "Coco e creme de pistachio",
                 price: "7.00€",
-                image: "",
+                image: wafflePistachio,
             },
             {
                 name: "Waffle Americano",
@@ -436,7 +461,7 @@ export const FOODS_MENU: MenuCategory[] = [
                     "Salada, bacon, cheddar, ovo estrelado, cebola frita e maple syrup",
                 price: "7.00€",
                 tags: [MenuTagType.BEST_SELLER],
-                image: "",
+                image: waffleAmericano,
             },
         ],
     },
@@ -469,7 +494,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 name: "Bowl de Fruta",
                 description: "Iogurte, granola artesanal, frutas e mel",
                 price: "5.00€",
-                image: "",
+                image: bowlFruta,
             },
             {
                 name: "Bowl de Fruta Vegan",
@@ -511,7 +536,6 @@ export const FOODS_MENU: MenuCategory[] = [
                 description:
                     "Matcha Latte ou Iced Matcha. Tosta Abacate (massa mãe, pasta de abacate, ovos escalfados e sementes). Croissant Pistachio (framboesa e creme pistachio)",
                 price: "13.00€",
-                tags: [MenuTagType.VEGAN],
                 image: "",
             },
             {
@@ -519,7 +543,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 description:
                     "2 Bebidas quentes: abatanado, café, cappuccino ou chá. Jarra de Sumo 1L: laranja. 2 Croissants folhados simples. Torrada em pão chapata c/ geleia de ananás e hortelã ou geleia de mirtilo. Bowl de Fruta: iogurte, granola artesanal, frutas e mel. Panqueca Clássica: manteiga e mel ou maple syrup",
                 price: "33.00€",
-                image: "",
+                image: menuTabuaCappuccino,
             },
         ],
     },
@@ -544,6 +568,12 @@ export const FOODS_MENU: MenuCategory[] = [
                 description:
                     "Nutella, Creme Kinder Bueno, Creme Lotus, Compota de Mirtilo, Mel, Maple Syrup",
                 price: "2.50€",
+                image: "",
+            },
+            {
+                name: "Creme de pistachio",
+                description: "",
+                price: "3.00€",
                 image: "",
             },
             {
