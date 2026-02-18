@@ -8,24 +8,28 @@ import tostaCappuccinoPaoBrioche from "@/assets/tostaCappuccinoPaoBrioche.jpeg";
 import tostaPresunto from "@/assets/tostaPresunto.jpeg";
 import tostaSeul from "@/assets/tostaSeul.jpeg";
 import tostaTomatoJam from "@/assets/tostaTomatoJam.jpeg";
-import { cn } from "@/lib/utils";
-import { useState } from "react";
+import { MenuTagType } from "@/components/Menu/components/MenuTag";
 
-type MenuItem = {
+interface MenuItem {
     name: string;
     description: string;
     price: string;
-    tag?: string;
+    tags?: MenuTagType[];
     image: string;
-};
+}
 
-type MenuCategory = {
+interface MenuCategory {
     id: string;
     label: string;
     items: MenuItem[];
-};
+}
 
-const foodCategories: MenuCategory[] = [
+export enum MENU_TYPES {
+    FOOD = "food",
+    DRINK = "drink",
+}
+
+export const FOODS_MENU: MenuCategory[] = [
     {
         id: "para-partilhar",
         label: "Para Partilhar",
@@ -104,7 +108,7 @@ const foodCategories: MenuCategory[] = [
                 description:
                     "Maçã de alho e ervas, salmão fumado, ovos escalfados, molho holandês e cebola frita. ",
                 price: "9.00€",
-                tag: "Best Seller",
+                tags: [MenuTagType.BEST_SELLER],
                 image: "",
             },
             {
@@ -112,7 +116,7 @@ const foodCategories: MenuCategory[] = [
                 description:
                     "Maçã de alho e ervas, salmão fumado, ovos escalfados, molho holandês e cebola frita. ",
                 price: "10.00€",
-                tag: "Best Seller",
+                tags: [MenuTagType.BEST_SELLER],
                 image: ovosRoyalePaoBrioche,
             },
         ],
@@ -140,7 +144,11 @@ const foodCategories: MenuCategory[] = [
                 description:
                     "Massa mãe, queijo creme, rúcula, frango e cogumelos salteados com manteiga de alho e ervas, granola salgada artesanal e crème balsâmico",
                 price: "9.50€",
-                tag: "Sugestão do Chef - Novo - Demorado",
+                tags: [
+                    MenuTagType.CHEF_SUGGESTION,
+                    MenuTagType.NEW,
+                    MenuTagType.LONG_COOKING,
+                ],
                 image: tostaCampestre,
             },
             {
@@ -148,7 +156,11 @@ const foodCategories: MenuCategory[] = [
                 description:
                     "Pão de forma com manteiga de alho e ervas, ovos mexidos, bacon, queijo cheddar, maionese de sriracha e molho coreano de maionese com leite condensado",
                 price: "9.00€",
-                tag: "Best Seller - Picante - Demorado",
+                tags: [
+                    MenuTagType.BEST_SELLER,
+                    MenuTagType.SPICY,
+                    MenuTagType.LONG_COOKING,
+                ],
                 image: tostaSeul,
             },
             {
@@ -191,7 +203,7 @@ const foodCategories: MenuCategory[] = [
                 description:
                     "Massa mãe, pasta de abacate, tomate cherry, cogumelos, molho balsâmico e granola salgada artesanal",
                 price: "7.50€",
-                tag: "Vegan",
+                tags: [MenuTagType.VEGAN],
                 image: "",
             },
             {
@@ -218,7 +230,7 @@ const foodCategories: MenuCategory[] = [
                 description:
                     "Base: mix de folhas, tomate, cebola frita, pepino, abacate e granola salgada artesanal. Escolha o molho: vinagrete, balsâmico ou azeite piri-piri",
                 price: "7.00€",
-                tag: "Vegan",
+                tags: [MenuTagType.VEGAN],
                 image: "",
             },
         ],
@@ -250,7 +262,7 @@ const foodCategories: MenuCategory[] = [
                 description:
                     "Geleia de tomate, ovos mexidos, bacon, queijo e avocado",
                 price: "6.00€",
-                tag: "Best Seller - Demorado",
+                tags: [MenuTagType.BEST_SELLER, MenuTagType.LONG_COOKING],
                 image: "",
             },
         ],
@@ -275,7 +287,7 @@ const foodCategories: MenuCategory[] = [
                 name: "Croissant Banoffee",
                 description: "Banana, doce de leite cremoso e bolacha Maria",
                 price: "4.50€",
-                tag: "Best Seller",
+                tags: [MenuTagType.BEST_SELLER],
                 image: "",
             },
             {
@@ -352,7 +364,7 @@ const foodCategories: MenuCategory[] = [
                 description:
                     "Morango, gelado de baunilha, creme de pistachio e pistachio",
                 price: "8.00€",
-                tag: "Best Seller",
+                tags: [MenuTagType.BEST_SELLER],
                 image: "",
             },
             {
@@ -419,7 +431,7 @@ const foodCategories: MenuCategory[] = [
                 description:
                     "Salada, bacon, cheddar, ovo estrelado, cebola frita e maple syrup",
                 price: "7.00€",
-                tag: "Best Seller",
+                tags: [MenuTagType.BEST_SELLER],
                 image: "",
             },
         ],
@@ -440,7 +452,7 @@ const foodCategories: MenuCategory[] = [
                 description:
                     "Creme de pistachio, morangos, pistachio triturado e gelado",
                 price: "8.00€",
-                tag: "Sugestão do Chef",
+                tags: [MenuTagType.CHEF_SUGGESTION],
                 image: "",
             },
         ],
@@ -459,7 +471,7 @@ const foodCategories: MenuCategory[] = [
                 name: "Bowl de Fruta Vegan",
                 description: "Iogurte vegan, granola artesanal, frutas e agave",
                 price: "6.00€",
-                tag: "Vegan",
+                tags: [MenuTagType.VEGAN],
                 image: "",
             },
         ],
@@ -494,7 +506,7 @@ const foodCategories: MenuCategory[] = [
                 description:
                     "Matcha Latte ou Iced Matcha. Tosta Abacate (massa mãe, pasta de abacate, ovos escalfados e sementes). Croissant Pistachio (framboesa e creme pistachio)",
                 price: "13.00€",
-                tag: "Vegan",
+                tags: [MenuTagType.VEGAN],
                 image: "",
             },
             {
@@ -581,7 +593,7 @@ const foodCategories: MenuCategory[] = [
     },
 ];
 
-const drinkCategories: MenuCategory[] = [
+export const DRINKS_MENU: MenuCategory[] = [
     {
         id: "cafetaria",
         label: "Cafetaria",
@@ -662,7 +674,7 @@ const drinkCategories: MenuCategory[] = [
                 name: "Spanish Latte",
                 description: "",
                 price: "3.50€",
-                tag: "New",
+                tags: [MenuTagType.NEW],
                 image: "",
             },
             {
@@ -694,7 +706,7 @@ const drinkCategories: MenuCategory[] = [
                 description:
                     "C/ geleia de frutos vermelhos / maracujá / morango",
                 price: "4.50€",
-                tag: "New",
+                tags: [MenuTagType.NEW],
                 image: "",
             },
         ],
@@ -715,7 +727,7 @@ const drinkCategories: MenuCategory[] = [
                 name: "Morango e Banana",
                 description: "",
                 price: "5.00€",
-                tag: "New",
+                tags: [MenuTagType.NEW],
                 image: "",
             },
         ],
@@ -866,128 +878,7 @@ const drinkCategories: MenuCategory[] = [
     },
 ];
 
-const Menu = () => {
-    const [activeType, setActiveType] = useState<"food" | "drink">("food");
-    const [activeCategory, setActiveCategory] = useState("para-partilhar");
-
-    const categories = activeType === "food" ? foodCategories : drinkCategories;
-    const currentCategory = categories.find((cat) => cat.id === activeCategory);
-
-    const handleTypeChange = (type: "food" | "drink") => {
-        setActiveType(type);
-        const cats = type === "food" ? foodCategories : drinkCategories;
-        setActiveCategory(cats[0].id);
-    };
-
-    return (
-        <section id="menu" className="py-24 bg-background">
-            <div className="container mx-auto px-4">
-                <div className="text-center max-w-2xl mx-auto mb-16">
-                    <span className="inline-block text-sm font-medium text-cappuccino tracking-wider uppercase mb-4">
-                        O Nosso Menu
-                    </span>
-                    <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground mb-6">
-                        Pratos que Contam Histórias
-                    </h2>
-                    <p className="text-muted-foreground text-lg">
-                        Cada prato é uma obra de arte culinária, criado com
-                        ingredientes frescos e muito amor.
-                    </p>
-                </div>
-
-                {/* Type Tabs (Comida / Bebida) */}
-                <div className="flex justify-center gap-4 mb-6 sm:mb-8 px-2">
-                    <button
-                        onClick={() => handleTypeChange("food")}
-                        className={cn(
-                            "px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold transition-all duration-300 border-b-2",
-                            activeType === "food"
-                                ? "border-cappuccino text-cappuccino"
-                                : "border-transparent text-muted-foreground hover:text-foreground hover:border-cappuccino/30",
-                        )}
-                    >
-                        Comidas
-                    </button>
-                    <button
-                        onClick={() => handleTypeChange("drink")}
-                        className={cn(
-                            "px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold transition-all duration-300 border-b-2",
-                            activeType === "drink"
-                                ? "border-cappuccino text-cappuccino"
-                                : "border-transparent text-muted-foreground hover:text-foreground hover:border-cappuccino/30",
-                        )}
-                    >
-                        Bebidas
-                    </button>
-                </div>
-
-                {/* Category Tabs */}
-                <div className="flex flex-wrap justify-center gap-2 mb-8 sm:mb-12 px-2">
-                    {categories.map((category) => (
-                        <button
-                            key={category.id}
-                            onClick={() => setActiveCategory(category.id)}
-                            className={cn(
-                                "px-4 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm font-medium transition-all duration-300",
-                                activeCategory === category.id
-                                    ? "bg-primary text-primary-foreground shadow-lg"
-                                    : "bg-cream text-foreground hover:bg-cappuccino/10",
-                            )}
-                        >
-                            {category.label}
-                        </button>
-                    ))}
-                </div>
-
-                {/* Menu Items Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-5xl mx-auto">
-                    {currentCategory?.items.map((item, index) => (
-                        <div
-                            key={index}
-                            className="group bg-card rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-border hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
-                        >
-                            <div className="flex gap-3 sm:gap-4">
-                                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-lg sm:rounded-xl overflow-hidden flex-shrink-0">
-                                    <div
-                                        className="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500"
-                                        style={{
-                                            backgroundImage: `url(${item.image})`,
-                                        }}
-                                    />
-                                </div>
-                                <div className="flex-1 min-w-0">
-                                    <div className="flex items-start justify-between gap-2 mb-1 sm:mb-2">
-                                        <h3 className="font-serif text-base sm:text-xl font-semibold text-foreground line-clamp-1">
-                                            {item.name}
-                                        </h3>
-                                        <span className="text-sm sm:text-lg font-semibold text-cappuccino flex-shrink-0">
-                                            {item.price}
-                                        </span>
-                                    </div>
-                                    {item.tag && (
-                                        <span className="inline-block px-2 py-0.5 text-xs font-medium bg-berry/10 text-berry rounded-full mb-1 sm:mb-2">
-                                            {item.tag}
-                                        </span>
-                                    )}
-                                    <p className="text-xs sm:text-sm text-muted-foreground line-clamp-2">
-                                        {item.description}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-                {/* CTA */}
-                <div className="text-center mt-12">
-                    <p className="text-muted-foreground mb-4">
-                        Tens alergias ou preferências alimentares? Fala
-                        connosco!
-                    </p>
-                </div>
-            </div>
-        </section>
-    );
+export const MENU_CONFIG: Record<MENU_TYPES, MenuCategory[]> = {
+    [MENU_TYPES.FOOD]: FOODS_MENU,
+    [MENU_TYPES.DRINK]: DRINKS_MENU,
 };
-
-export default Menu;
