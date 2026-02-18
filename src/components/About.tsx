@@ -1,3 +1,7 @@
+import chef from "@/assets/history/chef.jpeg";
+import food1 from "@/assets/history/food1.jpeg";
+import food2 from "@/assets/history/food2.jpeg";
+import table from "@/assets/history/table.jpeg";
 import { Heart, Leaf, Star } from "lucide-react";
 
 const About = () => {
@@ -35,18 +39,38 @@ const About = () => {
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="space-y-4">
                                     <div className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-cappuccino/20 to-cappuccino/5 overflow-hidden">
-                                        <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400')] bg-cover bg-center" />
+                                        <div
+                                            className="w-full h-full bg-cover bg-center"
+                                            style={{
+                                                backgroundImage: `url(${chef})`,
+                                            }}
+                                        />
                                     </div>
                                     <div className="aspect-square rounded-2xl bg-gradient-to-br from-berry/20 to-berry/5 overflow-hidden">
-                                        <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400')] bg-cover bg-center" />
+                                        <div
+                                            className="w-full h-full bg-cover bg-center"
+                                            style={{
+                                                backgroundImage: `url(${food2})`,
+                                            }}
+                                        />
                                     </div>
                                 </div>
                                 <div className="space-y-4 pt-8">
                                     <div className="aspect-square rounded-2xl bg-gradient-to-br from-sage/20 to-sage/5 overflow-hidden">
-                                        <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=400')] bg-cover bg-center" />
+                                        <div
+                                            className="w-full h-full bg-cover bg-center"
+                                            style={{
+                                                backgroundImage: `url(${food1})`,
+                                            }}
+                                        />
                                     </div>
                                     <div className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-gold/20 to-gold/5 overflow-hidden">
-                                        <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=400')] bg-cover bg-center" />
+                                        <div
+                                            className="w-full h-full bg-cover bg-center"
+                                            style={{
+                                                backgroundImage: `url(${table})`,
+                                            }}
+                                        />
                                     </div>
                                 </div>
                             </div>
