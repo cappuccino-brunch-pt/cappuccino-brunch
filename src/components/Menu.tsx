@@ -539,7 +539,7 @@ const foodCategories: MenuCategory[] = [
 
 const drinkCategories: MenuCategory[] = [
     {
-        id: "cafeteria",
+        id: "cafetaria",
         label: "Cafetaria",
         items: [
             {
@@ -572,11 +572,12 @@ const drinkCategories: MenuCategory[] = [
             },
             { name: "Americano", description: "", price: "1.50€", image: "" },
             { name: "Chá", description: "", price: "2.00€", image: "" },
-            { name: "Uccino", description: "", price: "2.00€", image: "" },
+            { name: "Lical", description: "", price: "2.00€", image: "" },
+            { name: "Machiato", description: "", price: "3.00€", image: "" },
             {
-                name: "Macchiato Caramel",
+                name: "Machiato Caramel",
                 description: "",
-                price: "3.00€",
+                price: "3.50€",
                 image: "",
             },
             { name: "Cappuccino", description: "", price: "2.50€", image: "" },
@@ -589,7 +590,7 @@ const drinkCategories: MenuCategory[] = [
             {
                 name: "Chocolate Quente",
                 description: "",
-                price: "3.00€",
+                price: "3.20€",
                 image: "",
             },
             { name: "Flat White", description: "", price: "3.00€", image: "" },
@@ -617,7 +618,7 @@ const drinkCategories: MenuCategory[] = [
                 name: "Spanish Latte",
                 description: "",
                 price: "3.50€",
-                tag: "NEW",
+                tag: "New",
                 image: "",
             },
             {
@@ -641,15 +642,15 @@ const drinkCategories: MenuCategory[] = [
             {
                 name: "Iced Matcha Latte",
                 description: "",
-                price: "3.80€",
+                price: "3.50€",
                 image: "",
             },
             {
                 name: "Iced Dalgona Matcha",
                 description:
-                    "Com geleia de frutos vermelhos, maracujá ou morango",
+                    "C/ geleia de frutos vermelhos / maracujá / morango",
                 price: "4.50€",
-                tag: "NEW",
+                tag: "New",
                 image: "",
             },
         ],
@@ -670,7 +671,7 @@ const drinkCategories: MenuCategory[] = [
                 name: "Morango e Banana",
                 description: "",
                 price: "5.00€",
-                tag: "NEW",
+                tag: "New",
                 image: "",
             },
         ],
@@ -702,7 +703,7 @@ const drinkCategories: MenuCategory[] = [
             { name: "Água", description: "", price: "1.10€", image: "" },
             { name: "Pedras", description: "", price: "1.20€", image: "" },
             {
-                name: "Pedras Limão",
+                name: "Pedras de Limão",
                 description: "",
                 price: "1.40€",
                 image: "",
@@ -719,17 +720,17 @@ const drinkCategories: MenuCategory[] = [
             {
                 name: "San Pellegrino",
                 description: "",
-                price: "2.80€",
+                price: "2.90€",
                 image: "",
             },
-            { name: "Água Tónica", description: "", price: "5.50€", image: "" },
+            { name: "Água Tónica", description: "", price: "3.50€", image: "" },
         ],
     },
     {
         id: "bebidas-alcool",
         label: "Bebidas c/ Álcool",
         items: [
-            { name: "Super Bock", description: "", price: "1.80€", image: "" },
+            { name: "Super Bock", description: "", price: "1.90€", image: "" },
             {
                 name: "Super Bock Stout",
                 description: "",
@@ -756,29 +757,21 @@ const drinkCategories: MenuCategory[] = [
         label: "Sangrias 1L/2L",
         items: [
             {
-                name: "Branca (1L)",
+                name: "Sangria Branca",
                 description: "",
-                price: "12.00€",
+                price: "12.00€/20.00€",
                 image: "",
             },
             {
-                name: "Branca (2L)",
+                name: "Sangria Tinta",
                 description: "",
-                price: "20.00€",
-                image: "",
-            },
-            { name: "Tinta (1L)", description: "", price: "12.00€", image: "" },
-            { name: "Tinta (2L)", description: "", price: "20.00€", image: "" },
-            {
-                name: "Espumante Rosé (1L)",
-                description: "",
-                price: "15.00€",
+                price: "12.00€/20.00€",
                 image: "",
             },
             {
-                name: "Espumante Rosé (2L)",
+                name: "Sangria Espumante Rosé",
                 description: "",
-                price: "25.00€",
+                price: "15.00€/25.00€",
                 image: "",
             },
         ],
@@ -788,34 +781,21 @@ const drinkCategories: MenuCategory[] = [
         label: "Vinhos",
         items: [
             {
-                name: "Esteva 37.5cl",
+                name: "Esteva 37.5CL / 75CL",
                 description: "",
-                price: "5.00€",
-                image: "",
-            },
-            { name: "Esteva 75cl", description: "", price: "9.00€", image: "" },
-            {
-                name: "Planalto 37.5cl",
-                description: "",
-                price: "5.50€",
+                price: "5.00€/9.00€",
                 image: "",
             },
             {
-                name: "Planalto 75cl",
+                name: "Planalto 37.5CL / 75CL",
                 description: "",
-                price: "10.00€",
+                price: "5.50€/10.00€",
                 image: "",
             },
             {
-                name: "Mateus Rosé 37.5cl",
+                name: "Mateus Rosé 37.5CL / 75CL",
                 description: "",
-                price: "5.50€",
-                image: "",
-            },
-            {
-                name: "Mateus Rosé 75cl",
-                description: "",
-                price: "10.00€",
+                price: "5.50€/10.00€",
                 image: "",
             },
         ],
