@@ -1,5 +1,31 @@
 import { Clock, Instagram, Mail, MapPin, Phone } from "lucide-react";
 
+const getScheduleInfo = () => {
+    const now = new Date();
+    const month = now.getMonth();
+    const day = now.getDate();
+
+    const summerMonths = [5, 6, 7, 8];
+
+    // Summer schedule is from Jun 26th to September 30th
+    const isSummer =
+        month === 5
+            ? summerMonths.includes(month) && day >= 26
+            : summerMonths.includes(month);
+
+    if (isSummer) {
+        return {
+            value: "Seg - Dom: 10h - 20h",
+            subvalue: "Cozinha fecha às 19:30",
+        };
+    }
+
+    return {
+        value: "Seg - Dom: 10h - 19h",
+        subvalue: "Cozinha fecha às 18:30",
+    };
+};
+
 const Contact = () => {
     const contactInfo = [
         {
@@ -17,8 +43,7 @@ const Contact = () => {
         {
             icon: Clock,
             label: "Horário",
-            value: "Seg - Dom: 10h - 19h",
-            subvalue: "Brunch servido todo o dia",
+            ...getScheduleInfo(),
         },
         {
             icon: Mail,
