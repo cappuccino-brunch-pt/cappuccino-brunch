@@ -55,6 +55,19 @@ export enum MENU_TYPES {
 
 export const FOODS_MENU: MenuCategory[] = [
     {
+        id: "menu-executivo",
+        label: "Menu Executivo",
+        items: [
+            {
+                name: "Dias Úteis",
+                description:
+                    "<b>Horário</b>: 12:00 às 15:00. \n<b>Inclui</b>: prato principal, bebida e café",
+                price: "10.00€",
+                image: "",
+            },
+        ],
+    },
+    {
         id: "para-partilhar",
         label: "Para Partilhar",
         items: [
