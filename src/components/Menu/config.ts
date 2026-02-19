@@ -33,7 +33,7 @@ import waffleBanoffee from "@/assets/menu/waffleBanoffee.jpeg";
 import wafflePistachio from "@/assets/menu/wafflePistachio.jpeg";
 import { MenuTagType } from "@/components/Menu/components/MenuTag";
 
-interface MenuItem {
+export interface MenuItem {
     name: string;
     description: string;
     price: string;
@@ -251,14 +251,14 @@ export const FOODS_MENU: MenuCategory[] = [
             {
                 name: "Salada Cappuccino",
                 description:
-                    "Base: mix de folhas, tomate, cebola frita, pepino, mini mozzarella e croutons. Escolha a proteína: frango, camarão, ovos (escalfados/estrelados) ou salmão fumado (+2€). Escolha o molho: iogurte, vinagrete, balsâmico ou azeite piri-piri",
+                    "<b>Base</b>: mix de folhas, tomate, cebola frita, pepino, mini mozzarella e croutons. \n<b>Escolha a proteína</b>: frango, camarão, ovos (escalfados/estrelados) ou salmão fumado (+2€). \n<b>Escolha o molho</b>: iogurte, vinagrete, balsâmico ou azeite piri-piri",
                 price: "8.00€",
                 image: saladaCappuccino,
             },
             {
                 name: "Salada Vegan",
                 description:
-                    "Base: mix de folhas, tomate, cebola frita, pepino, abacate e granola salgada artesanal. Escolha o molho: vinagrete, balsâmico ou azeite piri-piri",
+                    "<b>Base</b>: mix de folhas, tomate, cebola frita, pepino, abacate e granola salgada artesanal. \n<b>Escolha o molho</b>: vinagrete, balsâmico ou azeite piri-piri",
                 price: "7.00€",
                 tags: [MenuTagType.VEGAN],
                 image: "",
@@ -513,35 +513,35 @@ export const FOODS_MENU: MenuCategory[] = [
             {
                 name: "Menu Kids",
                 description:
-                    "Até 12 anos. À escolha: Bowl de Iogurte c/ compota de morango ou frutos vermelhos, ou Panqueca c/ Nutella, creme Kinder Bueno ou mel",
+                    "<b>Até 12 anos</b>. \n<b>À escolha</b>: Bowl de Iogurte c/ compota de morango ou frutos vermelhos, ou Panqueca c/ Nutella, creme Kinder Bueno ou mel",
                 price: "6.50€",
                 image: "",
             },
             {
                 name: "Menu American Breakfast",
                 description:
-                    "Prato: panqueca clássica, 2 ovos estrelados, bacon e torrada. Bebida à escolha: Coca-Cola, Compal ou Ice Tea",
+                    "<b>Prato</b>: panqueca clássica, 2 ovos estrelados, bacon e torrada. \n<b>Bebida à escolha</b>: Coca-Cola, Compal ou Ice Tea",
                 price: "8.50€",
                 image: "",
             },
             {
                 name: "Menu Cappuccino",
                 description:
-                    "Sumo à escolha. Panqueca Clássica c/ maple syrup. Tosta Bacon Jam ou Tosta Abacate (massa mãe, geleia de bacon e ovos mexidos ou massa mãe, pasta de abacate, ovos escalfados e sementes). Bebida quente: abatanado, café, cappuccino ou chá",
+                    "Sumo à escolha. \nPanqueca Clássica c/ maple syrup. \nTosta Bacon Jam ou Tosta Abacate (massa mãe, geleia de bacon e ovos mexidos ou massa mãe, pasta de abacate, ovos escalfados e sementes). \n<b>Bebida quente</b>: abatanado, café, cappuccino ou chá",
                 price: "12.50€",
                 image: "",
             },
             {
                 name: "Menu Green",
                 description:
-                    "Matcha Latte ou Iced Matcha. Tosta Abacate (massa mãe, pasta de abacate, ovos escalfados e sementes). Croissant Pistachio (framboesa e creme pistachio)",
+                    "Matcha Latte ou Iced Matcha. \nTosta Abacate (massa mãe, pasta de abacate, ovos escalfados e sementes). \nCroissant Pistachio (framboesa e creme pistachio)",
                 price: "13.00€",
                 image: "",
             },
             {
                 name: "Menu Tábua Cappuccino",
                 description:
-                    "2 Bebidas quentes: abatanado, café, cappuccino ou chá. Jarra de Sumo 1L: laranja. 2 Croissants folhados simples. Torrada em pão chapata c/ geleia de ananás e hortelã ou geleia de mirtilo. Bowl de Fruta: iogurte, granola artesanal, frutas e mel. Panqueca Clássica: manteiga e mel ou maple syrup",
+                    "<b>2 Bebidas quentes</b>: abatanado, café, cappuccino ou chá. \n<b>Jarra de Sumo 1L:</b> laranja. \n2 Croissants folhados simples. Torrada em pão chapata c/ geleia de ananás e hortelã ou geleia de mirtilo. \n<b>Bowl de Fruta:</b> iogurte, granola artesanal, frutas e mel. \n<b>Panqueca Clássica:</b> manteiga e mel ou maple syrup",
                 price: "33.00€",
                 image: menuTabuaCappuccino,
             },

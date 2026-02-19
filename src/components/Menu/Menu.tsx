@@ -1,10 +1,13 @@
+import { MenuItemModal } from "@/components/Menu/components/MenuItemModal";
 import { MenuTag } from "@/components/Menu/components/MenuTag";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
+import type { MenuItem } from "./config";
 import { MENU_CONFIG, MENU_TYPES } from "./config";
 
 const Menu = () => {
     const [activeType, setActiveType] = useState<MENU_TYPES>(MENU_TYPES.FOOD);
+    const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
 
     // Auto select the first category of the active type
     const [activeCategoryId, setActiveCategoryId] = useState(
@@ -96,7 +99,8 @@ const Menu = () => {
                     {currentCategoryConfig?.items.map((item, index) => (
                         <div
                             key={index}
-                            className="group bg-card rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-border hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
+                            onClick={() => setSelectedItem(item)}
+                            className="group bg-card rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-border hover:shadow-xl transition-all duration-500 hover:-translate-y-1 cursor-pointer"
                         >
                             <div className="flex gap-3 sm:gap-4">
                                 <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-lg sm:rounded-xl overflow-hidden flex-shrink-0">
@@ -123,9 +127,15 @@ const Menu = () => {
                                             ))}
                                         </div>
                                     )}
-                                    <p className="text-xs sm:text-sm text-muted-foreground line-clamp-2">
-                                        {item.description}
-                                    </p>
+                                    <p
+                                        className="text-xs sm:text-sm text-muted-foreground line-clamp-2"
+                                        dangerouslySetInnerHTML={{
+                                            __html: item.description.replace(
+                                                /\n/g,
+                                                " ",
+                                            ),
+                                        }}
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -140,6 +150,12 @@ const Menu = () => {
                     </p>
                 </div>
             </div>
+
+            <MenuItemModal
+                item={selectedItem}
+                open={!!selectedItem}
+                onOpenChange={(open) => !open && setSelectedItem(null)}
+            />
         </section>
     );
 };
