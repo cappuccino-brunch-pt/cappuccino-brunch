@@ -6,10 +6,15 @@ import Hero from "@/components/Hero";
 import { Menu } from "@/components/Menu";
 import Navigation from "@/components/Navigation";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 
 const Index = () => {
     const location = useLocation();
+
+    const { t } = useTranslation("translations");
+
+    console.log(t("title"));
 
     useEffect(() => {
         const scrollToHash = () => {
