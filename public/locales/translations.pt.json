@@ -1,3 +1,38 @@
 {
-    "title": "Cappuccino Brunch"
+    "title": "Cappuccino Brunch",
+    "cappuccino": "Cappuccino",
+    "reserve": "Reservar",
+    "reserve_table": "Reservar Mesa",
+
+    "navigation": {
+        "home": "Início",
+        "about": "Sobre",
+        "menu": "Menu",
+        "gallery": "Galeria",
+        "contact": "Contato"
+    },
+    "hero": {
+        "title": "Cappuccino Brunch",
+        "description": "O lugar perfeito para começar o dia com sabor e amor."
+    },
+    "about": {
+        "title": "Sobre",
+        "description": "O lugar perfeito para começar o dia com sabor e amor."
+    },
+    "menu": {
+        "title": "Menu",
+        "description": "O lugar perfeito para começar o dia com sabor e amor."
+    },
+    "gallery": {
+        "title": "Galeria",
+        "description": "O lugar perfeito para começar o dia com sabor e amor."
+    },
+    "contact": {
+        "title": "Contato",
+        "description": "O lugar perfeito para começar o dia com sabor e amor."
+    },
+    "footer": {
+        "title": "Footer",
+        "description": "O lugar perfeito para começar o dia com sabor e amor."
+    }
 }

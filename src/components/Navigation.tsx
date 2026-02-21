@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Instagram, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Navigation = () => {
+    const { t } = useTranslation("translations");
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -16,11 +18,11 @@ const Navigation = () => {
     }, []);
 
     const navLinks = [
-        { label: "Início", href: "#home" },
-        { label: "Sobre", href: "#about" },
-        { label: "Menu", href: "#menu" },
-        { label: "Galeria", href: "#gallery" },
-        { label: "Contacto", href: "#contact" },
+        { label: t("navigation.home"), href: "#home" },
+        { label: t("navigation.about"), href: "#about" },
+        { label: t("navigation.menu"), href: "#menu" },
+        { label: t("navigation.gallery"), href: "#gallery" },
+        { label: t("navigation.contact"), href: "#contact" },
     ];
 
     return (
@@ -37,7 +39,7 @@ const Navigation = () => {
                     {/* Logo */}
                     <a href="#home" className="flex items-center gap-2">
                         <span className="font-serif text-xl sm:text-2xl md:text-3xl font-semibold text-foreground">
-                            Cappuccino
+                            {t("cappuccino")}
                         </span>
                     </a>
 
@@ -66,7 +68,7 @@ const Navigation = () => {
                             <Instagram className="w-5 h-5" />
                         </a>
                         <Button className="rounded-full px-6" asChild>
-                            <a href="#contact">Reservar</a>
+                            <a href="#contact">{t("reserve")}</a>
                         </Button>
                     </div>
 
@@ -121,7 +123,7 @@ const Navigation = () => {
                                             setIsMobileMenuOpen(false)
                                         }
                                     >
-                                        Reservar Mesa
+                                        {t("reserve_table")}
                                     </a>
                                 </Button>
                             </div>
