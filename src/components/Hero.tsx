@@ -83,7 +83,7 @@ const Hero = () => {
                             <div className="w-10 h-10 rounded-full bg-cream flex items-center justify-center">
                                 <Clock className="w-5 h-5 text-cappuccino" />
                             </div>
-                            {/* TODO */}
+                            {/* TODO add translation for schedule */}
                             <span>Seg-Dom: 10h - 19h</span>
                         </div>
                     </div>

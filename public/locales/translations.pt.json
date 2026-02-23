@@ -22,15 +22,24 @@
         "tag": "Braga's Coziest Brunch Spot",
         "title": "Cappuccino Brunch",
         "description": "Onde cada manhã se transforma numa experiência. Pratos artesanais, café de especialidade e a atmosfera perfeita para momentos especiais.",
-        "location": "Braga, Portugal",
-
-        "schedule": "Seg - Dom: 10h - 19h",
-        "schedule_summer": "Seg - Dom: 10h - 20h",
-        "schedule_summer_description": "Cozinha fecha às 19:30"
+        "location": "Braga, Portugal"
     },
     "about": {
-        "title": "Sobre",
-        "description": "O lugar perfeito para começar o dia com sabor e amor."
+        "subtitle": "A Nossa História",
+        "title": "Onde o Café Encontra a Arte",
+        "description": "Nascido da paixão por brunches memoráveis, o Cappuccino Brunch é mais do que um restaurante — é um refúgio para os amantes de boa comida e bons momentos.",
+        "content": " Acreditamos que cada refeição deve ser uma celebração. Por isso, combinamos ingredientes frescos com técnicas criativas para criar pratos que são tão bonitos quanto deliciosos. Do nosso café de especialidade às nossas panquecas fluffy, cada detalhe é pensado para te fazer sorrir.",
+
+        "years_of_flavour": "Anos de Sabor",
+
+        "features": {
+            "title_1": "Ingredientes Frescos",
+            "description_1": "Produtos locais e sazonais, cuidadosamente selecionados todos os dias.",
+            "title_2": "Feito com Amor",
+            "description_2": "Cada prato é preparado com paixão e atenção aos detalhes.",
+            "title_3": "Experiência Única",
+            "description_3": "Um ambiente acolhedor para momentos especiais com quem amas."
+        }
     },
     "menu": {
         "title": "Menu",

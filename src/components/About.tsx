@@ -3,29 +3,28 @@ import food1 from "@/assets/history/food1.jpeg";
 import food2 from "@/assets/history/food2.jpeg";
 import table from "@/assets/history/table.jpeg";
 import { Heart, Leaf, Star } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+    const { t } = useTranslation("translations");
     const foundationYear = 2024;
     const yearsOfExperience = new Date().getFullYear() - foundationYear;
 
     const features = [
         {
             icon: Leaf,
-            title: "Ingredientes Frescos",
-            description:
-                "Produtos locais e sazonais, cuidadosamente selecionados todos os dias.",
+            title: t("about.features.title_1"),
+            description: t("about.features.description_1"),
         },
         {
             icon: Heart,
-            title: "Feito com Amor",
-            description:
-                "Cada prato é preparado com paixão e atenção aos detalhes.",
+            title: t("about.features.title_2"),
+            description: t("about.features.description_2"),
         },
         {
             icon: Star,
-            title: "Experiência Única",
-            description:
-                "Um ambiente acolhedor para momentos especiais com quem amas.",
+            title: t("about.features.title_3"),
+            description: t("about.features.description_3"),
         },
     ];
 
@@ -81,7 +80,7 @@ const About = () => {
                                         {yearsOfExperience}+
                                     </span>
                                     <span className="text-xs sm:text-sm text-muted-foreground">
-                                        Anos de Sabor
+                                        {t("about.years_of_flavour")}
                                     </span>
                                 </div>
                             </div>
@@ -90,25 +89,16 @@ const About = () => {
                         {/* Content */}
                         <div className="lg:pl-8">
                             <span className="inline-block text-sm font-medium text-cappuccino tracking-wider uppercase mb-4">
-                                A Nossa História
+                                {t("about.subtitle")}
                             </span>
                             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground mb-6 leading-tight">
-                                Onde o Café Encontra a Arte
+                                {t("about.title")}
                             </h2>
                             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                                Nascido da paixão por brunches memoráveis, o
-                                Cappuccino Brunch é mais do que um restaurante —
-                                é um refúgio para os amantes de boa comida e
-                                bons momentos.
+                                {t("about.description")}
                             </p>
                             <p className="text-muted-foreground leading-relaxed mb-10">
-                                Acreditamos que cada refeição deve ser uma
-                                celebração. Por isso, combinamos ingredientes
-                                frescos com técnicas criativas para criar pratos
-                                que são tão bonitos quanto deliciosos. Do nosso
-                                café de especialidade às nossas panquecas
-                                fluffy, cada detalhe é pensado para te fazer
-                                sorrir.
+                                {t("about.content")}
                             </p>
 
                             {/* Features */}
