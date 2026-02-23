@@ -124,14 +124,14 @@ export const FOODS_MENU: MenuCategory[] = [
             {
                 name: "Ovos Benedict c/ English Muffin",
                 description:
-                    "Maçã de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita.  ",
+                    "Manteiga de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita.  ",
                 price: "8.00€",
                 image: ovosBenedictEnglishMuffin,
             },
             {
                 name: "Ovos Benedict c/ Pão de Forma Brioche",
                 description:
-                    "Maçã de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita.  ",
+                    "Manteiga de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita.  ",
                 price: "9.00€",
                 image: "",
             },
@@ -145,7 +145,7 @@ export const FOODS_MENU: MenuCategory[] = [
             {
                 name: "Ovos Royale c/ English Muffin",
                 description:
-                    "Maçã de alho e ervas, salmão fumado, ovos escalfados, molho holandês e cebola frita. ",
+                    "Manteiga de alho e ervas, salmão fumado, ovos escalfados, molho holandês e cebola frita. ",
                 price: "9.00€",
                 tags: [MenuTagType.BEST_SELLER],
                 image: "",
@@ -153,7 +153,7 @@ export const FOODS_MENU: MenuCategory[] = [
             {
                 name: "Ovos Royale c/ Pão de Forma Brioche",
                 description:
-                    "Maçã de alho e ervas, salmão fumado, ovos escalfados, molho holandês e cebola frita. ",
+                    "Manteiga de alho e ervas, salmão fumado, ovos escalfados, molho holandês e cebola frita. ",
                 price: "10.00€",
                 tags: [MenuTagType.BEST_SELLER],
                 image: ovosRoyalePaoBrioche,
