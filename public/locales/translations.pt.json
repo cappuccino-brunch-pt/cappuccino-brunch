@@ -1,7 +1,7 @@
 {
     "title": "Cappuccino Brunch",
     "cappuccino": "Cappuccino",
-    "reserve": "Reservar",
+    "brunch": "Brunch",
     "reserve_table": "Reservar Mesa",
 
     "navigation": {
@@ -11,9 +11,22 @@
         "gallery": "Galeria",
         "contact": "Contato"
     },
+
+    "actions": {
+        "reserve": "Reservar",
+        "view_menu": "Ver Menu",
+        "reserve_table": "Reservar Mesa"
+    },
+
     "hero": {
+        "tag": "Braga's Coziest Brunch Spot",
         "title": "Cappuccino Brunch",
-        "description": "O lugar perfeito para começar o dia com sabor e amor."
+        "description": "Onde cada manhã se transforma numa experiência. Pratos artesanais, café de especialidade e a atmosfera perfeita para momentos especiais.",
+        "location": "Braga, Portugal",
+
+        "schedule": "Seg - Dom: 10h - 19h",
+        "schedule_summer": "Seg - Dom: 10h - 20h",
+        "schedule_summer_description": "Cozinha fecha às 19:30"
     },
     "about": {
         "title": "Sobre",

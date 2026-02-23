@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Clock, Coffee, MapPin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+    const { t } = useTranslation("translations");
+
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
             {/* Decorative elements */}
@@ -17,7 +20,7 @@ const Hero = () => {
                     <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-cream border border-border animate-fade-in">
                         <Coffee className="w-4 h-4 text-cappuccino" />
                         <span className="text-sm font-medium text-muted-foreground tracking-wide uppercase">
-                            Braga's Coziest Brunch Spot
+                            {t("hero.tag")}
                         </span>
                     </div>
 
@@ -26,9 +29,13 @@ const Hero = () => {
                         className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight mb-6 animate-fade-in"
                         style={{ animationDelay: "0.1s" }}
                     >
-                        <span className="text-foreground">Cappuccino</span>
+                        <span className="text-foreground">
+                            {t("cappuccino")}
+                        </span>
                         <br />
-                        <span className="text-gradient italic">Brunch</span>
+                        <span className="text-gradient italic">
+                            {t("brunch")}
+                        </span>
                     </h1>
 
                     {/* Tagline */}
@@ -36,9 +43,7 @@ const Hero = () => {
                         className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed animate-fade-in px-2"
                         style={{ animationDelay: "0.2s" }}
                     >
-                        Onde cada manhã se transforma numa experiência. Pratos
-                        artesanais, café de especialidade e a atmosfera perfeita
-                        para momentos especiais.
+                        {t("hero.description")}
                     </p>
 
                     {/* CTA Buttons */}
@@ -51,7 +56,7 @@ const Hero = () => {
                             className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
                             asChild
                         >
-                            <a href="#menu">Ver Menu</a>
+                            <a href="#menu">{t("actions.view_menu")}</a>
                         </Button>
                         <Button
                             variant="outline"
@@ -59,7 +64,7 @@ const Hero = () => {
                             className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg rounded-full transition-all duration-300 w-full sm:w-auto"
                             asChild
                         >
-                            <a href="#contact">Reservar Mesa</a>
+                            <a href="#contact">{t("actions.reserve_table")}</a>
                         </Button>
                     </div>
 
@@ -72,12 +77,13 @@ const Hero = () => {
                             <div className="w-10 h-10 rounded-full bg-cream flex items-center justify-center">
                                 <MapPin className="w-5 h-5 text-cappuccino" />
                             </div>
-                            <span>Braga, Portugal</span>
+                            <span>{t("hero.location")}</span>
                         </div>
                         <div className="flex items-center gap-3 text-muted-foreground">
                             <div className="w-10 h-10 rounded-full bg-cream flex items-center justify-center">
                                 <Clock className="w-5 h-5 text-cappuccino" />
                             </div>
+                            {/* TODO */}
                             <span>Seg-Dom: 10h - 19h</span>
                         </div>
                     </div>
