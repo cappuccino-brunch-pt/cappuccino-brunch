@@ -2,7 +2,6 @@
     "title": "Cappuccino Brunch",
     "cappuccino": "Cappuccino",
     "brunch": "Brunch",
-    "reserve_table": "Reservar Mesa",
 
     "navigation": {
         "home": "Início",
@@ -15,7 +14,8 @@
     "actions": {
         "reserve": "Reservar",
         "view_menu": "Ver Menu",
-        "reserve_table": "Reservar Mesa"
+        "reserve_table": "Reservar Mesa",
+        "follow_on_instagram": "Seguir no Instagram"
     },
 
     "hero": {
@@ -46,15 +46,43 @@
         "description": "O lugar perfeito para começar o dia com sabor e amor."
     },
     "gallery": {
-        "title": "Galeria",
-        "description": "O lugar perfeito para começar o dia com sabor e amor."
+        "title": "Momentos que Merecem Partilha",
+        "description": "Segue-nos no Instagram para não perderes nenhuma novidade e partilha os teus momentos connosco!"
     },
     "contact": {
-        "title": "Contato",
-        "description": "O lugar perfeito para começar o dia com sabor e amor."
+        "section_title": "Contacto",
+        "title": "Vem Visitar-nos",
+        "description": "Estamos sempre prontos para te receber. Reserva a tua mesa ou simplesmente aparece — há sempre espaço para mais um café!",
+
+        "follow_us": "Segue-nos:",
+
+        "features": {
+            "address": {
+                "title": "Morada",
+                "value": "Alameda do Fujacal - 279",
+                "subvalue": "4705-096 Braga, Portugal"
+            },
+            "phone": {
+                "title": "Telefone",
+                "value": "+351 253 049 517",
+                "subvalue": "Reservas e informações"
+            },
+            "schedule": {
+                "title": "Horário",
+                "value": "Seg-Dom: {{timespan}}",
+                "subvalue": "Cozinha fecha às {{kitchen_closing_time}}"
+            },
+            "email": {
+                "title": "Email",
+                "value": "cappuccino.brunch@gmail.com",
+                "subvalue": "Respondemos em 24h"
+            }
+        }
     },
     "footer": {
-        "title": "Footer",
-        "description": "O lugar perfeito para começar o dia com sabor e amor."
+        "description": "O lugar perfeito para começar o dia com sabor e amor.",
+        "rights": "© {{year}} Cappuccino Brunch. Todos os direitos reservados.",
+        "made_with": "Feito com ",
+        "made_in": "em Braga."
     }
 }

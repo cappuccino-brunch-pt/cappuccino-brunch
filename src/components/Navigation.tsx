@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const Navigation = () => {
-    const { t } = useTranslation("translations");
+    const { t } = useTranslation();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -68,7 +68,7 @@ const Navigation = () => {
                             <Instagram className="w-5 h-5" />
                         </a>
                         <Button className="rounded-full px-6" asChild>
-                            <a href="#contact">{t("reserve")}</a>
+                            <a href="#contact">{t("actions.reserve_table")}</a>
                         </Button>
                     </div>
 
@@ -123,7 +123,7 @@ const Navigation = () => {
                                             setIsMobileMenuOpen(false)
                                         }
                                     >
-                                        {t("reserve_table")}
+                                        {t("actions.reserve_table")}
                                     </a>
                                 </Button>
                             </div>

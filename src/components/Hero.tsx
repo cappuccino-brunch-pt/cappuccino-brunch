@@ -3,7 +3,7 @@ import { Clock, Coffee, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const Hero = () => {
-    const { t } = useTranslation("translations");
+    const { t } = useTranslation();
 
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">

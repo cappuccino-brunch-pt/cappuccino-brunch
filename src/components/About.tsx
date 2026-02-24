@@ -6,7 +6,7 @@ import { Heart, Leaf, Star } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const About = () => {
-    const { t } = useTranslation("translations");
+    const { t } = useTranslation();
     const foundationYear = 2024;
     const yearsOfExperience = new Date().getFullYear() - foundationYear;
 

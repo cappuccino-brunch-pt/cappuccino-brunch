@@ -1,6 +1,9 @@
+import { INSTAGRAM_HANDLE } from "@/constants";
 import { Coffee, Heart, Instagram } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+    const { t } = useTranslation();
     const currentYear = new Date().getFullYear();
 
     return (
@@ -17,12 +20,11 @@ const Footer = () => {
                             >
                                 <Coffee className="w-6 h-6 sm:w-8 sm:h-8" />
                                 <span className="font-serif text-2xl sm:text-3xl font-semibold">
-                                    Cappuccino Brunch
+                                    {t("title")}
                                 </span>
                             </a>
                             <p className="text-cream/60 max-w-xs">
-                                O lugar perfeito para começar o dia com sabor e
-                                amor.
+                                {t("footer.description")}
                             </p>
                         </div>
 
@@ -32,31 +34,31 @@ const Footer = () => {
                                 href="#home"
                                 className="text-cream/60 hover:text-cream transition-colors"
                             >
-                                Início
+                                {t("navigation.home")}
                             </a>
                             <a
                                 href="#about"
                                 className="text-cream/60 hover:text-cream transition-colors"
                             >
-                                Sobre
+                                {t("navigation.about")}
                             </a>
                             <a
                                 href="#menu"
                                 className="text-cream/60 hover:text-cream transition-colors"
                             >
-                                Menu
+                                {t("navigation.menu")}
                             </a>
                             <a
                                 href="#gallery"
                                 className="text-cream/60 hover:text-cream transition-colors"
                             >
-                                Galeria
+                                {t("navigation.gallery")}
                             </a>
                             <a
                                 href="#contact"
                                 className="text-cream/60 hover:text-cream transition-colors"
                             >
-                                Contacto
+                                {t("navigation.contact")}
                             </a>
                         </div>
 
@@ -70,7 +72,7 @@ const Footer = () => {
                             >
                                 <Instagram className="w-5 h-5" />
                                 <span className="text-sm">
-                                    @cappuccino.brunch
+                                    {INSTAGRAM_HANDLE}
                                 </span>
                             </a>
                         </div>
@@ -78,14 +80,11 @@ const Footer = () => {
 
                     {/* Bottom Section */}
                     <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-cream/40">
-                        <p>
-                            © {currentYear} Cappuccino Brunch. Todos os direitos
-                            reservados.
-                        </p>
+                        <p>{t("footer.rights", { year: currentYear })}</p>
                         <p className="flex items-center gap-1">
-                            Feito com{" "}
+                            {t("footer.made_with")}
                             <Heart className="w-4 h-4 text-berry fill-berry" />{" "}
-                            em Braga.
+                            {t("footer.made_in")}
                         </p>
                     </div>
                 </div>

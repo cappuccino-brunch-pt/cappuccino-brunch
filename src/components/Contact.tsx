@@ -1,6 +1,8 @@
+import { TFunction } from "i18next";
 import { Clock, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-const getScheduleInfo = () => {
+const getScheduleInfo = (t: TFunction) => {
     const now = new Date();
     const month = now.getMonth();
     const day = now.getDate();
@@ -15,41 +17,49 @@ const getScheduleInfo = () => {
 
     if (isSummer) {
         return {
-            value: "Seg - Dom: 10h - 20h",
-            subvalue: "Cozinha fecha às 19:30",
+            value: t("contact.features.schedule.value", {
+                timespan: "10h - 20h",
+            }),
+            subvalue: t("contact.features.schedule.subvalue", {
+                kitchen_closing_time: "19:30h",
+            }),
         };
     }
 
     return {
-        value: "Seg - Dom: 10h - 19h",
-        subvalue: "Cozinha fecha às 18:30",
+        value: t("contact.features.schedule.value", { timespan: "10h - 19h" }),
+        subvalue: t("contact.features.schedule.subvalue", {
+            kitchen_closing_time: "18:30h",
+        }),
     };
 };
 
 const Contact = () => {
+    const { t } = useTranslation();
+
     const contactInfo = [
         {
             icon: MapPin,
-            label: "Morada",
-            value: "Braga, Portugal",
-            subvalue: "Alameda do Fujacal - 279 - 4705-096",
+            label: t("contact.features.address.title"),
+            value: t("contact.features.address.value"),
+            subvalue: t("contact.features.address.subvalue"),
         },
         {
             icon: Phone,
-            label: "Telefone",
-            value: "+351 253 049 517",
-            subvalue: "Reservas e informações",
+            label: t("contact.features.phone.title"),
+            value: t("contact.features.phone.value"),
+            subvalue: t("contact.features.phone.subvalue"),
         },
         {
             icon: Clock,
-            label: "Horário",
-            ...getScheduleInfo(),
+            label: t("contact.features.schedule.title"),
+            ...getScheduleInfo(t),
         },
         {
             icon: Mail,
-            label: "Email",
-            value: "cappuccino.brunch@gmail.com",
-            subvalue: "Respondemos em 24h",
+            label: t("contact.features.email.title"),
+            value: t("contact.features.email.value"),
+            subvalue: t("contact.features.email.subvalue"),
         },
     ];
 
@@ -58,15 +68,13 @@ const Contact = () => {
             <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto text-center">
                     <span className="inline-block text-sm font-medium text-cappuccino tracking-wider uppercase mb-4">
-                        Contacto
+                        {t("contact.section_title")}
                     </span>
                     <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground mb-6">
-                        Vem Visitar-nos
+                        {t("contact.title")}
                     </h2>
                     <p className="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
-                        Estamos sempre prontos para te receber. Reserva a tua
-                        mesa ou simplesmente aparece — há sempre espaço para
-                        mais um café!
+                        {t("contact.description")}
                     </p>
 
                     {/* Contact Info Grid 2x2 */}
@@ -97,7 +105,7 @@ const Contact = () => {
                     {/* Social */}
                     <div className="flex items-center justify-center gap-4">
                         <span className="text-sm text-muted-foreground">
-                            Segue-nos:
+                            {t("contact.follow_us")}
                         </span>
                         <a
                             href="https://www.instagram.com/cappuccino.brunch/"
