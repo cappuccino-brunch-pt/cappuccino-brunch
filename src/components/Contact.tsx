@@ -2,10 +2,17 @@ import { getScheduleInfoForContactComponent } from "@/lib/utils";
 import { Clock, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
+export interface IContactInfoItem {
+    icon: React.ElementType;
+    label: string;
+    value: string;
+    subvalue: string;
+}
+
 const Contact = () => {
     const { t } = useTranslation();
 
-    const contactInfo = [
+    const contactInfo: IContactInfoItem[] = [
         {
             icon: MapPin,
             label: t("contact.features.address.title"),

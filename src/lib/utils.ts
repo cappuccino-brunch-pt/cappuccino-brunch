@@ -1,3 +1,4 @@
+import { IContactInfoItem } from "@/components/Contact";
 import { clsx, type ClassValue } from "clsx";
 import { TFunction } from "i18next";
 import { twMerge } from "tailwind-merge";
@@ -27,7 +28,9 @@ export const getOpeningHoursForHeroComponent = (): string => {
     return "10h - 19h";
 };
 
-export const getScheduleInfoForContactComponent = (t: TFunction) => {
+export const getScheduleInfoForContactComponent = (
+    t: TFunction,
+): Pick<IContactInfoItem, "value" | "subvalue"> => {
     const now = new Date();
     const month = now.getMonth();
     const day = now.getDate();
