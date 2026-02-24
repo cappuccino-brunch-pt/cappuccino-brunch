@@ -6,7 +6,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { APP_LANGUAGE_STORAGE_KEY } from "@/i18n";
 import { ESupportedLanguages } from "@/types/common.types";
-import { Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const languages = [
@@ -36,8 +35,8 @@ const LanguageToggle = () => {
     return (
         <DropdownMenu modal={false}>
             <DropdownMenuTrigger asChild>
-                <button className="w-10 h-10 rounded-full bg-cream flex items-center justify-center hover:bg-cappuccino hover:text-cream transition-all duration-300 focus:outline-none">
-                    <Globe className="w-5 h-5" />
+                <button className="w-10 h-10 rounded-full bg-cream flex items-center justify-center hover:bg-cappuccino hover:text-cream transition-all duration-300 focus:outline-none text-xl">
+                    {currentLanguage.flag}
                 </button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="min-w-[140px]">
