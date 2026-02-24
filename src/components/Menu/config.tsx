@@ -5,15 +5,18 @@ import croissantBacon from "@/assets/menu/croissantBacon.jpeg";
 import croissantBanoffee from "@/assets/menu/croissantBanoffee.jpeg";
 import croissantKinder from "@/assets/menu/croissantKinder.jpeg";
 import croissantMozzarella from "@/assets/menu/croissantMozzarella.jpeg";
+import croissantNutella from "@/assets/menu/croissantNutella.jpeg";
 import croissantPistachio from "@/assets/menu/croissantPistachio.jpeg";
 import croissantSalmao from "@/assets/menu/croissantSalmao.jpeg";
 import englishMuffinManteigaDeErvas from "@/assets/menu/englishMuffinManteigaDeErvas.jpeg";
 import frenchToastFrutosDoBosque from "@/assets/menu/frenchToastFrutosDoBosque.jpeg";
 import frenchToastPistachio from "@/assets/menu/frenchToastPistachio.jpeg";
 import menuAmericanBreakfast from "@/assets/menu/menuAmericanBreakfast.jpeg";
+import menuExecutivo from "@/assets/menu/menuExecutivo.jpeg";
 import menuTabuaCappuccino from "@/assets/menu/menuTabuaCappuccino.jpeg";
 import nachosGuacamole from "@/assets/menu/nachosGuacamole.jpeg";
 import ovosBenedictEnglishMuffin from "@/assets/menu/ovosBenedictEnglishMuffin.jpeg";
+import ovosBenedictPaoBrioche from "@/assets/menu/ovosBenedictPaoBrioche.jpeg";
 import ovosMexidosComBacon from "@/assets/menu/ovosMexidosComBacon.jpeg";
 import ovosRoyalePaoBrioche from "@/assets/menu/ovosRoyalePaoBrioche.jpeg";
 import ovosTurkish from "@/assets/menu/ovosTurkish.jpeg";
@@ -75,7 +78,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 descriptionKey:
                     "menu.food.executive_menu.items.daily.description",
                 price: "10.00€",
-                image: "",
+                image: menuExecutivo,
             },
         ],
     },
@@ -149,7 +152,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 descriptionKey:
                     "menu.food.eggs.items.benedict_brioche.description",
                 price: "9.00€",
-                image: "",
+                image: ovosBenedictPaoBrioche,
             },
             {
                 nameKey: "menu.food.eggs.items.turkish.name",
@@ -328,7 +331,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 descriptionKey:
                     "menu.food.sweet_croissants.items.nutella.description",
                 price: "4.50€",
-                image: "",
+                image: croissantNutella,
             },
             {
                 nameKey: "menu.food.sweet_croissants.items.kinder.name",
