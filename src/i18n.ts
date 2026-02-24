@@ -8,7 +8,7 @@ import { initReactI18next } from "react-i18next";
 
 const buildNumber = import.meta.env.VITE_BUILD_NUMBER;
 
-const APP_LANGUAGE_STORAGE_KEY = "cappuccino-brunch-language";
+export const APP_LANGUAGE_STORAGE_KEY = "cappuccino-brunch-language";
 
 i18next
     .use(initReactI18next)

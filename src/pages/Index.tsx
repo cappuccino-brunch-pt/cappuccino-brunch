@@ -5,11 +5,28 @@ import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import { Menu } from "@/components/Menu";
 import Navigation from "@/components/Navigation";
+import { APP_LANGUAGE_STORAGE_KEY } from "@/i18n";
+import { ESupportedLanguages } from "@/types/common.types";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 
 const Index = () => {
     const location = useLocation();
+    const { i18n } = useTranslation();
+
+    useEffect(() => {
+        const localStorageLanguage = localStorage.getItem(
+            APP_LANGUAGE_STORAGE_KEY,
+        );
+        i18n.changeLanguage(
+            localStorageLanguage || ESupportedLanguages.PORTUGUESE,
+        );
+        localStorage.setItem(
+            APP_LANGUAGE_STORAGE_KEY,
+            localStorageLanguage || ESupportedLanguages.PORTUGUESE,
+        );
+    }, []);
 
     useEffect(() => {
         const scrollToHash = () => {

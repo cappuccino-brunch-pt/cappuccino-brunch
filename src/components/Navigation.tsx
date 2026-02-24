@@ -1,3 +1,4 @@
+import LanguageToggle from "@/components/LanguageToggle";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Instagram, Menu, X } from "lucide-react";
@@ -59,6 +60,7 @@ const Navigation = () => {
 
                     {/* Desktop CTA */}
                     <div className="hidden md:flex items-center gap-4">
+                        <LanguageToggle />
                         <a
                             href="https://www.instagram.com/cappuccino.brunch/"
                             target="_blank"
@@ -108,6 +110,7 @@ const Navigation = () => {
                             ))}
                             <hr className="border-border my-2" />
                             <div className="flex items-center gap-4">
+                                <LanguageToggle />
                                 <a
                                     href="https://www.instagram.com/cappuccino.brunch/"
                                     target="_blank"

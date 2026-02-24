@@ -1,0 +1,92 @@
+{
+    "title": "Cappuccino Brunch",
+    "cappuccino": "Cappuccino",
+    "brunch": "Brunch",
+
+    "navigation": {
+        "home": "Home",
+        "about": "About",
+        "menu": "Menu",
+        "gallery": "Gallery",
+        "contact": "Contact"
+    },
+
+    "actions": {
+        "reserve": "Reserve",
+        "view_menu": "View Menu",
+        "reserve_table": "Reserve Table",
+        "follow_on_instagram": "Follow on Instagram"
+    },
+
+    "hero": {
+        "tag": "Braga's Coziest Brunch Spot",
+        "title": "Cappuccino Brunch",
+        "description": "Where every morning transforms into an experience. Artisanal dishes, specialty coffee and the perfect atmosphere for special moments.",
+        "location": "Braga, Portugal"
+    },
+    "about": {
+        "subtitle": "Our Story",
+        "title": "Where Coffee Meets Art",
+        "description": "Born from a passion for memorable brunches, Cappuccino Brunch is more than a restaurant — it's a haven for lovers of good food and good moments.",
+        "content": "We believe that every meal should be a celebration. That's why we combine fresh ingredients with creative techniques to create dishes that are as beautiful as they are delicious. From our specialty coffee to our fluffy pancakes, every detail is designed to make you smile.",
+
+        "years_of_flavour": "Years of Flavour",
+
+        "features": {
+            "title_1": "Fresh Ingredients",
+            "description_1": "Local and seasonal products, carefully selected every day.",
+            "title_2": "Made with Love",
+            "description_2": "Every dish is prepared with passion and attention to detail.",
+            "title_3": "Unique Experience",
+            "description_3": "A cozy atmosphere for special moments with those you love."
+        }
+    },
+    "menu": {
+        "title": "Menu",
+        "description": "The perfect place to start your day with flavour and love."
+    },
+    "gallery": {
+        "title": "Moments Worth Sharing",
+        "description": "Follow us on Instagram so you don't miss any news and share your moments with us!"
+    },
+    "contact": {
+        "section_title": "Contact",
+        "title": "Come Visit Us",
+        "description": "We're always ready to welcome you. Book your table or just drop by — there's always room for one more coffee!",
+
+        "follow_us": "Follow us:",
+
+        "features": {
+            "address": {
+                "title": "Address",
+                "value": "Alameda do Fujacal - 279",
+                "subvalue": "4705-096 Braga, Portugal"
+            },
+            "phone": {
+                "title": "Phone",
+                "value": "+351 253 049 517",
+                "subvalue": "Reservations and information"
+            },
+            "schedule": {
+                "title": "Schedule",
+                "value": "Mon-Sun: {{timespan}}",
+                "subvalue": "Kitchen closes at {{kitchen_closing_time}}"
+            },
+            "email": {
+                "title": "Email",
+                "value": "cappuccino.brunch@gmail.com",
+                "subvalue": "We respond within 24h"
+            }
+        }
+    },
+    "footer": {
+        "description": "The perfect place to start your day with flavour and love.",
+        "rights": "© {{year}} Cappuccino Brunch. All rights reserved.",
+        "made_with": "Made with ",
+        "made_in": "in Braga."
+    },
+    "language": {
+        "portuguese": "Portuguese",
+        "english": "English"
+    }
+}
