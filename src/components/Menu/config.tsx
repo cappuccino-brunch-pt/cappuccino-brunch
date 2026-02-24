@@ -573,6 +573,43 @@ export const FOODS_MENU: MenuCategory[] = [
         ],
     },
     {
+        id: "pastry",
+        labelKey: "menu.food.pastry.title",
+        items: [
+            {
+                nameKey: "menu.food.pastry.items.flaky_croissant.name",
+                descriptionKey:
+                    "menu.food.pastry.items.flaky_croissant.description",
+                price: "1.50€",
+                image: "",
+            },
+            {
+                nameKey:
+                    "menu.food.pastry.items.ciabatta_bread_toast_with_butter.name",
+                descriptionKey:
+                    "menu.food.pastry.items.ciabatta_bread_toast_with_butter.description",
+                price: "2.50€",
+                image: "",
+            },
+            {
+                nameKey:
+                    "menu.food.pastry.items.ciabatta_bread_toast_with_jam.name",
+                descriptionKey:
+                    "menu.food.pastry.items.ciabatta_bread_toast_with_jam.description",
+                price: "3.00€",
+                image: "",
+            },
+            {
+                nameKey:
+                    "menu.food.pastry.items.mixed_toast_on_ciabatta_bread.name",
+                descriptionKey:
+                    "menu.food.pastry.items.mixed_toast_on_ciabatta_bread.description",
+                price: "3.90€",
+                image: "",
+            },
+        ],
+    },
+    {
         id: "extras",
         labelKey: "menu.food.extras.title",
         items: [
@@ -648,9 +685,9 @@ export const FOODS_MENU: MenuCategory[] = [
                 image: "",
             },
             {
-                nameKey: "menu.food.extras.items.chapata_bread.name",
+                nameKey: "menu.food.extras.items.ciabatta_bread.name",
                 descriptionKey:
-                    "menu.food.extras.items.chapata_bread.description",
+                    "menu.food.extras.items.ciabatta_bread.description",
                 price: "1.50€",
                 image: "",
             },

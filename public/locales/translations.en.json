@@ -42,8 +42,686 @@
         }
     },
     "menu": {
-        "title": "Menu",
-        "description": "The perfect place to start your day with flavour and love."
+        "section_title": "Our Menu",
+        "subtitle": "Dishes that Tell Stories",
+        "description": "Each dish is a culinary work of art, created with fresh ingredients and lots of love.",
+        "allergies_warning": "Do you have allergies or dietary preferences? Talk to us!",
+
+        "food": {
+            "title": "Food",
+            "executive_menu": {
+                "title": "Executive Menu",
+                "items": {
+                    "daily": {
+                        "name": "Weekdays",
+                        "description": "<b>Hours</b>: 12:00 to 15:00. \n<b>Includes</b>: main course, drink and coffee"
+                    }
+                }
+            },
+            "to_share": {
+                "title": "To Share",
+                "items": {
+                    "english_muffin": {
+                        "name": "English Muffin",
+                        "description": "W/ garlic and herb butter"
+                    },
+                    "english_muffin_gratin": {
+                        "name": "English Muffin Gratin",
+                        "description": "W/ garlic and herb butter and gratin cheese"
+                    },
+                    "caprese": {
+                        "name": "Caprese",
+                        "description": "Cherry tomato, mini mozzarella and pesto"
+                    },
+                    "nachos": {
+                        "name": "Nachos",
+                        "description": "With guacamole"
+                    },
+                    "shrimp_bites": {
+                        "name": "Shrimp Bites",
+                        "description": "Chips, guacamole and shrimp"
+                    }
+                }
+            },
+            "eggs": {
+                "title": "Eggs",
+                "description": "Served with mixed salad and assorted seeds (except Turkish Eggs)",
+                "items": {
+                    "scrambled_toast": {
+                        "name": "Scrambled Eggs w/ Toast",
+                        "description": ""
+                    },
+                    "scrambled_toast_bacon": {
+                        "name": "Scrambled Eggs w/ Toast and Bacon",
+                        "description": ""
+                    },
+                    "benedict_english_muffin": {
+                        "name": "Benedict Eggs w/ English Muffin",
+                        "description": "Garlic and herb butter, ham, poached egg, hollandaise sauce and fried onion."
+                    },
+                    "benedict_brioche": {
+                        "name": "Benedict Eggs w/ Brioche Bread",
+                        "description": "Garlic and herb butter, ham, poached egg, hollandaise sauce and fried onion."
+                    },
+                    "turkish": {
+                        "name": "Turkish Eggs (Çilbir)",
+                        "description": "Garlic-seasoned yogurt cream, poached eggs and spiced aromatic olive oil with toast"
+                    },
+                    "royale_english_muffin": {
+                        "name": "Royale Eggs w/ English Muffin",
+                        "description": "Garlic and herb butter, smoked salmon, poached eggs, hollandaise sauce and fried onion."
+                    },
+                    "royale_brioche": {
+                        "name": "Royale Eggs w/ Brioche Bread",
+                        "description": "Garlic and herb butter, smoked salmon, poached eggs, hollandaise sauce and fried onion."
+                    }
+                }
+            },
+            "toasts": {
+                "title": "Toast",
+                "description": "All toasts are served with mixed salad and assorted seeds",
+                "items": {
+                    "cappuccino": {
+                        "name": "Cappuccino Toast",
+                        "description": "W/ English Muffin and garlic and herb butter, English bacon, mushrooms, poached eggs, blended hollandaise sauce and fried onion"
+                    },
+                    "cappuccino_brioche": {
+                        "name": "Cappuccino Toast w/ Brioche Bread",
+                        "description": "W/ Brioche Bread and garlic and herb butter, English bacon, mushrooms, poached eggs, blended hollandaise sauce and fried onion"
+                    },
+                    "campestre": {
+                        "name": "Campestre Toast",
+                        "description": "Sourdough, cream cheese, arugula, chicken and mushrooms sautéed with garlic and herb butter, artisanal savory granola and balsamic cream"
+                    },
+                    "seul": {
+                        "name": "Seoul Toast",
+                        "description": "Bread with garlic and herb butter, scrambled eggs, bacon, cheddar cheese, sriracha mayo and Korean mayo sauce with condensed milk"
+                    },
+                    "salmon": {
+                        "name": "Salmon Toast",
+                        "description": "Sourdough, cream cheese, arugula, smoked salmon and fried onion"
+                    },
+                    "tomato_jam": {
+                        "name": "Tomato Jam Toast",
+                        "description": "Sourdough, tomato jam, scrambled eggs, bacon, arugula and sliced avocado"
+                    },
+                    "avocado": {
+                        "name": "Avocado Toast",
+                        "description": "Sourdough, avocado spread, poached eggs and seeds"
+                    },
+                    "avocado_salmon": {
+                        "name": "Avocado Toast w/ Smoked Salmon",
+                        "description": "Sourdough, avocado spread, poached eggs, seeds and smoked salmon"
+                    },
+                    "presunto": {
+                        "name": "Ham Toast",
+                        "description": "Sourdough, pineapple and mint jam, arugula, ham and torched brie cheese"
+                    },
+                    "vegan": {
+                        "name": "Vegan Toast",
+                        "description": "Sourdough, avocado spread, cherry tomato, mushrooms, balsamic sauce and artisanal savory granola"
+                    },
+                    "bacon_jam": {
+                        "name": "Bacon Jam Toast",
+                        "description": "Sourdough, bacon jam and scrambled eggs"
+                    }
+                }
+            },
+            "salad_bowls": {
+                "title": "Salad Bowls",
+                "items": {
+                    "cappuccino": {
+                        "name": "Cappuccino Salad",
+                        "description": "<b>Base</b>: mixed greens, tomato, fried onion, cucumber, mini mozzarella and croutons. \n<b>Choose your protein</b>: chicken, shrimp, eggs (poached/fried) or smoked salmon (+2€). \n<b>Choose your dressing</b>: yogurt, vinaigrette, balsamic or piri-piri olive oil"
+                    },
+                    "vegan": {
+                        "name": "Vegan Salad",
+                        "description": "<b>Base</b>: mixed greens, tomato, fried onion, cucumber, avocado and artisanal savory granola. \n<b>Choose your dressing</b>: vinaigrette, balsamic or piri-piri olive oil"
+                    }
+                }
+            },
+            "savory_croissants": {
+                "title": "Savory Croissants",
+                "description": "Served with mixed salad and assorted seeds",
+                "items": {
+                    "bacon": {
+                        "name": "Bacon Croissant",
+                        "description": "Scrambled eggs and bacon"
+                    },
+                    "mozzarella": {
+                        "name": "Mozzarella Croissant",
+                        "description": "Ham, pesto and mini mozzarella"
+                    },
+                    "salmon": {
+                        "name": "Salmon Croissant",
+                        "description": "Cream cheese, fried onion and smoked salmon"
+                    },
+                    "avocado": {
+                        "name": "Avocado Croissant",
+                        "description": "Tomato jam, scrambled eggs, bacon, cheese and avocado"
+                    }
+                }
+            },
+            "sweet_croissants": {
+                "title": "Sweet Croissants",
+                "items": {
+                    "nutella": {
+                        "name": "Nutella Croissant",
+                        "description": "Strawberries and Nutella"
+                    },
+                    "kinder": {
+                        "name": "Kinder Bueno Croissant",
+                        "description": "Raspberry and Kinder Bueno cream"
+                    },
+                    "banoffee": {
+                        "name": "Banoffee Croissant",
+                        "description": "Banana, creamy dulce de leche and Maria biscuit"
+                    },
+                    "pistachio": {
+                        "name": "Pistachio Croissant",
+                        "description": "Raspberry, pistachio cream and crushed pistachio"
+                    }
+                }
+            },
+            "pancakes": {
+                "title": "Pancakes",
+                "items": {
+                    "classic_honey": {
+                        "name": "Classic Pancake w/ Butter and Honey",
+                        "description": "Butter and honey"
+                    },
+                    "classic_maple": {
+                        "name": "Classic Pancake w/ Maple Syrup",
+                        "description": "Butter and maple syrup"
+                    },
+                    "nutella": {
+                        "name": "Nutella Pancake",
+                        "description": "Strawberry, banana and Nutella"
+                    },
+                    "pineapple_mint": {
+                        "name": "Pineapple and Mint Pancake",
+                        "description": "Blueberries and pineapple and mint jam"
+                    },
+                    "banoffee": {
+                        "name": "Banoffee Pancake",
+                        "description": "Banana, creamy dulce de leche, Maria biscuit and whipped cream"
+                    },
+                    "oreo": {
+                        "name": "Oreo Pancake",
+                        "description": "Raspberry and Oreo cream"
+                    },
+                    "kinder": {
+                        "name": "Kinder Bueno Pancake",
+                        "description": "Kinder Bueno cream and vanilla ice cream"
+                    },
+                    "new_york": {
+                        "name": "New York Pancake",
+                        "description": "Blueberry compote and warm maple syrup caramel"
+                    },
+                    "lotus": {
+                        "name": "Lotus Pancake",
+                        "description": "Blueberry, raspberry, vanilla ice cream, Lotus cream and maple syrup"
+                    },
+                    "pistachio": {
+                        "name": "Pistachio Pancake",
+                        "description": "Strawberry, vanilla ice cream, pistachio cream and pistachio"
+                    },
+                    "american": {
+                        "name": "American Pancake",
+                        "description": "Bacon, cheddar, fried egg, fried onion and maple syrup"
+                    }
+                }
+            },
+            "waffles": {
+                "title": "Waffles",
+                "description": "Served with vanilla ice cream (except American Waffle)",
+                "items": {
+                    "classic_honey": {
+                        "name": "Classic Waffle w/ Butter and Honey",
+                        "description": "Butter and honey"
+                    },
+                    "classic_maple": {
+                        "name": "Classic Waffle w/ Maple Syrup",
+                        "description": "Butter and maple syrup"
+                    },
+                    "nutella": {
+                        "name": "Nutella Waffle",
+                        "description": "Strawberry and Nutella"
+                    },
+                    "kinder": {
+                        "name": "Kinder Bueno Waffle",
+                        "description": "Kinder Bueno cream"
+                    },
+                    "banoffee": {
+                        "name": "Banoffee Waffle",
+                        "description": "Banana, creamy dulce de leche, Maria biscuit and whipped cream"
+                    },
+                    "lotus": {
+                        "name": "Lotus Waffle",
+                        "description": "Blueberries, Lotus cream and biscuit"
+                    },
+                    "pistachio": {
+                        "name": "Pistachio Waffle",
+                        "description": "Coconut and pistachio cream"
+                    },
+                    "american": {
+                        "name": "American Waffle",
+                        "description": "Salad, bacon, cheddar, fried egg, fried onion and maple syrup"
+                    }
+                }
+            },
+            "french_toast": {
+                "title": "French Toast",
+                "items": {
+                    "berries": {
+                        "name": "Wild Berries French Toast",
+                        "description": "Red fruit compote, strawberries, raspberries and blueberries"
+                    },
+                    "pistachio": {
+                        "name": "Pistachio French Toast",
+                        "description": "Pistachio cream, strawberries, crushed pistachio and ice cream"
+                    }
+                }
+            },
+            "yogurt_bowls": {
+                "title": "Yogurt Bowls",
+                "items": {
+                    "fruit": {
+                        "name": "Fruit Bowl",
+                        "description": "Yogurt, artisanal granola, fruits and honey"
+                    },
+                    "fruit_vegan": {
+                        "name": "Vegan Fruit Bowl",
+                        "description": "Vegan yogurt, artisanal granola, fruits and agave"
+                    }
+                }
+            },
+            "brunch_menus": {
+                "title": "Brunch Menus",
+                "description": "Not subject to changes",
+                "items": {
+                    "kids": {
+                        "name": "Kids Menu",
+                        "description": "<b>Up to 12 years old</b>. \n<b>Choose</b>: Yogurt Bowl w/ strawberry or red fruit compote, or Pancake w/ Nutella, Kinder Bueno cream or honey"
+                    },
+                    "american_breakfast": {
+                        "name": "American Breakfast Menu",
+                        "description": "<b>Dish</b>: classic pancake, 2 fried eggs, bacon and toast. \n<b>Drink of choice</b>: Coca-Cola, Compal or Ice Tea"
+                    },
+                    "cappuccino": {
+                        "name": "Cappuccino Menu",
+                        "description": "Juice of choice. \nClassic Pancake w/ maple syrup. \nBacon Jam Toast or Avocado Toast (sourdough, bacon jam and scrambled eggs or sourdough, avocado spread, poached eggs and seeds). \n<b>Hot drink</b>: americano, coffee, cappuccino or tea"
+                    },
+                    "green": {
+                        "name": "Green Menu",
+                        "description": "Matcha Latte or Iced Matcha. \nAvocado Toast (sourdough, avocado spread, poached eggs and seeds). \nPistachio Croissant (raspberry and pistachio cream)"
+                    },
+                    "tabua_cappuccino": {
+                        "name": "Cappuccino Board Menu",
+                        "description": "<b>2 Hot drinks</b>: americano, coffee, cappuccino or tea. \n<b>1L Juice Jug:</b> orange. \n2 Simple puff croissants. Toast in ciabatta bread w/ pineapple and mint jam or blueberry jam. \n<b>Fruit Bowl:</b> yogurt, artisanal granola, fruits and honey. \n<b>Classic Pancake:</b> butter and honey or maple syrup"
+                    }
+                }
+            },
+            "pastry": {
+                "title": "Pastry",
+                "items": {
+                    "flaky_croissant": {
+                        "name": "Puff Croissant",
+                        "description": ""
+                    },
+                    "ciabatta_bread_toast_with_butter": {
+                        "name": "Toast in Ciabatta Bread",
+                        "description": "W/ butter and oregano"
+                    },
+                    "ciabatta_bread_toast_with_jam": {
+                        "name": "Toast in Ciabatta Bread",
+                        "description": "W/ jam of choice"
+                    },
+                    "mixed_toast_on_ciabatta_bread": {
+                        "name": "Toastie in Ciabatta Bread",
+                        "description": "W/ butter and oregano"
+                    }
+                }
+            },
+            "extras": {
+                "title": "Extras",
+                "items": {
+                    "fruits": {
+                        "name": "Fruits",
+                        "description": "Banana/Strawberry/Blueberry/Raspberry"
+                    },
+                    "vanilla_ice_cream": {
+                        "name": "Vanilla Ice Cream",
+                        "description": ""
+                    },
+                    "toppings": {
+                        "name": "Toppings",
+                        "description": "Nutella, Kinder Bueno Cream, Lotus Cream, Blueberry Compote, Honey, Maple Syrup"
+                    },
+                    "pistachio_cream": {
+                        "name": "Pistachio Cream",
+                        "description": ""
+                    },
+                    "egg": {
+                        "name": "Egg",
+                        "description": ""
+                    },
+                    "bacon": {
+                        "name": "Bacon",
+                        "description": ""
+                    },
+                    "sauteed_mushroom": {
+                        "name": "Sautéed Mushroom",
+                        "description": ""
+                    },
+                    "avocado": {
+                        "name": "Avocado",
+                        "description": ""
+                    },
+                    "smoked_salmon": {
+                        "name": "Smoked Salmon",
+                        "description": ""
+                    },
+                    "brie_cheese": {
+                        "name": "Brie Cheese",
+                        "description": ""
+                    },
+                    "waffle": {
+                        "name": "Waffle",
+                        "description": ""
+                    },
+                    "ciabatta_bread": {
+                        "name": "Ciabatta Bread",
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "drink": {
+            "title": "Drinks",
+            "coffee_shop": {
+                "title": "Coffee Shop",
+                "items": {
+                    "carioca_coffee": {
+                        "name": "Carioca Espresso",
+                        "description": ""
+                    },
+                    "carioca_lemon": {
+                        "name": "Lemon Carioca",
+                        "description": ""
+                    },
+                    "pingo": {
+                        "name": "Pingo",
+                        "description": ""
+                    },
+                    "coffee": {
+                        "name": "Coffee",
+                        "description": ""
+                    },
+                    "double_coffee": {
+                        "name": "Double Coffee",
+                        "description": ""
+                    },
+                    "decaf": {
+                        "name": "Decaf",
+                        "description": ""
+                    },
+                    "barley": {
+                        "name": "Barley",
+                        "description": ""
+                    },
+                    "milk_glass": {
+                        "name": "Milk Glass",
+                        "description": ""
+                    },
+                    "americano": {
+                        "name": "Americano",
+                        "description": ""
+                    },
+                    "tea": {
+                        "name": "Tea",
+                        "description": ""
+                    },
+                    "lical": {
+                        "name": "Lical",
+                        "description": ""
+                    },
+                    "machiato": {
+                        "name": "Macchiato",
+                        "description": ""
+                    },
+                    "machiato_caramel": {
+                        "name": "Caramel Macchiato",
+                        "description": ""
+                    },
+                    "cappuccino": {
+                        "name": "Cappuccino",
+                        "description": ""
+                    },
+                    "cappuccino_caramel": {
+                        "name": "Caramel Cappuccino",
+                        "description": ""
+                    },
+                    "hot_chocolate": {
+                        "name": "Hot Chocolate",
+                        "description": ""
+                    },
+                    "flat_white": {
+                        "name": "Flat White",
+                        "description": ""
+                    },
+                    "chai_latte": {
+                        "name": "Chai Latte",
+                        "description": ""
+                    }
+                }
+            },
+            "iced_coffees": {
+                "title": "Iced Coffees",
+                "items": {
+                    "frappe": {
+                        "name": "Frappé",
+                        "description": ""
+                    },
+                    "dalgona": {
+                        "name": "Dalgona Coffee",
+                        "description": ""
+                    },
+                    "caramel_frappe": {
+                        "name": "Caramel Frappé",
+                        "description": ""
+                    },
+                    "spanish_latte": {
+                        "name": "Spanish Latte",
+                        "description": ""
+                    },
+                    "kinder_latte": {
+                        "name": "Kinder Latte",
+                        "description": ""
+                    }
+                }
+            },
+            "matcha": {
+                "title": "Matcha",
+                "items": {
+                    "matcha_latte": {
+                        "name": "Matcha Latte",
+                        "description": ""
+                    },
+                    "iced_matcha_latte": {
+                        "name": "Iced Matcha Latte",
+                        "description": ""
+                    },
+                    "iced_dalgona_matcha": {
+                        "name": "Iced Dalgona Matcha",
+                        "description": "W/ red berries / passion fruit / strawberry jam"
+                    }
+                }
+            },
+            "smoothies": {
+                "title": "Smoothies",
+                "items": {
+                    "strawberry": {
+                        "name": "Strawberry",
+                        "description": ""
+                    },
+                    "red_fruits": {
+                        "name": "Red Berries",
+                        "description": ""
+                    },
+                    "passion_fruit": {
+                        "name": "Passion Fruit",
+                        "description": ""
+                    },
+                    "strawberry_banana": {
+                        "name": "Strawberry and Banana",
+                        "description": ""
+                    }
+                }
+            },
+            "natural_juices": {
+                "title": "Natural Juices",
+                "items": {
+                    "lemonade": {
+                        "name": "Lemonade",
+                        "description": ""
+                    },
+                    "orange": {
+                        "name": "Orange",
+                        "description": ""
+                    },
+                    "orange_red_fruits": {
+                        "name": "Orange and Red Berries",
+                        "description": ""
+                    },
+                    "strawberry_lemonade": {
+                        "name": "Strawberry Lemonade",
+                        "description": ""
+                    }
+                }
+            },
+            "beverages": {
+                "title": "Drinks",
+                "items": {
+                    "water": {
+                        "name": "Water",
+                        "description": ""
+                    },
+                    "pedras": {
+                        "name": "Pedras",
+                        "description": ""
+                    },
+                    "pedras_lemon": {
+                        "name": "Pedras Lemon",
+                        "description": ""
+                    },
+                    "compal": {
+                        "name": "Compal",
+                        "description": ""
+                    },
+                    "coca_cola": {
+                        "name": "Coca-Cola",
+                        "description": ""
+                    },
+                    "coca_cola_zero": {
+                        "name": "Coca-Cola Zero",
+                        "description": ""
+                    },
+                    "ice_tea": {
+                        "name": "Ice Tea",
+                        "description": ""
+                    },
+                    "san_pellegrino": {
+                        "name": "San Pellegrino",
+                        "description": ""
+                    },
+                    "tonic_water": {
+                        "name": "Tonic Water",
+                        "description": ""
+                    }
+                }
+            },
+            "alcoholic_beverages": {
+                "title": "Alcoholic Drinks",
+                "items": {
+                    "super_bock": {
+                        "name": "Super Bock",
+                        "description": ""
+                    },
+                    "super_bock_stout": {
+                        "name": "Super Bock Stout",
+                        "description": ""
+                    },
+                    "panache": {
+                        "name": "Panaché",
+                        "description": ""
+                    },
+                    "somersby_apple": {
+                        "name": "Somersby Apple",
+                        "description": ""
+                    },
+                    "somersby_blackberry": {
+                        "name": "Somersby Blackberry",
+                        "description": ""
+                    }
+                }
+            },
+            "sangrias": {
+                "title": "Sangrias 1L/2L",
+                "items": {
+                    "white": {
+                        "name": "White Sangria",
+                        "description": ""
+                    },
+                    "red": {
+                        "name": "Red Sangria",
+                        "description": ""
+                    },
+                    "sparkling_rose": {
+                        "name": "Sparkling Rosé Sangria",
+                        "description": ""
+                    }
+                }
+            },
+            "wines": {
+                "title": "Wines",
+                "items": {
+                    "esteva": {
+                        "name": "Esteva 37.5CL / 75CL",
+                        "description": ""
+                    },
+                    "planalto": {
+                        "name": "Planalto 37.5CL / 75CL",
+                        "description": ""
+                    },
+                    "mateus_rose": {
+                        "name": "Mateus Rosé 37.5CL / 75CL",
+                        "description": ""
+                    }
+                }
+            },
+            "cocktails": {
+                "title": "Cocktails",
+                "items": {
+                    "screwdriver": {
+                        "name": "Screwdriver",
+                        "description": ""
+                    },
+                    "gin": {
+                        "name": "Gin",
+                        "description": ""
+                    },
+                    "aperol_spritz": {
+                        "name": "Aperol Spritz",
+                        "description": ""
+                    },
+                    "espresso_martini": {
+                        "name": "Espresso Martini",
+                        "description": ""
+                    }
+                }
+            }
+        }
     },
     "gallery": {
         "title": "Moments Worth Sharing",

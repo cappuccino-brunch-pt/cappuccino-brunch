@@ -362,11 +362,32 @@
                     }
                 }
             },
+            "pastry": {
+                "title": "Pastelaria",
+                "items": {
+                    "flaky_croissant": {
+                        "name": "Croissant Folhado",
+                        "description": ""
+                    },
+                    "ciabatta_bread_toast_with_butter": {
+                        "name": "Torrada em Pão Chapata",
+                        "description": "C/ manteiga e oregãos"
+                    },
+                    "ciabatta_bread_toast_with_jam": {
+                        "name": "Torrada em Pão Chapata",
+                        "description": "C/ geleia a escolha"
+                    },
+                    "mixed_toast_on_ciabatta_bread": {
+                        "name": "Tosta Mista em Pão Chapata",
+                        "description": "C/ manteiga e oregãos"
+                    }
+                }
+            },
             "extras": {
                 "title": "Extras",
                 "items": {
                     "fruits": {
-                        "name": "Frutas ",
+                        "name": "Frutas",
                         "description": "Banana/Morango/Mirtilo/Framboesa"
                     },
                     "vanilla_ice_cream": {
@@ -409,7 +430,7 @@
                         "name": "Waffle",
                         "description": ""
                     },
-                    "chapata_bread": {
+                    "ciabatta_bread": {
                         "name": "Pão Chapata",
                         "description": ""
                     }
