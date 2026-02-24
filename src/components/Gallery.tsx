@@ -5,7 +5,9 @@ import gallery4 from "@/assets/gallery/4.jpeg";
 import gallery5 from "@/assets/gallery/5.jpeg";
 import gallery6 from "@/assets/gallery/6.jpeg";
 import { Button } from "@/components/ui/button";
+import { INSTAGRAM_HANDLE } from "@/constants";
 import { Instagram } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const galleryImages = [
     { url: gallery1, alt: "Galeria 1" },
@@ -17,19 +19,20 @@ const galleryImages = [
 ];
 
 const Gallery = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="gallery" className="py-24 bg-cream/30">
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <span className="inline-block text-sm font-medium text-cappuccino tracking-wider uppercase mb-4">
-                        @cappuccino.brunch
+                        {INSTAGRAM_HANDLE}
                     </span>
                     <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground mb-6">
-                        Momentos que Merecem Partilha
+                        {t("gallery.title")}
                     </h2>
                     <p className="text-muted-foreground text-lg">
-                        Segue-nos no Instagram para não perderes nenhuma
-                        novidade e partilha os teus momentos connosco!
+                        {t("gallery.description")}
                     </p>
                 </div>
 
@@ -68,7 +71,7 @@ const Gallery = () => {
                             className="flex items-center gap-2"
                         >
                             <Instagram className="w-5 h-5" />
-                            Seguir no Instagram
+                            {t("actions.follow_on_instagram")}
                         </a>
                     </Button>
                 </div>

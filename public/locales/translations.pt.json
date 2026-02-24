@@ -1,0 +1,770 @@
+{
+    "title": "Cappuccino Brunch",
+    "cappuccino": "Cappuccino",
+    "brunch": "Brunch",
+
+    "navigation": {
+        "home": "Início",
+        "about": "Sobre",
+        "menu": "Menu",
+        "gallery": "Galeria",
+        "contact": "Contato"
+    },
+
+    "actions": {
+        "reserve": "Reservar",
+        "view_menu": "Ver Menu",
+        "reserve_table": "Reservar Mesa",
+        "follow_on_instagram": "Seguir no Instagram"
+    },
+
+    "hero": {
+        "tag": "Braga's Coziest Brunch Spot",
+        "title": "Cappuccino Brunch",
+        "description": "Onde cada manhã se transforma numa experiência. Pratos artesanais, café de especialidade e a atmosfera perfeita para momentos especiais.",
+        "location": "Braga, Portugal"
+    },
+    "about": {
+        "subtitle": "A Nossa História",
+        "title": "Onde o Café Encontra a Arte",
+        "description": "Nascido da paixão por brunches memoráveis, o Cappuccino Brunch é mais do que um restaurante — é um refúgio para os amantes de boa comida e bons momentos.",
+        "content": " Acreditamos que cada refeição deve ser uma celebração. Por isso, combinamos ingredientes frescos com técnicas criativas para criar pratos que são tão bonitos quanto deliciosos. Do nosso café de especialidade às nossas panquecas fluffy, cada detalhe é pensado para te fazer sorrir.",
+
+        "years_of_flavour": "Anos de Sabor",
+
+        "features": {
+            "title_1": "Ingredientes Frescos",
+            "description_1": "Produtos locais e sazonais, cuidadosamente selecionados todos os dias.",
+            "title_2": "Feito com Amor",
+            "description_2": "Cada prato é preparado com paixão e atenção aos detalhes.",
+            "title_3": "Experiência Única",
+            "description_3": "Um ambiente acolhedor para momentos especiais com quem amas."
+        }
+    },
+    "menu": {
+        "section_title": "O Nosso Menu",
+        "subtitle": "Pratos que Contam Histórias",
+        "description": "Cada prato é uma obra de arte culinária, criado com ingredientes frescos e muito amor.",
+        "allergies_warning": "Tens alergias ou preferências alimentares? Fala connosco!",
+
+        "food": {
+            "title": "Comidas",
+            "executive_menu": {
+                "title": "Menu Executivo",
+                "items": {
+                    "daily": {
+                        "name": "Dias Úteis",
+                        "description": "<b>Horário</b>: 12:00 às 15:00. \n<b>Inclui</b>: prato principal, bebida e café"
+                    }
+                }
+            },
+            "to_share": {
+                "title": "Para Partilhar",
+                "items": {
+                    "english_muffin": {
+                        "name": "English Muffin",
+                        "description": "C/ manteiga de alho e ervas"
+                    },
+                    "english_muffin_gratin": {
+                        "name": "English Muffin Gratinado",
+                        "description": "C/ manteiga de alho e ervas e queijo gratinado"
+                    },
+                    "caprese": {
+                        "name": "Caprese",
+                        "description": "Tomate cherry, mini mozzarella e pesto"
+                    },
+                    "nachos": {
+                        "name": "Nachos",
+                        "description": "Com guacamole"
+                    },
+                    "shrimp_bites": {
+                        "name": "Shrimp Bites",
+                        "description": "Ships, guacamole e camarão"
+                    }
+                }
+            },
+            "eggs": {
+                "title": "Ovos",
+                "description": "Acompanham mix de salada e sementes variadas (excepto Ovos Turkish)",
+                "items": {
+                    "scrambled_toast": {
+                        "name": "Ovos Mexidos c/ Tosta",
+                        "description": ""
+                    },
+                    "scrambled_toast_bacon": {
+                        "name": "Ovos Mexidos c/ Tosta e Bacon",
+                        "description": ""
+                    },
+                    "benedict_english_muffin": {
+                        "name": "Ovos Benedict c/ English Muffin",
+                        "description": "Manteiga de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita.  "
+                    },
+                    "benedict_brioche": {
+                        "name": "Ovos Benedict c/ Pão de Forma Brioche",
+                        "description": "Manteiga de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita.  "
+                    },
+                    "turkish": {
+                        "name": "Ovos Turkish (Çilbir)",
+                        "description": "Creme de iogurte temperado com alho, ovos escalfados e azeite aromatizado com especiarias e tosta"
+                    },
+                    "royale_english_muffin": {
+                        "name": "Ovos Royale c/ English Muffin",
+                        "description": "Manteiga de alho e ervas, salmão fumado, ovos escalfados, molho holandês e cebola frita. "
+                    },
+                    "royale_brioche": {
+                        "name": "Ovos Royale c/ Pão de Forma Brioche",
+                        "description": "Manteiga de alho e ervas, salmão fumado, ovos escalfados, molho holandês e cebola frita. "
+                    }
+                }
+            },
+            "toasts": {
+                "title": "Tostas",
+                "description": "Todas as tostas acompanham mix de salada e sementes variadas",
+                "items": {
+                    "cappuccino": {
+                        "name": "Tosta Cappuccino",
+                        "description": "C/ English Muffin e manteiga de alho e ervas, bacon inglês, cogumelos, ovos escalfados, molho holandês triturado e cebola frita"
+                    },
+                    "cappuccino_brioche": {
+                        "name": "Tosta Cappuccino C/ Pão de Forma Brioche",
+                        "description": "C/ Pão de Forma Brioche e manteiga de alho e ervas, bacon inglês, cogumelos, ovos escalfados, molho holandês triturado e cebola frita"
+                    },
+                    "campestre": {
+                        "name": "Tosta Campestre",
+                        "description": "Massa mãe, queijo creme, rúcula, frango e cogumelos salteados com manteiga de alho e ervas, granola salgada artesanal e crème balsâmico"
+                    },
+                    "seul": {
+                        "name": "Tosta Seul",
+                        "description": "Pão de forma com manteiga de alho e ervas, ovos mexidos, bacon, queijo cheddar, maionese de sriracha e molho coreano de maionese com leite condensado"
+                    },
+                    "salmon": {
+                        "name": "Tosta Salmão",
+                        "description": "Massa mãe, queijo creme, rúcula, salmão fumado e cebola frita"
+                    },
+                    "tomato_jam": {
+                        "name": "Tosta Tomato Jam",
+                        "description": "Massa mãe, geleia de tomate, ovos mexidos, bacon, rúcula e abacate laminado"
+                    },
+                    "avocado": {
+                        "name": "Tosta Abacate",
+                        "description": "Massa mãe, pasta de abacate, ovos escalfados e sementes"
+                    },
+                    "avocado_salmon": {
+                        "name": "Tosta Abacate c/ Salmão Fumado",
+                        "description": "Massa mãe, pasta de abacate, ovos escalfados, sementes e salmão fumado"
+                    },
+                    "presunto": {
+                        "name": "Tosta Presunto",
+                        "description": "Massa mãe, geleia de ananás e hortelã, rúcula, presunto e queijo brie maçaricado"
+                    },
+                    "vegan": {
+                        "name": "Tosta Vegan",
+                        "description": "Massa mãe, pasta de abacate, tomate cherry, cogumelos, molho balsâmico e granola salgada artesanal"
+                    },
+                    "bacon_jam": {
+                        "name": "Tosta Bacon Jam",
+                        "description": "Massa mãe, geleia de bacon e ovos mexidos"
+                    }
+                }
+            },
+            "salad_bowls": {
+                "title": "Bowls Salada",
+                "items": {
+                    "cappuccino": {
+                        "name": "Salada Cappuccino",
+                        "description": "<b>Base</b>: mix de folhas, tomate, cebola frita, pepino, mini mozzarella e croutons. \n<b>Escolha a proteína</b>: frango, camarão, ovos (escalfados/estrelados) ou salmão fumado (+2€). \n<b>Escolha o molho</b>: iogurte, vinagrete, balsâmico ou azeite piri-piri"
+                    },
+                    "vegan": {
+                        "name": "Salada Vegan",
+                        "description": "<b>Base</b>: mix de folhas, tomate, cebola frita, pepino, abacate e granola salgada artesanal. \n<b>Escolha o molho</b>: vinagrete, balsâmico ou azeite piri-piri"
+                    }
+                }
+            },
+            "savory_croissants": {
+                "title": "Croissants Salgados",
+                "description": "Acompanham mix de salada e sementes variadas",
+                "items": {
+                    "bacon": {
+                        "name": "Croissant Bacon",
+                        "description": "Ovos mexidos e bacon"
+                    },
+                    "mozzarella": {
+                        "name": "Croissant Mozzarella",
+                        "description": "Presunto, pesto e mini mozzarella"
+                    },
+                    "salmon": {
+                        "name": "Croissant Salmão",
+                        "description": "Queijo creme, cebola frita e salmão fumado"
+                    },
+                    "avocado": {
+                        "name": "Croissant Avocado",
+                        "description": "Geleia de tomate, ovos mexidos, bacon, queijo e avocado"
+                    }
+                }
+            },
+            "sweet_croissants": {
+                "title": "Croissants Doces",
+                "items": {
+                    "nutella": {
+                        "name": "Croissant Nutella",
+                        "description": "Morangos e Nutella"
+                    },
+                    "kinder": {
+                        "name": "Croissant Kinder Bueno",
+                        "description": "Framboesa e creme Kinder Bueno"
+                    },
+                    "banoffee": {
+                        "name": "Croissant Banoffee",
+                        "description": "Banana, doce de leite cremoso e bolacha Maria"
+                    },
+                    "pistachio": {
+                        "name": "Croissant Pistachio",
+                        "description": "Framboesa, creme pistachio e pistachio triturado"
+                    }
+                }
+            },
+            "pancakes": {
+                "title": "Panquecas",
+                "items": {
+                    "classic_honey": {
+                        "name": "Panqueca Clássica c/ Manteiga e Mel",
+                        "description": "Manteiga e mel"
+                    },
+                    "classic_maple": {
+                        "name": "Panqueca Clássica c/ Maple Syrup",
+                        "description": "Manteiga e maple syrup"
+                    },
+                    "nutella": {
+                        "name": "Panqueca Nutella",
+                        "description": "Morango, banana e Nutella"
+                    },
+                    "pineapple_mint": {
+                        "name": "Panqueca Ananás Hortelã",
+                        "description": "Mirtilos e geleia de ananás e hortelã"
+                    },
+                    "banoffee": {
+                        "name": "Panqueca Banoffee",
+                        "description": "Banana, doce de leite cremoso, bolacha Maria e chantilly"
+                    },
+                    "oreo": {
+                        "name": "Panqueca Oreo",
+                        "description": "Framboesa e creme Oreo"
+                    },
+                    "kinder": {
+                        "name": "Panqueca Kinder Bueno",
+                        "description": "Creme Kinder Bueno e gelado de baunilha"
+                    },
+                    "new_york": {
+                        "name": "Panqueca New York",
+                        "description": "Compota de mirtilo e caramelo de maple syrup aquecido"
+                    },
+                    "lotus": {
+                        "name": "Panqueca Lotus",
+                        "description": "Mirtilo, framboesa, gelado de baunilha, creme Lotus e maple syrup"
+                    },
+                    "pistachio": {
+                        "name": "Panqueca Pistachio",
+                        "description": "Morango, gelado de baunilha, creme de pistachio e pistachio"
+                    },
+                    "american": {
+                        "name": "Panqueca Americana",
+                        "description": "Bacon, cheddar, ovo estrelado, cebola frita e maple syrup"
+                    }
+                }
+            },
+            "waffles": {
+                "title": "Waffles",
+                "description": "Acompanham gelado de baunilha(exceto Waffle Americano)",
+                "items": {
+                    "classic_honey": {
+                        "name": "Waffle Clássico c/ Manteiga e Mel",
+                        "description": "Manteiga e mel"
+                    },
+                    "classic_maple": {
+                        "name": "Waffle Clássico c/ Maple Syrup",
+                        "description": "Manteiga e maple syrup"
+                    },
+                    "nutella": {
+                        "name": "Waffle Nutella",
+                        "description": "Morango e Nutella"
+                    },
+                    "kinder": {
+                        "name": "Waffle Kinder Bueno",
+                        "description": "Creme Kinder Bueno"
+                    },
+                    "banoffee": {
+                        "name": "Waffle Banoffee",
+                        "description": "Banana, doce de leite cremoso, bolacha Maria e chantilly"
+                    },
+                    "lotus": {
+                        "name": "Waffle Lotus",
+                        "description": "Mirtilos, creme Lotus e bolacha"
+                    },
+                    "pistachio": {
+                        "name": "Waffle Pistachio",
+                        "description": "Coco e creme de pistachio"
+                    },
+                    "american": {
+                        "name": "Waffle Americano",
+                        "description": "Salada, bacon, cheddar, ovo estrelado, cebola frita e maple syrup"
+                    }
+                }
+            },
+            "french_toast": {
+                "title": "French Toast",
+                "items": {
+                    "berries": {
+                        "name": "French Toast Frutos do Bosque",
+                        "description": "Compota de frutos vermelhos, morangos, framboesas e mirtilos"
+                    },
+                    "pistachio": {
+                        "name": "French Toast Pistachio",
+                        "description": "Creme de pistachio, morangos, pistachio triturado e gelado"
+                    }
+                }
+            },
+            "yogurt_bowls": {
+                "title": "Bowls Iogurte",
+                "items": {
+                    "fruit": {
+                        "name": "Bowl de Fruta",
+                        "description": "Iogurte, granola artesanal, frutas e mel"
+                    },
+                    "fruit_vegan": {
+                        "name": "Bowl de Fruta Vegan",
+                        "description": "Iogurte vegan, granola artesanal, frutas e agave"
+                    }
+                }
+            },
+            "brunch_menus": {
+                "title": "Menus Brunch",
+                "description": "Não sujeito a alterações",
+                "items": {
+                    "kids": {
+                        "name": "Menu Kids",
+                        "description": "<b>Até 12 anos</b>. \n<b>À escolha</b>: Bowl de Iogurte c/ compota de morango ou frutos vermelhos, ou Panqueca c/ Nutella, creme Kinder Bueno ou mel"
+                    },
+                    "american_breakfast": {
+                        "name": "Menu American Breakfast",
+                        "description": "<b>Prato</b>: panqueca clássica, 2 ovos estrelados, bacon e torrada. \n<b>Bebida à escolha</b>: Coca-Cola, Compal ou Ice Tea"
+                    },
+                    "cappuccino": {
+                        "name": "Menu Cappuccino",
+                        "description": "Sumo à escolha. \nPanqueca Clássica c/ maple syrup. \nTosta Bacon Jam ou Tosta Abacate (massa mãe, geleia de bacon e ovos mexidos ou massa mãe, pasta de abacate, ovos escalfados e sementes). \n<b>Bebida quente</b>: abatanado, café, cappuccino ou chá"
+                    },
+                    "green": {
+                        "name": "Menu Green",
+                        "description": "Matcha Latte ou Iced Matcha. \nTosta Abacate (massa mãe, pasta de abacate, ovos escalfados e sementes). \nCroissant Pistachio (framboesa e creme pistachio)"
+                    },
+                    "tabua_cappuccino": {
+                        "name": "Menu Tábua Cappuccino",
+                        "description": "<b>2 Bebidas quentes</b>: abatanado, café, cappuccino ou chá. \n<b>Jarra de Sumo 1L:</b> laranja. \n2 Croissants folhados simples. Torrada em pão chapata c/ geleia de ananás e hortelã ou geleia de mirtilo. \n<b>Bowl de Fruta:</b> iogurte, granola artesanal, frutas e mel. \n<b>Panqueca Clássica:</b> manteiga e mel ou maple syrup"
+                    }
+                }
+            },
+            "pastry": {
+                "title": "Pastelaria",
+                "items": {
+                    "flaky_croissant": {
+                        "name": "Croissant Folhado",
+                        "description": ""
+                    },
+                    "ciabatta_bread_toast_with_butter": {
+                        "name": "Torrada em Pão Chapata",
+                        "description": "C/ manteiga e oregãos"
+                    },
+                    "ciabatta_bread_toast_with_jam": {
+                        "name": "Torrada em Pão Chapata",
+                        "description": "C/ geleia a escolha"
+                    },
+                    "mixed_toast_on_ciabatta_bread": {
+                        "name": "Tosta Mista em Pão Chapata",
+                        "description": "C/ manteiga e oregãos"
+                    }
+                }
+            },
+            "extras": {
+                "title": "Extras",
+                "items": {
+                    "fruits": {
+                        "name": "Frutas",
+                        "description": "Banana/Morango/Mirtilo/Framboesa"
+                    },
+                    "vanilla_ice_cream": {
+                        "name": "Gelado de Baunilha",
+                        "description": ""
+                    },
+                    "toppings": {
+                        "name": "Toppings",
+                        "description": "Nutella, Creme Kinder Bueno, Creme Lotus, Compota de Mirtilo, Mel, Maple Syrup"
+                    },
+                    "pistachio_cream": {
+                        "name": "Creme de pistachio",
+                        "description": ""
+                    },
+                    "egg": {
+                        "name": "Ovo",
+                        "description": ""
+                    },
+                    "bacon": {
+                        "name": "Bacon",
+                        "description": ""
+                    },
+                    "sauteed_mushroom": {
+                        "name": "Cogumelo Salteado",
+                        "description": ""
+                    },
+                    "avocado": {
+                        "name": "Avocado",
+                        "description": ""
+                    },
+                    "smoked_salmon": {
+                        "name": "Salmão Fumado",
+                        "description": ""
+                    },
+                    "brie_cheese": {
+                        "name": "Queijo Brie",
+                        "description": ""
+                    },
+                    "waffle": {
+                        "name": "Waffle",
+                        "description": ""
+                    },
+                    "ciabatta_bread": {
+                        "name": "Pão Chapata",
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "drink": {
+            "title": "Bebidas",
+            "coffee_shop": {
+                "title": "Cafetaria",
+                "items": {
+                    "carioca_coffee": {
+                        "name": "Carioca de Café",
+                        "description": ""
+                    },
+                    "carioca_lemon": {
+                        "name": "Carioca de Limão",
+                        "description": ""
+                    },
+                    "pingo": {
+                        "name": "Pingo",
+                        "description": ""
+                    },
+                    "coffee": {
+                        "name": "Café",
+                        "description": ""
+                    },
+                    "double_coffee": {
+                        "name": "Café Duplo",
+                        "description": ""
+                    },
+                    "decaf": {
+                        "name": "Descafeinado",
+                        "description": ""
+                    },
+                    "barley": {
+                        "name": "Cevada",
+                        "description": ""
+                    },
+                    "milk_glass": {
+                        "name": "Copo de Leite",
+                        "description": ""
+                    },
+                    "americano": {
+                        "name": "Americano",
+                        "description": ""
+                    },
+                    "tea": {
+                        "name": "Chá",
+                        "description": ""
+                    },
+                    "lical": {
+                        "name": "Lical",
+                        "description": ""
+                    },
+                    "machiato": {
+                        "name": "Machiato",
+                        "description": ""
+                    },
+                    "machiato_caramel": {
+                        "name": "Machiato Caramel",
+                        "description": ""
+                    },
+                    "cappuccino": {
+                        "name": "Cappuccino",
+                        "description": ""
+                    },
+                    "cappuccino_caramel": {
+                        "name": "Cappuccino Caramel",
+                        "description": ""
+                    },
+                    "hot_chocolate": {
+                        "name": "Chocolate Quente",
+                        "description": ""
+                    },
+                    "flat_white": {
+                        "name": "Flat White",
+                        "description": ""
+                    },
+                    "chai_latte": {
+                        "name": "Chai Latte",
+                        "description": ""
+                    }
+                }
+            },
+            "iced_coffees": {
+                "title": "Iced Coffees",
+                "items": {
+                    "frappe": {
+                        "name": "Frappé",
+                        "description": ""
+                    },
+                    "dalgona": {
+                        "name": "Dalgona Coffee",
+                        "description": ""
+                    },
+                    "caramel_frappe": {
+                        "name": "Caramel Frappé",
+                        "description": ""
+                    },
+                    "spanish_latte": {
+                        "name": "Spanish Latte",
+                        "description": ""
+                    },
+                    "kinder_latte": {
+                        "name": "Kinder Latte",
+                        "description": ""
+                    }
+                }
+            },
+            "matcha": {
+                "title": "Matcha",
+                "items": {
+                    "matcha_latte": {
+                        "name": "Matcha Latte",
+                        "description": ""
+                    },
+                    "iced_matcha_latte": {
+                        "name": "Iced Matcha Latte",
+                        "description": ""
+                    },
+                    "iced_dalgona_matcha": {
+                        "name": "Iced Dalgona Matcha",
+                        "description": "C/ geleia de frutos vermelhos / maracujá / morango"
+                    }
+                }
+            },
+            "smoothies": {
+                "title": "Smoothies",
+                "items": {
+                    "strawberry": {
+                        "name": "Morango",
+                        "description": ""
+                    },
+                    "red_fruits": {
+                        "name": "Frutos Vermelhos",
+                        "description": ""
+                    },
+                    "passion_fruit": {
+                        "name": "Maracujá",
+                        "description": ""
+                    },
+                    "strawberry_banana": {
+                        "name": "Morango e Banana",
+                        "description": ""
+                    }
+                }
+            },
+            "natural_juices": {
+                "title": "Sumos Naturais",
+                "items": {
+                    "lemonade": {
+                        "name": "Limonada",
+                        "description": ""
+                    },
+                    "orange": {
+                        "name": "Laranja",
+                        "description": ""
+                    },
+                    "orange_red_fruits": {
+                        "name": "Laranja e Frutos Vermelhos",
+                        "description": ""
+                    },
+                    "strawberry_lemonade": {
+                        "name": "Limonada de Morango",
+                        "description": ""
+                    }
+                }
+            },
+            "beverages": {
+                "title": "Bebidas",
+                "items": {
+                    "water": {
+                        "name": "Água",
+                        "description": ""
+                    },
+                    "pedras": {
+                        "name": "Pedras",
+                        "description": ""
+                    },
+                    "pedras_lemon": {
+                        "name": "Pedras de Limão",
+                        "description": ""
+                    },
+                    "compal": {
+                        "name": "Compal",
+                        "description": ""
+                    },
+                    "coca_cola": {
+                        "name": "Coca-Cola",
+                        "description": ""
+                    },
+                    "coca_cola_zero": {
+                        "name": "Coca-Cola Zero",
+                        "description": ""
+                    },
+                    "ice_tea": {
+                        "name": "Ice Tea",
+                        "description": ""
+                    },
+                    "san_pellegrino": {
+                        "name": "San Pellegrino",
+                        "description": ""
+                    },
+                    "tonic_water": {
+                        "name": "Água Tónica",
+                        "description": ""
+                    }
+                }
+            },
+            "alcoholic_beverages": {
+                "title": "Bebidas c/ Álcool",
+                "items": {
+                    "super_bock": {
+                        "name": "Super Bock",
+                        "description": ""
+                    },
+                    "super_bock_stout": {
+                        "name": "Super Bock Stout",
+                        "description": ""
+                    },
+                    "panache": {
+                        "name": "Panaché",
+                        "description": ""
+                    },
+                    "somersby_apple": {
+                        "name": "Somersby Apple",
+                        "description": ""
+                    },
+                    "somersby_blackberry": {
+                        "name": "Somersby Blackberry",
+                        "description": ""
+                    }
+                }
+            },
+            "sangrias": {
+                "title": "Sangrias 1L/2L",
+                "items": {
+                    "white": {
+                        "name": "Sangria Branca",
+                        "description": ""
+                    },
+                    "red": {
+                        "name": "Sangria Tinta",
+                        "description": ""
+                    },
+                    "sparkling_rose": {
+                        "name": "Sangria Espumante Rosé",
+                        "description": ""
+                    }
+                }
+            },
+            "wines": {
+                "title": "Vinhos",
+                "items": {
+                    "esteva": {
+                        "name": "Esteva 37.5CL / 75CL",
+                        "description": ""
+                    },
+                    "planalto": {
+                        "name": "Planalto 37.5CL / 75CL",
+                        "description": ""
+                    },
+                    "mateus_rose": {
+                        "name": "Mateus Rosé 37.5CL / 75CL",
+                        "description": ""
+                    }
+                }
+            },
+            "cocktails": {
+                "title": "Cocktails",
+                "items": {
+                    "screwdriver": {
+                        "name": "Screwdriver",
+                        "description": ""
+                    },
+                    "gin": {
+                        "name": "Gin",
+                        "description": ""
+                    },
+                    "aperol_spritz": {
+                        "name": "Aperol Spritz",
+                        "description": ""
+                    },
+                    "espresso_martini": {
+                        "name": "Espresso Martini",
+                        "description": ""
+                    }
+                }
+            }
+        }
+    },
+    "gallery": {
+        "title": "Momentos que Merecem Partilha",
+        "description": "Segue-nos no Instagram para não perderes nenhuma novidade e partilha os teus momentos connosco!"
+    },
+    "contact": {
+        "section_title": "Contacto",
+        "title": "Vem Visitar-nos",
+        "description": "Estamos sempre prontos para te receber. Reserva a tua mesa ou simplesmente aparece — há sempre espaço para mais um café!",
+
+        "follow_us": "Segue-nos:",
+
+        "features": {
+            "address": {
+                "title": "Morada",
+                "value": "Alameda do Fujacal - 279",
+                "subvalue": "4705-096 Braga, Portugal"
+            },
+            "phone": {
+                "title": "Telefone",
+                "value": "+351 253 049 517",
+                "subvalue": "Reservas e informações"
+            },
+            "schedule": {
+                "title": "Horário",
+                "value": "Seg-Dom: {{timespan}}",
+                "subvalue": "Cozinha fecha às {{kitchen_closing_time}}"
+            },
+            "email": {
+                "title": "Email",
+                "value": "cappuccino.brunch@gmail.com",
+                "subvalue": "Respondemos em 24h"
+            }
+        }
+    },
+    "footer": {
+        "description": "O lugar perfeito para começar o dia com sabor e amor.",
+        "rights": "© {{year}} Cappuccino Brunch. Todos os direitos reservados.",
+        "made_with": "Feito com ",
+        "made_in": "em Braga."
+    },
+    "language": {
+        "portuguese": "Português",
+        "english": "Inglês"
+    }
+}
