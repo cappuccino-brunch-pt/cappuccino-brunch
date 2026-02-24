@@ -30,14 +30,13 @@ const Menu = () => {
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <span className="inline-block text-sm font-medium text-cappuccino tracking-wider uppercase mb-4">
-                        O Nosso Menu
+                        {t("menu.section_title")}
                     </span>
                     <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground mb-6">
-                        Pratos que Contam Histórias
+                        {t("menu.subtitle")}
                     </h2>
                     <p className="text-muted-foreground text-lg">
-                        Cada prato é uma obra de arte culinária, criado com
-                        ingredientes frescos e muito amor.
+                        {t("menu.description")}
                     </p>
                 </div>
 
@@ -52,7 +51,7 @@ const Menu = () => {
                                 : "border-transparent text-muted-foreground hover:text-foreground hover:border-cappuccino/30",
                         )}
                     >
-                        Comidas
+                        {t("menu.food.title")}
                     </button>
                     <button
                         onClick={() => handleTypeChange(MENU_TYPES.DRINK)}
@@ -63,7 +62,7 @@ const Menu = () => {
                                 : "border-transparent text-muted-foreground hover:text-foreground hover:border-cappuccino/30",
                         )}
                     >
-                        Bebidas
+                        {t("menu.drink.title")}
                     </button>
                 </div>
 
@@ -146,8 +145,7 @@ const Menu = () => {
                 {/* CTA */}
                 <div className="text-center mt-12">
                     <p className="text-muted-foreground mb-4">
-                        Tens alergias ou preferências alimentares? Fala
-                        connosco!
+                        {t("menu.allergies_warning")}
                     </p>
                 </div>
             </div>

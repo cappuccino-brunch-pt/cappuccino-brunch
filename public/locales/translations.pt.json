@@ -42,7 +42,13 @@
         }
     },
     "menu": {
+        "section_title": "O Nosso Menu",
+        "subtitle": "Pratos que Contam Histórias",
+        "description": "Cada prato é uma obra de arte culinária, criado com ingredientes frescos e muito amor.",
+        "allergies_warning": "Tens alergias ou preferências alimentares? Fala connosco!",
+
         "food": {
+            "title": "Comidas",
             "executive_menu": {
                 "title": "Menu Executivo",
                 "items": {
@@ -411,6 +417,7 @@
             }
         },
         "drink": {
+            "title": "Bebidas",
             "coffee_shop": {
                 "title": "Cafetaria",
                 "items": {
