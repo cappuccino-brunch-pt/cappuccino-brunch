@@ -67,7 +67,7 @@ export enum MENU_TYPES {
 
 export const FOODS_MENU: MenuCategory[] = [
     {
-        id: "menu-executivo",
+        id: "executive_menu",
         labelKey: "menu.food.executive_menu.title",
         items: [
             {
@@ -80,7 +80,7 @@ export const FOODS_MENU: MenuCategory[] = [
         ],
     },
     {
-        id: "para-partilhar",
+        id: "to_share",
         labelKey: "menu.food.to_share.title",
         items: [
             {
@@ -91,83 +91,84 @@ export const FOODS_MENU: MenuCategory[] = [
                 image: englishMuffinManteigaDeErvas,
             },
             {
-                nameKey: "English Muffin Gratinado",
+                nameKey: "menu.food.to_share.items.english_muffin_gratin.name",
                 descriptionKey:
-                    "C/ manteiga de alho e ervas e queijo gratinado",
+                    "menu.food.to_share.items.english_muffin_gratin.description",
                 price: "4.00€",
                 image: "",
             },
             {
-                nameKey: "Caprese",
-                descriptionKey: "Tomate cherry, mini mozzarella e pesto",
+                nameKey: "menu.food.to_share.items.caprese.name",
+                descriptionKey: "menu.food.to_share.items.caprese.description",
                 price: "5.00€",
                 image: caprese,
             },
             {
-                nameKey: "Nachos",
-                descriptionKey: "Com guacamole",
+                nameKey: "menu.food.to_share.items.nachos.name",
+                descriptionKey: "menu.food.to_share.items.nachos.description",
                 price: "5.50€",
                 image: nachosGuacamole,
             },
             {
-                nameKey: "Shrimp Bites",
-                descriptionKey: "Ships, guacamole e camarão",
+                nameKey: "menu.food.to_share.items.shrimp_bites.name",
+                descriptionKey:
+                    "menu.food.to_share.items.shrimp_bites.description",
                 price: "6.50€",
                 image: shrimpBites,
             },
         ],
     },
     {
-        id: "ovos",
-        labelKey: "Ovos",
-        descriptionKey:
-            "Acompanham mix de salada e sementes variadas (excepto Ovos Turkish)",
+        id: "eggs",
+        labelKey: "menu.food.eggs.title",
+        descriptionKey: "menu.food.eggs.description",
         items: [
             {
-                nameKey: "Ovos Mexidos c/ Tosta",
-                descriptionKey: "",
+                nameKey: "menu.food.eggs.items.scrambled_toast.name",
+                descriptionKey:
+                    "menu.food.eggs.items.scrambled_toast.description",
                 price: "4.50€",
                 image: "",
             },
             {
-                nameKey: "Ovos Mexidos c/ Tosta e Bacon",
-                descriptionKey: "",
+                nameKey: "menu.food.eggs.items.scrambled_toast_bacon.name",
+                descriptionKey:
+                    "menu.food.eggs.items.scrambled_toast_bacon.description",
                 price: "5.00€",
                 image: ovosMexidosComBacon,
             },
             {
-                nameKey: "Ovos Benedict c/ English Muffin",
+                nameKey: "menu.food.eggs.items.benedict_english_muffin.name",
                 descriptionKey:
-                    "Manteiga de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita.  ",
+                    "menu.food.eggs.items.benedict_english_muffin.description",
                 price: "8.00€",
                 image: ovosBenedictEnglishMuffin,
             },
             {
-                nameKey: "Ovos Benedict c/ Pão de Forma Brioche",
+                nameKey: "menu.food.eggs.items.benedict_brioche.name",
                 descriptionKey:
-                    "Manteiga de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita.  ",
+                    "menu.food.eggs.items.benedict_brioche.description",
                 price: "9.00€",
                 image: "",
             },
             {
-                nameKey: "Ovos Turkish (Çilbir)",
-                descriptionKey:
-                    "Creme de iogurte temperado com alho, ovos escalfados e azeite aromatizado com especiarias e tosta",
+                nameKey: "menu.food.eggs.items.turkish.name",
+                descriptionKey: "menu.food.eggs.items.turkish.description",
                 price: "8.50€",
                 image: ovosTurkish,
             },
             {
-                nameKey: "Ovos Royale c/ English Muffin",
+                nameKey: "menu.food.eggs.items.royale_english_muffin.name",
                 descriptionKey:
-                    "Manteiga de alho e ervas, salmão fumado, ovos escalfados, molho holandês e cebola frita. ",
+                    "menu.food.eggs.items.royale_english_muffin.description",
                 price: "9.00€",
                 tags: [MenuTagType.BEST_SELLER],
                 image: "",
             },
             {
-                nameKey: "Ovos Royale c/ Pão de Forma Brioche",
+                nameKey: "menu.food.eggs.items.royale_brioche.name",
                 descriptionKey:
-                    "Manteiga de alho e ervas, salmão fumado, ovos escalfados, molho holandês e cebola frita. ",
+                    "menu.food.eggs.items.royale_brioche.description",
                 price: "10.00€",
                 tags: [MenuTagType.BEST_SELLER],
                 image: ovosRoyalePaoBrioche,
@@ -175,31 +176,28 @@ export const FOODS_MENU: MenuCategory[] = [
         ],
     },
     {
-        id: "tostas",
-        labelKey: "Tostas",
-        descriptionKey:
-            "Todas as tostas acompanham mix de salada e sementes variadas",
+        id: "toasts",
+        labelKey: "menu.food.toasts.title",
+        descriptionKey: "menu.food.toasts.description",
         items: [
             {
-                nameKey: "Tosta Cappuccino",
-                descriptionKey:
-                    "C/ English Muffin e manteiga de alho e ervas, bacon inglês, cogumelos, ovos escalfados, molho holandês triturado e cebola frita",
+                nameKey: "menu.food.toasts.items.cappuccino.name",
+                descriptionKey: "menu.food.toasts.items.cappuccino.description",
                 price: "9.00€",
                 tags: [MenuTagType.LONG_COOKING],
                 image: "",
             },
             {
-                nameKey: "Tosta Cappuccino C/ Pão de Forma Brioche",
+                nameKey: "menu.food.toasts.items.cappuccino_brioche.name",
                 descriptionKey:
-                    "C/ Pão de Forma Brioche e manteiga de alho e ervas, bacon inglês, cogumelos, ovos escalfados, molho holandês triturado e cebola frita",
+                    "menu.food.toasts.items.cappuccino_brioche.description",
                 price: "10.00€",
                 tags: [MenuTagType.LONG_COOKING],
                 image: tostaCappuccinoPaoBrioche,
             },
             {
-                nameKey: "Tosta Campestre",
-                descriptionKey:
-                    "Massa mãe, queijo creme, rúcula, frango e cogumelos salteados com manteiga de alho e ervas, granola salgada artesanal e crème balsâmico",
+                nameKey: "menu.food.toasts.items.campestre.name",
+                descriptionKey: "menu.food.toasts.items.campestre.description",
                 price: "9.50€",
                 tags: [
                     MenuTagType.CHEF_SUGGESTION,
@@ -209,9 +207,8 @@ export const FOODS_MENU: MenuCategory[] = [
                 image: tostaCampestre,
             },
             {
-                nameKey: "Tosta Seul",
-                descriptionKey:
-                    "Pão de forma com manteiga de alho e ervas, ovos mexidos, bacon, queijo cheddar, maionese de sriracha e molho coreano de maionese com leite condensado",
+                nameKey: "menu.food.toasts.items.seul.name",
+                descriptionKey: "menu.food.toasts.items.seul.description",
                 price: "9.00€",
                 tags: [
                     MenuTagType.BEST_SELLER,
@@ -221,71 +218,65 @@ export const FOODS_MENU: MenuCategory[] = [
                 image: tostaSeul,
             },
             {
-                nameKey: "Tosta Salmão",
-                descriptionKey:
-                    "Massa mãe, queijo creme, rúcula, salmão fumado e cebola frita",
+                nameKey: "menu.food.toasts.items.salmon.name",
+                descriptionKey: "menu.food.toasts.items.salmon.description",
                 price: "8.50€",
                 image: "",
             },
             {
-                nameKey: "Tosta Tomato Jam",
-                descriptionKey:
-                    "Massa mãe, geleia de tomate, ovos mexidos, bacon, rúcula e abacate laminado",
+                nameKey: "menu.food.toasts.items.tomato_jam.name",
+                descriptionKey: "menu.food.toasts.items.tomato_jam.description",
                 price: "8.00€",
                 image: tostaTomatoJam,
             },
             {
-                nameKey: "Tosta Abacate",
-                descriptionKey:
-                    "Massa mãe, pasta de abacate, ovos escalfados e sementes",
+                nameKey: "menu.food.toasts.items.avocado.name",
+                descriptionKey: "menu.food.toasts.items.avocado.description",
                 price: "7.00€",
                 image: tostaAbacate,
             },
             {
-                nameKey: "Tosta Abacate c/ Salmão Fumado",
+                nameKey: "menu.food.toasts.items.avocado_salmon.name",
                 descriptionKey:
-                    "Massa mãe, pasta de abacate, ovos escalfados, sementes e salmão fumado",
+                    "menu.food.toasts.items.avocado_salmon.description",
                 price: "8.50€",
                 image: "",
             },
             {
-                nameKey: "Tosta Presunto",
-                descriptionKey:
-                    "Massa mãe, geleia de ananás e hortelã, rúcula, presunto e queijo brie maçaricado",
+                nameKey: "menu.food.toasts.items.presunto.name",
+                descriptionKey: "menu.food.toasts.items.presunto.description",
                 price: "8.00€",
                 image: tostaPresunto,
             },
             {
-                nameKey: "Tosta Vegan",
-                descriptionKey:
-                    "Massa mãe, pasta de abacate, tomate cherry, cogumelos, molho balsâmico e granola salgada artesanal",
+                nameKey: "menu.food.toasts.items.vegan.name",
+                descriptionKey: "menu.food.toasts.items.vegan.description",
                 price: "7.50€",
                 tags: [MenuTagType.VEGAN],
                 image: tostaVegan,
             },
             {
-                nameKey: "Tosta Bacon Jam",
-                descriptionKey: "Massa mãe, geleia de bacon e ovos mexidos",
+                nameKey: "menu.food.toasts.items.bacon_jam.name",
+                descriptionKey: "menu.food.toasts.items.bacon_jam.description",
                 price: "7.00€",
                 image: tostaBaconJam,
             },
         ],
     },
     {
-        id: "bowls-salada",
-        labelKey: "Bowls Salada",
+        id: "salad_bowls",
+        labelKey: "menu.food.salad_bowls.title",
         items: [
             {
-                nameKey: "Salada Cappuccino",
+                nameKey: "menu.food.salad_bowls.items.cappuccino.name",
                 descriptionKey:
-                    "<b>Base</b>: mix de folhas, tomate, cebola frita, pepino, mini mozzarella e croutons. \n<b>Escolha a proteína</b>: frango, camarão, ovos (escalfados/estrelados) ou salmão fumado (+2€). \n<b>Escolha o molho</b>: iogurte, vinagrete, balsâmico ou azeite piri-piri",
+                    "menu.food.salad_bowls.items.cappuccino.description",
                 price: "8.00€",
                 image: saladaCappuccino,
             },
             {
-                nameKey: "Salada Vegan",
-                descriptionKey:
-                    "<b>Base</b>: mix de folhas, tomate, cebola frita, pepino, abacate e granola salgada artesanal. \n<b>Escolha o molho</b>: vinagrete, balsâmico ou azeite piri-piri",
+                nameKey: "menu.food.salad_bowls.items.vegan.name",
+                descriptionKey: "menu.food.salad_bowls.items.vegan.description",
                 price: "7.00€",
                 tags: [MenuTagType.VEGAN],
                 image: "",
@@ -293,32 +284,35 @@ export const FOODS_MENU: MenuCategory[] = [
         ],
     },
     {
-        id: "croissants-salgados",
-        labelKey: "Croissants Salgados",
-        descriptionKey: "Acompanham mix de salada e sementes variadas",
+        id: "savory_croissants",
+        labelKey: "menu.food.savory_croissants.title",
+        descriptionKey: "menu.food.savory_croissants.description",
         items: [
             {
-                nameKey: "Croissant Bacon",
-                descriptionKey: "Ovos mexidos e bacon",
+                nameKey: "menu.food.savory_croissants.items.bacon.name",
+                descriptionKey:
+                    "menu.food.savory_croissants.items.bacon.description",
                 price: "4.50€",
                 image: croissantBacon,
             },
             {
-                nameKey: "Croissant Mozzarella",
-                descriptionKey: "Presunto, pesto e mini mozzarella",
+                nameKey: "menu.food.savory_croissants.items.mozzarella.name",
+                descriptionKey:
+                    "menu.food.savory_croissants.items.mozzarella.description",
                 price: "5.00€",
                 image: croissantMozzarella,
             },
             {
-                nameKey: "Croissant Salmão",
-                descriptionKey: "Queijo creme, cebola frita e salmão fumado",
+                nameKey: "menu.food.savory_croissants.items.salmon.name",
+                descriptionKey:
+                    "menu.food.savory_croissants.items.salmon.description",
                 price: "5.50€",
                 image: croissantSalmao,
             },
             {
-                nameKey: "Croissant Avocado",
+                nameKey: "menu.food.savory_croissants.items.avocado.name",
                 descriptionKey:
-                    "Geleia de tomate, ovos mexidos, bacon, queijo e avocado",
+                    "menu.food.savory_croissants.items.avocado.description",
                 price: "6.00€",
                 tags: [MenuTagType.BEST_SELLER, MenuTagType.LONG_COOKING],
                 image: croissantAvocado,
@@ -326,110 +320,112 @@ export const FOODS_MENU: MenuCategory[] = [
         ],
     },
     {
-        id: "croissants-doces",
-        labelKey: "Croissants Doces",
+        id: "sweet_croissants",
+        labelKey: "menu.food.sweet_croissants.title",
         items: [
             {
-                nameKey: "Croissant Nutella",
-                descriptionKey: "Morangos e Nutella",
+                nameKey: "menu.food.sweet_croissants.items.nutella.name",
+                descriptionKey:
+                    "menu.food.sweet_croissants.items.nutella.description",
                 price: "4.50€",
                 image: "",
             },
             {
-                nameKey: "Croissant Kinder Bueno",
-                descriptionKey: "Framboesa e creme Kinder Bueno",
+                nameKey: "menu.food.sweet_croissants.items.kinder.name",
+                descriptionKey:
+                    "menu.food.sweet_croissants.items.kinder.description",
                 price: "4.50€",
                 image: croissantKinder,
             },
             {
-                nameKey: "Croissant Banoffee",
-                descriptionKey: "Banana, doce de leite cremoso e bolacha Maria",
+                nameKey: "menu.food.sweet_croissants.items.banoffee.name",
+                descriptionKey:
+                    "menu.food.sweet_croissants.items.banoffee.description",
                 price: "4.50€",
                 tags: [MenuTagType.BEST_SELLER],
                 image: croissantBanoffee,
             },
             {
-                nameKey: "Croissant Pistachio",
+                nameKey: "menu.food.sweet_croissants.items.pistachio.name",
                 descriptionKey:
-                    "Framboesa, creme pistachio e pistachio triturado",
+                    "menu.food.sweet_croissants.items.pistachio.description",
                 price: "5.00€",
                 image: croissantPistachio,
             },
         ],
     },
     {
-        id: "panquecas",
-        labelKey: "Panquecas",
+        id: "pancakes",
+        labelKey: "menu.food.pancakes.title",
         items: [
             {
-                nameKey: "Panqueca Clássica c/ Manteiga e Mel",
-                descriptionKey: "Manteiga e mel",
+                nameKey: "menu.food.pancakes.items.classic_honey.name",
+                descriptionKey:
+                    "menu.food.pancakes.items.classic_honey.description",
                 price: "4.50€",
                 image: "",
             },
             {
-                nameKey: "Panqueca Clássica c/ Maple Syrup",
-                descriptionKey: "Manteiga e maple syrup",
+                nameKey: "menu.food.pancakes.items.classic_maple.name",
+                descriptionKey:
+                    "menu.food.pancakes.items.classic_maple.description",
                 price: "5.00€",
                 image: panquecaClassicaMapleSyrup,
             },
             {
-                nameKey: "Panqueca Nutella",
-                descriptionKey: "Morango, banana e Nutella",
+                nameKey: "menu.food.pancakes.items.nutella.name",
+                descriptionKey: "menu.food.pancakes.items.nutella.description",
                 price: "6.00€",
                 image: panquecaNutella,
             },
             {
-                nameKey: "Panqueca Ananás Hortelã",
-                descriptionKey: "Mirtilos e geleia de ananás e hortelã",
+                nameKey: "menu.food.pancakes.items.pineapple_mint.name",
+                descriptionKey:
+                    "menu.food.pancakes.items.pineapple_mint.description",
                 price: "6.00€",
                 image: panquecaAnanasHortela,
             },
             {
-                nameKey: "Panqueca Banoffee",
-                descriptionKey:
-                    "Banana, doce de leite cremoso, bolacha Maria e chantilly",
+                nameKey: "menu.food.pancakes.items.banoffee.name",
+                descriptionKey: "menu.food.pancakes.items.banoffee.description",
                 price: "6.00€",
                 image: panquecaBanoffee,
             },
             {
-                nameKey: "Panqueca Oreo",
-                descriptionKey: "Framboesa e creme Oreo",
+                nameKey: "menu.food.pancakes.items.oreo.name",
+                descriptionKey: "menu.food.pancakes.items.oreo.description",
                 price: "6.00€",
                 image: panquecaOreo,
             },
             {
-                nameKey: "Panqueca Kinder Bueno",
-                descriptionKey: "Creme Kinder Bueno e gelado de baunilha",
+                nameKey: "menu.food.pancakes.items.kinder.name",
+                descriptionKey: "menu.food.pancakes.items.kinder.description",
                 price: "7.00€",
                 image: panquecaKinder,
             },
             {
-                nameKey: "Panqueca New York",
-                descriptionKey:
-                    "Compota de mirtilo e caramelo de maple syrup aquecido",
+                nameKey: "menu.food.pancakes.items.new_york.name",
+                descriptionKey: "menu.food.pancakes.items.new_york.description",
                 price: "7.00€",
                 image: panquecaNewYork,
             },
             {
-                nameKey: "Panqueca Lotus",
-                descriptionKey:
-                    "Mirtilo, framboesa, gelado de baunilha, creme Lotus e maple syrup",
+                nameKey: "menu.food.pancakes.items.lotus.name",
+                descriptionKey: "menu.food.pancakes.items.lotus.description",
                 price: "7.00€",
                 image: panquecaLotus,
             },
             {
-                nameKey: "Panqueca Pistachio",
+                nameKey: "menu.food.pancakes.items.pistachio.name",
                 descriptionKey:
-                    "Morango, gelado de baunilha, creme de pistachio e pistachio",
+                    "menu.food.pancakes.items.pistachio.description",
                 price: "8.00€",
                 tags: [MenuTagType.BEST_SELLER],
                 image: panquecaPistachio,
             },
             {
-                nameKey: "Panqueca Americana",
-                descriptionKey:
-                    "Bacon, cheddar, ovo estrelado, cebola frita e maple syrup",
+                nameKey: "menu.food.pancakes.items.american.name",
+                descriptionKey: "menu.food.pancakes.items.american.description",
                 price: "7.50€",
                 image: panquecaAmericana,
             },
@@ -437,57 +433,56 @@ export const FOODS_MENU: MenuCategory[] = [
     },
     {
         id: "waffles",
-        labelKey: "Waffles",
-        descriptionKey:
-            "Acompanham gelado de baunilha(exceto Waffle Americano)",
+        labelKey: "menu.food.waffles.title",
+        descriptionKey: "menu.food.waffles.description",
         items: [
             {
-                nameKey: "Waffle Clássico c/ Manteiga e Mel",
-                descriptionKey: "Manteiga e mel",
+                nameKey: "menu.food.waffles.items.classic_honey.name",
+                descriptionKey:
+                    "menu.food.waffles.items.classic_honey.description",
                 price: "4.50€",
                 image: waffleClassicoMel,
             },
             {
-                nameKey: "Waffle Clássico c/ Maple Syrup",
-                descriptionKey: "Manteiga e maple syrup",
+                nameKey: "menu.food.waffles.items.classic_maple.name",
+                descriptionKey:
+                    "menu.food.waffles.items.classic_maple.description",
                 price: "5.00€",
                 image: "",
             },
             {
-                nameKey: "Waffle Nutella",
-                descriptionKey: "Morango e Nutella",
+                nameKey: "menu.food.waffles.items.nutella.name",
+                descriptionKey: "menu.food.waffles.items.nutella.description",
                 price: "6.00€",
                 image: waffleNutella,
             },
             {
-                nameKey: "Waffle Kinder Bueno",
-                descriptionKey: "Creme Kinder Bueno",
+                nameKey: "menu.food.waffles.items.kinder.name",
+                descriptionKey: "menu.food.waffles.items.kinder.description",
                 price: "6.00€",
                 image: "",
             },
             {
-                nameKey: "Waffle Banoffee",
-                descriptionKey:
-                    "Banana, doce de leite cremoso, bolacha Maria e chantilly",
+                nameKey: "menu.food.waffles.items.banoffee.name",
+                descriptionKey: "menu.food.waffles.items.banoffee.description",
                 price: "6.00€",
                 image: waffleBanoffee,
             },
             {
-                nameKey: "Waffle Lotus",
-                descriptionKey: "Mirtilos, creme Lotus e bolacha",
+                nameKey: "menu.food.waffles.items.lotus.name",
+                descriptionKey: "menu.food.waffles.items.lotus.description",
                 price: "6.50€",
                 image: waffleLotus,
             },
             {
-                nameKey: "Waffle Pistachio",
-                descriptionKey: "Coco e creme de pistachio",
+                nameKey: "menu.food.waffles.items.pistachio.name",
+                descriptionKey: "menu.food.waffles.items.pistachio.description",
                 price: "7.00€",
                 image: wafflePistachio,
             },
             {
-                nameKey: "Waffle Americano",
-                descriptionKey:
-                    "Salada, bacon, cheddar, ovo estrelado, cebola frita e maple syrup",
+                nameKey: "menu.food.waffles.items.american.name",
+                descriptionKey: "menu.food.waffles.items.american.description",
                 price: "7.00€",
                 tags: [MenuTagType.BEST_SELLER],
                 image: waffleAmericano,
@@ -495,20 +490,20 @@ export const FOODS_MENU: MenuCategory[] = [
         ],
     },
     {
-        id: "french-toast",
-        labelKey: "French Toast",
+        id: "french_toast",
+        labelKey: "menu.food.french_toast.title",
         items: [
             {
-                nameKey: "French Toast Frutos do Bosque",
+                nameKey: "menu.food.french_toast.items.berries.name",
                 descriptionKey:
-                    "Compota de frutos vermelhos, morangos, framboesas e mirtilos",
+                    "menu.food.french_toast.items.berries.description",
                 price: "7.00€",
                 image: frenchToastFrutosDoBosque,
             },
             {
-                nameKey: "French Toast Pistachio",
+                nameKey: "menu.food.french_toast.items.pistachio.name",
                 descriptionKey:
-                    "Creme de pistachio, morangos, pistachio triturado e gelado",
+                    "menu.food.french_toast.items.pistachio.description",
                 price: "8.00€",
                 tags: [MenuTagType.CHEF_SUGGESTION],
                 image: frenchToastPistachio,
@@ -516,19 +511,20 @@ export const FOODS_MENU: MenuCategory[] = [
         ],
     },
     {
-        id: "bowls-iogurte",
-        labelKey: "Bowls Iogurte",
+        id: "yogurt_bowls",
+        labelKey: "menu.food.yogurt_bowls.title",
         items: [
             {
-                nameKey: "Bowl de Fruta",
-                descriptionKey: "Iogurte, granola artesanal, frutas e mel",
+                nameKey: "menu.food.yogurt_bowls.items.fruit.name",
+                descriptionKey:
+                    "menu.food.yogurt_bowls.items.fruit.description",
                 price: "5.00€",
                 image: bowlFruta,
             },
             {
-                nameKey: "Bowl de Fruta Vegan",
+                nameKey: "menu.food.yogurt_bowls.items.fruit_vegan.name",
                 descriptionKey:
-                    "Iogurte vegan, granola artesanal, frutas e agave",
+                    "menu.food.yogurt_bowls.items.fruit_vegan.description",
                 price: "6.00€",
                 tags: [MenuTagType.VEGAN],
                 image: "",
@@ -536,42 +532,41 @@ export const FOODS_MENU: MenuCategory[] = [
         ],
     },
     {
-        id: "menus-brunch",
-        labelKey: "Menus Brunch",
-        descriptionKey: "Não sujeito a alterações",
+        id: "brunch_menus",
+        labelKey: "menu.food.brunch_menus.title",
+        descriptionKey: "menu.food.brunch_menus.description",
         items: [
             {
-                nameKey: "Menu Kids",
-                descriptionKey:
-                    "<b>Até 12 anos</b>. \n<b>À escolha</b>: Bowl de Iogurte c/ compota de morango ou frutos vermelhos, ou Panqueca c/ Nutella, creme Kinder Bueno ou mel",
+                nameKey: "menu.food.brunch_menus.items.kids.name",
+                descriptionKey: "menu.food.brunch_menus.items.kids.description",
                 price: "6.50€",
                 image: "",
             },
             {
-                nameKey: "Menu American Breakfast",
+                nameKey: "menu.food.brunch_menus.items.american_breakfast.name",
                 descriptionKey:
-                    "<b>Prato</b>: panqueca clássica, 2 ovos estrelados, bacon e torrada. \n<b>Bebida à escolha</b>: Coca-Cola, Compal ou Ice Tea",
+                    "menu.food.brunch_menus.items.american_breakfast.description",
                 price: "8.50€",
                 image: menuAmericanBreakfast,
             },
             {
-                nameKey: "Menu Cappuccino",
+                nameKey: "menu.food.brunch_menus.items.cappuccino.name",
                 descriptionKey:
-                    "Sumo à escolha. \nPanqueca Clássica c/ maple syrup. \nTosta Bacon Jam ou Tosta Abacate (massa mãe, geleia de bacon e ovos mexidos ou massa mãe, pasta de abacate, ovos escalfados e sementes). \n<b>Bebida quente</b>: abatanado, café, cappuccino ou chá",
+                    "menu.food.brunch_menus.items.cappuccino.description",
                 price: "12.50€",
                 image: "",
             },
             {
-                nameKey: "Menu Green",
+                nameKey: "menu.food.brunch_menus.items.green.name",
                 descriptionKey:
-                    "Matcha Latte ou Iced Matcha. \nTosta Abacate (massa mãe, pasta de abacate, ovos escalfados e sementes). \nCroissant Pistachio (framboesa e creme pistachio)",
+                    "menu.food.brunch_menus.items.green.description",
                 price: "13.00€",
                 image: "",
             },
             {
-                nameKey: "Menu Tábua Cappuccino",
+                nameKey: "menu.food.brunch_menus.items.tabua_cappuccino.name",
                 descriptionKey:
-                    "<b>2 Bebidas quentes</b>: abatanado, café, cappuccino ou chá. \n<b>Jarra de Sumo 1L:</b> laranja. \n2 Croissants folhados simples. Torrada em pão chapata c/ geleia de ananás e hortelã ou geleia de mirtilo. \n<b>Bowl de Fruta:</b> iogurte, granola artesanal, frutas e mel. \n<b>Panqueca Clássica:</b> manteiga e mel ou maple syrup",
+                    "menu.food.brunch_menus.items.tabua_cappuccino.description",
                 price: "33.00€",
                 image: menuTabuaCappuccino,
             },
@@ -579,78 +574,83 @@ export const FOODS_MENU: MenuCategory[] = [
     },
     {
         id: "extras",
-        labelKey: "Extras",
+        labelKey: "menu.food.extras.title",
         items: [
             {
-                nameKey: "Frutas ",
-                descriptionKey: "Banana/Morango/Mirtilo/Framboesa",
+                nameKey: "menu.food.extras.items.fruits.name",
+                descriptionKey: "menu.food.extras.items.fruits.description",
                 price: "1.50€",
                 image: "",
             },
             {
-                nameKey: "Gelado de Baunilha",
-                descriptionKey: "",
-                price: "2.00€",
-                image: "",
-            },
-            {
-                nameKey: "Toppings",
+                nameKey: "menu.food.extras.items.vanilla_ice_cream.name",
                 descriptionKey:
-                    "Nutella, Creme Kinder Bueno, Creme Lotus, Compota de Mirtilo, Mel, Maple Syrup",
+                    "menu.food.extras.items.vanilla_ice_cream.description",
+                price: "2.00€",
+                image: "",
+            },
+            {
+                nameKey: "menu.food.extras.items.toppings.name",
+                descriptionKey: "menu.food.extras.items.toppings.description",
                 price: "2.50€",
                 image: "",
             },
             {
-                nameKey: "Creme de pistachio",
-                descriptionKey: "",
+                nameKey: "menu.food.extras.items.pistachio_cream.name",
+                descriptionKey:
+                    "menu.food.extras.items.pistachio_cream.description",
                 price: "3.00€",
                 image: "",
             },
             {
-                nameKey: "Ovo",
-                descriptionKey: "",
+                nameKey: "menu.food.extras.items.egg.name",
+                descriptionKey: "menu.food.extras.items.egg.description",
                 price: "1.50€",
                 image: "",
             },
             {
-                nameKey: "Bacon",
-                descriptionKey: "",
+                nameKey: "menu.food.extras.items.bacon.name",
+                descriptionKey: "menu.food.extras.items.bacon.description",
                 price: "2.00€",
                 image: "",
             },
             {
-                nameKey: "Cogumelo Salteado",
-                descriptionKey: "",
+                nameKey: "menu.food.extras.items.sauteed_mushroom.name",
+                descriptionKey:
+                    "menu.food.extras.items.sauteed_mushroom.description",
                 price: "2.00€",
                 image: "",
             },
             {
-                nameKey: "Avocado",
-                descriptionKey: "",
+                nameKey: "menu.food.extras.items.avocado.name",
+                descriptionKey: "menu.food.extras.items.avocado.description",
                 price: "3.00€",
                 image: "",
             },
             {
-                nameKey: "Salmão Fumado",
-                descriptionKey: "",
+                nameKey: "menu.food.extras.items.smoked_salmon.name",
+                descriptionKey:
+                    "menu.food.extras.items.smoked_salmon.description",
                 price: "3.00€",
                 image: "",
             },
             {
-                nameKey: "Queijo Brie",
-                descriptionKey: "",
+                nameKey: "menu.food.extras.items.brie_cheese.name",
+                descriptionKey:
+                    "menu.food.extras.items.brie_cheese.description",
                 price: "2.00€",
                 image: "",
             },
             {
-                nameKey: "Waffle",
-                descriptionKey: "",
+                nameKey: "menu.food.extras.items.waffle.name",
+                descriptionKey: "menu.food.extras.items.waffle.description",
                 price: "2.50€",
                 image: "",
             },
             {
-                nameKey: "Pão Chapata",
-                descriptionKey: "",
+                nameKey: "menu.food.extras.items.chapata_bread.name",
+                descriptionKey:
+                    "menu.food.extras.items.chapata_bread.description",
                 price: "1.50€",
                 image: "",
             },
@@ -660,131 +660,173 @@ export const FOODS_MENU: MenuCategory[] = [
 
 export const DRINKS_MENU: MenuCategory[] = [
     {
-        id: "cafetaria",
-        labelKey: "Cafetaria",
+        id: "coffee_shop",
+        labelKey: "menu.drink.coffee_shop.title",
         items: [
             {
-                nameKey: "Carioca de Café",
-                descriptionKey: "",
+                nameKey: "menu.drink.coffee_shop.items.carioca_coffee.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.carioca_coffee.description",
                 price: "0.70€",
                 image: "",
             },
             {
-                nameKey: "Carioca de Limão",
-                descriptionKey: "",
-                price: "1.00€",
-                image: "",
-            },
-            { nameKey: "Pingo", descriptionKey: "", price: "0.80€", image: "" },
-            { nameKey: "Café", descriptionKey: "", price: "0.90€", image: "" },
-            {
-                nameKey: "Café Duplo",
-                descriptionKey: "",
-                price: "1.80€",
-                image: "",
-            },
-            {
-                nameKey: "Descafeinado",
-                descriptionKey: "",
+                nameKey: "menu.drink.coffee_shop.items.carioca_lemon.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.carioca_lemon.description",
                 price: "1.00€",
                 image: "",
             },
             {
-                nameKey: "Cevada",
-                descriptionKey: "",
+                nameKey: "menu.drink.coffee_shop.items.pingo.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.pingo.description",
                 price: "0.80€",
                 image: "",
             },
             {
-                nameKey: "Copo de Leite",
-                descriptionKey: "",
+                nameKey: "menu.drink.coffee_shop.items.coffee.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.coffee.description",
+                price: "0.90€",
+                image: "",
+            },
+            {
+                nameKey: "menu.drink.coffee_shop.items.double_coffee.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.double_coffee.description",
+                price: "1.80€",
+                image: "",
+            },
+            {
+                nameKey: "menu.drink.coffee_shop.items.decaf.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.decaf.description",
                 price: "1.00€",
                 image: "",
             },
             {
-                nameKey: "Americano",
-                descriptionKey: "",
+                nameKey: "menu.drink.coffee_shop.items.barley.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.barley.description",
+                price: "0.80€",
+                image: "",
+            },
+            {
+                nameKey: "menu.drink.coffee_shop.items.milk_glass.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.milk_glass.description",
+                price: "1.00€",
+                image: "",
+            },
+            {
+                nameKey: "menu.drink.coffee_shop.items.americano.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.americano.description",
                 price: "1.50€",
                 image: "",
             },
-            { nameKey: "Chá", descriptionKey: "", price: "2.00€", image: "" },
-            { nameKey: "Lical", descriptionKey: "", price: "2.00€", image: "" },
             {
-                nameKey: "Machiato",
-                descriptionKey: "",
+                nameKey: "menu.drink.coffee_shop.items.tea.name",
+                descriptionKey: "menu.drink.coffee_shop.items.tea.description",
+                price: "2.00€",
+                image: "",
+            },
+            {
+                nameKey: "menu.drink.coffee_shop.items.lical.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.lical.description",
+                price: "2.00€",
+                image: "",
+            },
+            {
+                nameKey: "menu.drink.coffee_shop.items.machiato.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.machiato.description",
                 price: "3.00€",
                 image: "",
             },
             {
-                nameKey: "Machiato Caramel",
-                descriptionKey: "",
+                nameKey: "menu.drink.coffee_shop.items.machiato_caramel.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.machiato_caramel.description",
                 price: "3.50€",
                 image: "",
             },
             {
-                nameKey: "Cappuccino",
-                descriptionKey: "",
+                nameKey: "menu.drink.coffee_shop.items.cappuccino.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.cappuccino.description",
                 price: "2.50€",
                 image: "",
             },
             {
-                nameKey: "Cappuccino Caramel",
-                descriptionKey: "",
+                nameKey: "menu.drink.coffee_shop.items.cappuccino_caramel.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.cappuccino_caramel.description",
                 price: "3.00€",
                 image: "",
             },
             {
-                nameKey: "Chocolate Quente",
-                descriptionKey: "",
+                nameKey: "menu.drink.coffee_shop.items.hot_chocolate.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.hot_chocolate.description",
                 price: "3.20€",
                 image: "",
             },
             {
-                nameKey: "Flat White",
-                descriptionKey: "",
+                nameKey: "menu.drink.coffee_shop.items.flat_white.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.flat_white.description",
                 price: "3.00€",
                 image: "",
             },
             {
-                nameKey: "Chai Latte",
-                descriptionKey: "",
+                nameKey: "menu.drink.coffee_shop.items.chai_latte.name",
+                descriptionKey:
+                    "menu.drink.coffee_shop.items.chai_latte.description",
                 price: "3.50€",
                 image: "",
             },
         ],
     },
     {
-        id: "iced-coffees",
-        labelKey: "Iced Coffees",
+        id: "iced_coffees",
+        labelKey: "menu.drink.iced_coffees.title",
         items: [
             {
-                nameKey: "Frappé",
-                descriptionKey: "",
+                nameKey: "menu.drink.iced_coffees.items.frappe.name",
+                descriptionKey:
+                    "menu.drink.iced_coffees.items.frappe.description",
                 price: "2.70€",
                 image: "",
             },
             {
-                nameKey: "Dalgona Coffee",
-                descriptionKey: "",
+                nameKey: "menu.drink.iced_coffees.items.dalgona.name",
+                descriptionKey:
+                    "menu.drink.iced_coffees.items.dalgona.description",
                 price: "3.00€",
                 image: "",
             },
             {
-                nameKey: "Caramel Frappé",
-                descriptionKey: "",
+                nameKey: "menu.drink.iced_coffees.items.caramel_frappe.name",
+                descriptionKey:
+                    "menu.drink.iced_coffees.items.caramel_frappe.description",
                 price: "3.20€",
                 image: "",
             },
             {
-                nameKey: "Spanish Latte",
-                descriptionKey: "",
+                nameKey: "menu.drink.iced_coffees.items.spanish_latte.name",
+                descriptionKey:
+                    "menu.drink.iced_coffees.items.spanish_latte.description",
                 price: "3.50€",
                 tags: [MenuTagType.NEW],
                 image: "",
             },
             {
-                nameKey: "Kinder Latte",
-                descriptionKey: "",
+                nameKey: "menu.drink.iced_coffees.items.kinder_latte.name",
+                descriptionKey:
+                    "menu.drink.iced_coffees.items.kinder_latte.description",
                 price: "4.00€",
                 image: "",
             },
@@ -792,24 +834,26 @@ export const DRINKS_MENU: MenuCategory[] = [
     },
     {
         id: "matcha",
-        labelKey: "Matcha",
+        labelKey: "menu.drink.matcha.title",
         items: [
             {
-                nameKey: "Matcha Latte",
-                descriptionKey: "",
-                price: "3.50€",
-                image: "",
-            },
-            {
-                nameKey: "Iced Matcha Latte",
-                descriptionKey: "",
-                price: "3.50€",
-                image: "",
-            },
-            {
-                nameKey: "Iced Dalgona Matcha",
+                nameKey: "menu.drink.matcha.items.matcha_latte.name",
                 descriptionKey:
-                    "C/ geleia de frutos vermelhos / maracujá / morango",
+                    "menu.drink.matcha.items.matcha_latte.description",
+                price: "3.50€",
+                image: "",
+            },
+            {
+                nameKey: "menu.drink.matcha.items.iced_matcha_latte.name",
+                descriptionKey:
+                    "menu.drink.matcha.items.iced_matcha_latte.description",
+                price: "3.50€",
+                image: "",
+            },
+            {
+                nameKey: "menu.drink.matcha.items.iced_dalgona_matcha.name",
+                descriptionKey:
+                    "menu.drink.matcha.items.iced_dalgona_matcha.description",
                 price: "4.50€",
                 tags: [MenuTagType.NEW],
                 image: "",
@@ -818,29 +862,33 @@ export const DRINKS_MENU: MenuCategory[] = [
     },
     {
         id: "smoothies",
-        labelKey: "Smoothies",
+        labelKey: "menu.drink.smoothies.title",
         items: [
             {
-                nameKey: "Morango",
-                descriptionKey: "",
+                nameKey: "menu.drink.smoothies.items.strawberry.name",
+                descriptionKey:
+                    "menu.drink.smoothies.items.strawberry.description",
                 price: "4.50€",
                 image: "",
             },
             {
-                nameKey: "Frutos Vermelhos",
-                descriptionKey: "",
+                nameKey: "menu.drink.smoothies.items.red_fruits.name",
+                descriptionKey:
+                    "menu.drink.smoothies.items.red_fruits.description",
                 price: "4.50€",
                 image: "",
             },
             {
-                nameKey: "Maracujá",
-                descriptionKey: "",
+                nameKey: "menu.drink.smoothies.items.passion_fruit.name",
+                descriptionKey:
+                    "menu.drink.smoothies.items.passion_fruit.description",
                 price: "4.50€",
                 image: "",
             },
             {
-                nameKey: "Morango e Banana",
-                descriptionKey: "",
+                nameKey: "menu.drink.smoothies.items.strawberry_banana.name",
+                descriptionKey:
+                    "menu.drink.smoothies.items.strawberry_banana.description",
                 price: "5.00€",
                 tags: [MenuTagType.NEW],
                 image: "",
@@ -848,121 +896,146 @@ export const DRINKS_MENU: MenuCategory[] = [
         ],
     },
     {
-        id: "sumos-naturais",
-        labelKey: "Sumos Naturais",
+        id: "natural_juices",
+        labelKey: "menu.drink.natural_juices.title",
         items: [
             {
-                nameKey: "Limonada",
-                descriptionKey: "",
+                nameKey: "menu.drink.natural_juices.items.lemonade.name",
+                descriptionKey:
+                    "menu.drink.natural_juices.items.lemonade.description",
                 price: "2.20€",
                 image: "",
             },
             {
-                nameKey: "Laranja",
-                descriptionKey: "",
+                nameKey: "menu.drink.natural_juices.items.orange.name",
+                descriptionKey:
+                    "menu.drink.natural_juices.items.orange.description",
                 price: "2.80€",
                 image: "",
             },
             {
-                nameKey: "Laranja e Frutos Vermelhos",
-                descriptionKey: "",
+                nameKey:
+                    "menu.drink.natural_juices.items.orange_red_fruits.name",
+                descriptionKey:
+                    "menu.drink.natural_juices.items.orange_red_fruits.description",
                 price: "3.20€",
                 image: "",
             },
             {
-                nameKey: "Limonada de Morango",
-                descriptionKey: "",
+                nameKey:
+                    "menu.drink.natural_juices.items.strawberry_lemonade.name",
+                descriptionKey:
+                    "menu.drink.natural_juices.items.strawberry_lemonade.description",
                 price: "3.20€",
                 image: "",
             },
         ],
     },
     {
-        id: "bebidas",
-        labelKey: "Bebidas",
+        id: "beverages",
+        labelKey: "menu.drink.beverages.title",
         items: [
-            { nameKey: "Água", descriptionKey: "", price: "1.10€", image: "" },
             {
-                nameKey: "Pedras",
-                descriptionKey: "",
+                nameKey: "menu.drink.beverages.items.water.name",
+                descriptionKey: "menu.drink.beverages.items.water.description",
+                price: "1.10€",
+                image: "",
+            },
+            {
+                nameKey: "menu.drink.beverages.items.pedras.name",
+                descriptionKey: "menu.drink.beverages.items.pedras.description",
                 price: "1.20€",
                 image: "",
             },
             {
-                nameKey: "Pedras de Limão",
-                descriptionKey: "",
+                nameKey: "menu.drink.beverages.items.pedras_lemon.name",
+                descriptionKey:
+                    "menu.drink.beverages.items.pedras_lemon.description",
                 price: "1.40€",
                 image: "",
             },
             {
-                nameKey: "Compal",
-                descriptionKey: "",
+                nameKey: "menu.drink.beverages.items.compal.name",
+                descriptionKey: "menu.drink.beverages.items.compal.description",
                 price: "1.80€",
                 image: "",
             },
             {
-                nameKey: "Coca-Cola",
-                descriptionKey: "",
+                nameKey: "menu.drink.beverages.items.coca_cola.name",
+                descriptionKey:
+                    "menu.drink.beverages.items.coca_cola.description",
                 price: "1.80€",
                 image: "",
             },
             {
-                nameKey: "Coca-Cola Zero",
-                descriptionKey: "",
+                nameKey: "menu.drink.beverages.items.coca_cola_zero.name",
+                descriptionKey:
+                    "menu.drink.beverages.items.coca_cola_zero.description",
                 price: "1.80€",
                 image: "",
             },
             {
-                nameKey: "Ice Tea",
-                descriptionKey: "",
+                nameKey: "menu.drink.beverages.items.ice_tea.name",
+                descriptionKey:
+                    "menu.drink.beverages.items.ice_tea.description",
                 price: "1.80€",
                 image: "",
             },
             {
-                nameKey: "San Pellegrino",
-                descriptionKey: "",
+                nameKey: "menu.drink.beverages.items.san_pellegrino.name",
+                descriptionKey:
+                    "menu.drink.beverages.items.san_pellegrino.description",
                 price: "2.90€",
                 image: "",
             },
             {
-                nameKey: "Água Tónica",
-                descriptionKey: "",
+                nameKey: "menu.drink.beverages.items.tonic_water.name",
+                descriptionKey:
+                    "menu.drink.beverages.items.tonic_water.description",
                 price: "3.50€",
                 image: "",
             },
         ],
     },
     {
-        id: "bebidas-alcool",
-        labelKey: "Bebidas c/ Álcool",
+        id: "alcoholic_beverages",
+        labelKey: "menu.drink.alcoholic_beverages.title",
         items: [
             {
-                nameKey: "Super Bock",
-                descriptionKey: "",
+                nameKey: "menu.drink.alcoholic_beverages.items.super_bock.name",
+                descriptionKey:
+                    "menu.drink.alcoholic_beverages.items.super_bock.description",
                 price: "1.90€",
                 image: "",
             },
             {
-                nameKey: "Super Bock Stout",
-                descriptionKey: "",
+                nameKey:
+                    "menu.drink.alcoholic_beverages.items.super_bock_stout.name",
+                descriptionKey:
+                    "menu.drink.alcoholic_beverages.items.super_bock_stout.description",
                 price: "1.90€",
                 image: "",
             },
             {
-                nameKey: "Panaché",
-                descriptionKey: "",
+                nameKey: "menu.drink.alcoholic_beverages.items.panache.name",
+                descriptionKey:
+                    "menu.drink.alcoholic_beverages.items.panache.description",
                 price: "2.00€",
                 image: "",
             },
             {
-                nameKey: "Somersby Apple",
-                descriptionKey: "",
+                nameKey:
+                    "menu.drink.alcoholic_beverages.items.somersby_apple.name",
+                descriptionKey:
+                    "menu.drink.alcoholic_beverages.items.somersby_apple.description",
                 price: "3.00€",
                 image: "",
             },
             {
-                nameKey: "Somersby Blackberry",
-                descriptionKey: "",
+                nameKey:
+                    "menu.drink.alcoholic_beverages.items.somersby_blackberry.name",
+                descriptionKey:
+                    "menu.drink.alcoholic_beverages.items.somersby_blackberry.description",
                 price: "3.00€",
                 image: "",
             },
@@ -970,47 +1043,49 @@ export const DRINKS_MENU: MenuCategory[] = [
     },
     {
         id: "sangrias",
-        labelKey: "Sangrias 1L/2L",
+        labelKey: "menu.drink.sangrias.title",
         items: [
             {
-                nameKey: "Sangria Branca",
-                descriptionKey: "",
+                nameKey: "menu.drink.sangrias.items.white.name",
+                descriptionKey: "menu.drink.sangrias.items.white.description",
                 price: "12.00€/20.00€",
                 image: "",
             },
             {
-                nameKey: "Sangria Tinta",
-                descriptionKey: "",
+                nameKey: "menu.drink.sangrias.items.red.name",
+                descriptionKey: "menu.drink.sangrias.items.red.description",
                 price: "12.00€/20.00€",
                 image: "",
             },
             {
-                nameKey: "Sangria Espumante Rosé",
-                descriptionKey: "",
+                nameKey: "menu.drink.sangrias.items.sparkling_rose.name",
+                descriptionKey:
+                    "menu.drink.sangrias.items.sparkling_rose.description",
                 price: "15.00€/25.00€",
                 image: "",
             },
         ],
     },
     {
-        id: "vinhos",
-        labelKey: "Vinhos",
+        id: "wines",
+        labelKey: "menu.drink.wines.title",
         items: [
             {
-                nameKey: "Esteva 37.5CL / 75CL",
-                descriptionKey: "",
+                nameKey: "menu.drink.wines.items.esteva.name",
+                descriptionKey: "menu.drink.wines.items.esteva.description",
                 price: "5.00€/9.00€",
                 image: "",
             },
             {
-                nameKey: "Planalto 37.5CL / 75CL",
-                descriptionKey: "",
+                nameKey: "menu.drink.wines.items.planalto.name",
+                descriptionKey: "menu.drink.wines.items.planalto.description",
                 price: "5.50€/10.00€",
                 image: "",
             },
             {
-                nameKey: "Mateus Rosé 37.5CL / 75CL",
-                descriptionKey: "",
+                nameKey: "menu.drink.wines.items.mateus_rose.name",
+                descriptionKey:
+                    "menu.drink.wines.items.mateus_rose.description",
                 price: "5.50€/10.00€",
                 image: "",
             },
@@ -1018,24 +1093,32 @@ export const DRINKS_MENU: MenuCategory[] = [
     },
     {
         id: "cocktails",
-        labelKey: "Cocktails",
+        labelKey: "menu.drink.cocktails.title",
         items: [
             {
-                nameKey: "Screwdriver",
-                descriptionKey: "",
+                nameKey: "menu.drink.cocktails.items.screwdriver.name",
+                descriptionKey:
+                    "menu.drink.cocktails.items.screwdriver.description",
                 price: "6.50€",
                 image: "",
             },
-            { nameKey: "Gin", descriptionKey: "", price: "7.00€", image: "" },
             {
-                nameKey: "Aperol Spritz",
-                descriptionKey: "",
+                nameKey: "menu.drink.cocktails.items.gin.name",
+                descriptionKey: "menu.drink.cocktails.items.gin.description",
+                price: "7.00€",
+                image: "",
+            },
+            {
+                nameKey: "menu.drink.cocktails.items.aperol_spritz.name",
+                descriptionKey:
+                    "menu.drink.cocktails.items.aperol_spritz.description",
                 price: "8.00€",
                 image: "",
             },
             {
-                nameKey: "Espresso Martini",
-                descriptionKey: "",
+                nameKey: "menu.drink.cocktails.items.espresso_martini.name",
+                descriptionKey:
+                    "menu.drink.cocktails.items.espresso_martini.description",
                 price: "8.00€",
                 image: "",
             },

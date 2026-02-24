@@ -27,7 +27,7 @@ i18next
             localStorage.getItem(APP_LANGUAGE_STORAGE_KEY) ||
             ESupportedLanguages.PORTUGUESE,
         fallbackLng: ESupportedLanguages.PORTUGUESE,
-        returnEmptyString: false,
+        returnEmptyString: true,
         returnNull: false, // ensure to update this value in "src/i18n-declaration.d.ts" before making changes.
         ns: ["translations"],
         defaultNS: "translations",
