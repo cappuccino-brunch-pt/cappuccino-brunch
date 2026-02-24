@@ -7,6 +7,7 @@ import {
     DialogHeader,
     DialogTitle,
 } from "@/components/ui/dialog";
+import { useTranslation } from "react-i18next";
 
 interface MenuItemModalProps {
     item: MenuItem | null;
@@ -15,7 +16,13 @@ interface MenuItemModalProps {
 }
 
 const MenuItemModal = ({ item, open, onOpenChange }: MenuItemModalProps) => {
+    const { t } = useTranslation();
+
     if (!item) return null;
+
+    const description = item.descriptionKey
+        ? t(item.descriptionKey)
+        : item.description?.toString() ?? "";
 
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
@@ -45,11 +52,11 @@ const MenuItemModal = ({ item, open, onOpenChange }: MenuItemModalProps) => {
                         </div>
                     )}
 
-                    {item.description && (
+                    {description && (
                         <DialogDescription
                             className="text-sm sm:text-base text-muted-foreground leading-relaxed"
                             dangerouslySetInnerHTML={{
-                                __html: item.description.replace(/\n/g, "<br>"),
+                                __html: description.replace(/\n/g, "<br>"),
                             }}
                         />
                     )}

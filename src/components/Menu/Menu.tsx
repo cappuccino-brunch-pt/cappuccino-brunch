@@ -2,10 +2,12 @@ import { MenuItemModal } from "@/components/Menu/components/MenuItemModal";
 import { MenuTag } from "@/components/Menu/components/MenuTag";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import type { MenuItem } from "./config";
 import { MENU_CONFIG, MENU_TYPES } from "./config";
 
 const Menu = () => {
+    const { t } = useTranslation();
     const [activeType, setActiveType] = useState<MENU_TYPES>(MENU_TYPES.FOOD);
     const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
 
@@ -78,17 +80,17 @@ const Menu = () => {
                                     : "bg-cream text-foreground hover:bg-cappuccino/10",
                             )}
                         >
-                            {category.label}
+                            {t(category.labelKey)}
                         </button>
                     ))}
                 </div>
 
                 {/* Category Description Badge */}
-                {currentCategoryConfig?.description && (
+                {currentCategoryConfig?.descriptionKey && (
                     <div className="flex justify-center mb-6 sm:mb-8 px-2">
                         <div className="bg-cream/50 border border-border rounded-lg sm:rounded-xl px-4 sm:px-6 py-3 sm:py-4 max-w-2xl text-center">
                             <p className="text-sm sm:text-base text-muted-foreground">
-                                {currentCategoryConfig.description}
+                                {t(currentCategoryConfig.descriptionKey)}
                             </p>
                         </div>
                     </div>
@@ -114,7 +116,7 @@ const Menu = () => {
                                 <div className="flex-1 min-w-0">
                                     <div className="flex items-start justify-between gap-2 mb-1 sm:mb-2">
                                         <h3 className="font-serif text-base sm:text-xl font-semibold text-foreground line-clamp-1">
-                                            {item.name}
+                                            {t(item.nameKey)}
                                         </h3>
                                         <span className="text-sm sm:text-lg font-semibold text-cappuccino flex-shrink-0">
                                             {item.price}
@@ -130,10 +132,9 @@ const Menu = () => {
                                     <p
                                         className="text-xs sm:text-sm text-muted-foreground line-clamp-2"
                                         dangerouslySetInnerHTML={{
-                                            __html: item.description.replace(
-                                                /\n/g,
-                                                " ",
-                                            ),
+                                            __html: (
+                                                t(item.descriptionKey) ?? ""
+                                            ).replace(/\n/g, " "),
                                         }}
                                     />
                                 </div>

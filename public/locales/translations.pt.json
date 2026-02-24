@@ -42,8 +42,26 @@
         }
     },
     "menu": {
-        "title": "Menu",
-        "description": "O lugar perfeito para começar o dia com sabor e amor."
+        "food": {
+            "executive_menu": {
+                "title": "Menu Executivo",
+                "items": {
+                    "daily": {
+                        "name": "Dias Úteis",
+                        "description": "<b>Horário</b>: 12:00 às 15:00. \n<b>Inclui</b>: prato principal, bebida e café"
+                    }
+                }
+            },
+            "to_share": {
+                "title": "Para Partilhar",
+                "items": {
+                    "english_muffin": {
+                        "name": "English Muffin",
+                        "description": "C/ manteiga de alho e ervas"
+                    }
+                }
+            }
+        }
     },
     "gallery": {
         "title": "Momentos que Merecem Partilha",
