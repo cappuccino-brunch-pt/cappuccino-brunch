@@ -22,7 +22,8 @@
         "tag": "Braga's Coziest Brunch Spot",
         "title": "Cappuccino Brunch",
         "description": "Where every morning transforms into an experience. Artisanal dishes, specialty coffee and the perfect atmosphere for special moments.",
-        "location": "Braga, Portugal"
+        "location": "Braga, Portugal",
+        "schedule": "Mon-Sun: {{timespan}}"
     },
     "about": {
         "subtitle": "Our Story",
@@ -762,9 +763,5 @@
         "rights": "© {{year}} Cappuccino Brunch. All rights reserved.",
         "made_with": "Made with ",
         "made_in": "in Braga."
-    },
-    "language": {
-        "portuguese": "Portuguese",
-        "english": "English"
     }
 }

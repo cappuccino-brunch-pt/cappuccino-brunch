@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { getOpeningHoursForHeroComponent } from "@/lib/utils";
 import { Clock, Coffee, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
@@ -83,8 +84,11 @@ const Hero = () => {
                             <div className="w-10 h-10 rounded-full bg-cream flex items-center justify-center">
                                 <Clock className="w-5 h-5 text-cappuccino" />
                             </div>
-                            {/* TODO add translation for schedule */}
-                            <span>Seg-Dom: 10h - 19h</span>
+                            <span>
+                                {t("hero.schedule", {
+                                    timespan: getOpeningHoursForHeroComponent(),
+                                })}
+                            </span>
                         </div>
                     </div>
                 </div>
