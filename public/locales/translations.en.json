@@ -47,6 +47,8 @@
         "subtitle": "Dishes that Tell Stories",
         "description": "Each dish is a culinary work of art, created with fresh ingredients and lots of love.",
         "allergies_warning": "Do you have allergies or dietary preferences? Talk to us!",
+        "price_from": "From",
+        "variants_title": "Available options:",
 
         "food": {
             "title": "Food",
@@ -64,11 +66,17 @@
                 "items": {
                     "english_muffin": {
                         "name": "English Muffin",
-                        "description": "W/ garlic and herb butter"
-                    },
-                    "english_muffin_gratin": {
-                        "name": "English Muffin Gratin",
-                        "description": "W/ garlic and herb butter and gratin cheese"
+                        "description": "W/ garlic and herb butter",
+                        "variants": {
+                            "normal": {
+                                "name": "English Muffin",
+                                "description": "W/ garlic and herb butter"
+                            },
+                            "gratin": {
+                                "name": "English Muffin Gratin",
+                                "description": "W/ garlic and herb butter and gratin cheese"
+                            }
+                        }
                     },
                     "caprese": {
                         "name": "Caprese",
@@ -90,31 +98,49 @@
                 "items": {
                     "scrambled_toast": {
                         "name": "Scrambled Eggs w/ Toast",
-                        "description": ""
+                        "description": "",
+                        "variants": {
+                            "normal": {
+                                "name": "Scrambled Eggs w/ Toast",
+                                "description": ""
+                            },
+                            "bacon": {
+                                "name": "Scrambled Eggs w/ Toast and Bacon",
+                                "description": ""
+                            }
+                        }
                     },
-                    "scrambled_toast_bacon": {
-                        "name": "Scrambled Eggs w/ Toast and Bacon",
-                        "description": ""
-                    },
-                    "benedict_english_muffin": {
-                        "name": "Benedict Eggs w/ English Muffin",
-                        "description": "Garlic and herb butter, ham, poached egg, hollandaise sauce and fried onion."
-                    },
-                    "benedict_brioche": {
-                        "name": "Benedict Eggs w/ Brioche Bread",
-                        "description": "Garlic and herb butter, ham, poached egg, hollandaise sauce and fried onion."
+                    "benedict": {
+                        "name": "Benedict Eggs",
+                        "description": "Garlic and herb butter, ham, poached egg, hollandaise sauce and fried onion.",
+                        "variants": {
+                            "english_muffin": {
+                                "name": "w/ English Muffin",
+                                "description": "Garlic and herb butter, ham, poached egg, hollandaise sauce and fried onion."
+                            },
+                            "brioche": {
+                                "name": "w/ Brioche Bread",
+                                "description": "Garlic and herb butter, ham, poached egg, hollandaise sauce and fried onion."
+                            }
+                        }
                     },
                     "turkish": {
                         "name": "Turkish Eggs (Çilbir)",
                         "description": "Garlic-seasoned yogurt cream, poached eggs and spiced aromatic olive oil with toast"
                     },
-                    "royale_english_muffin": {
-                        "name": "Royale Eggs w/ English Muffin",
-                        "description": "Garlic and herb butter, smoked salmon, poached eggs, hollandaise sauce and fried onion."
-                    },
-                    "royale_brioche": {
-                        "name": "Royale Eggs w/ Brioche Bread",
-                        "description": "Garlic and herb butter, smoked salmon, poached eggs, hollandaise sauce and fried onion."
+                    "royale": {
+                        "name": "Royale Eggs",
+                        "description": "Garlic and herb butter, smoked salmon, poached eggs, hollandaise sauce and fried onion.",
+                        "variants": {
+                            "english_muffin": {
+                                "name": "w/ English Muffin",
+                                "description": "Garlic and herb butter, smoked salmon, poached eggs, hollandaise sauce and fried onion."
+                            },
+                            "brioche": {
+                                "name": "w/ Brioche Bread",
+                                "description": "Garlic and herb butter, smoked salmon, poached eggs, hollandaise sauce and fried onion."
+                            }
+                        }
                     }
                 }
             },
@@ -124,11 +150,17 @@
                 "items": {
                     "cappuccino": {
                         "name": "Cappuccino Toast",
-                        "description": "W/ English Muffin and garlic and herb butter, English bacon, mushrooms, poached eggs, blended hollandaise sauce and fried onion"
-                    },
-                    "cappuccino_brioche": {
-                        "name": "Cappuccino Toast w/ Brioche Bread",
-                        "description": "W/ Brioche Bread and garlic and herb butter, English bacon, mushrooms, poached eggs, blended hollandaise sauce and fried onion"
+                        "description": "Garlic and herb butter, English bacon, mushrooms, poached eggs, blended hollandaise sauce and fried onion",
+                        "variants": {
+                            "english_muffin": {
+                                "name": "w/ English Muffin",
+                                "description": "W/ English Muffin and garlic and herb butter, English bacon, mushrooms, poached eggs, blended hollandaise sauce and fried onion"
+                            },
+                            "brioche": {
+                                "name": "w/ Brioche Bread",
+                                "description": "W/ Brioche Bread and garlic and herb butter, English bacon, mushrooms, poached eggs, blended hollandaise sauce and fried onion"
+                            }
+                        }
                     },
                     "campestre": {
                         "name": "Campestre Toast",
@@ -148,11 +180,17 @@
                     },
                     "avocado": {
                         "name": "Avocado Toast",
-                        "description": "Sourdough, avocado spread, poached eggs and seeds"
-                    },
-                    "avocado_salmon": {
-                        "name": "Avocado Toast w/ Smoked Salmon",
-                        "description": "Sourdough, avocado spread, poached eggs, seeds and smoked salmon"
+                        "description": "Sourdough, avocado spread, poached eggs and seeds",
+                        "variants": {
+                            "normal": {
+                                "name": "Avocado Toast",
+                                "description": "Sourdough, avocado spread, poached eggs and seeds"
+                            },
+                            "salmon": {
+                                "name": "w/ Smoked Salmon",
+                                "description": "Sourdough, avocado spread, poached eggs, seeds and smoked salmon"
+                            }
+                        }
                     },
                     "presunto": {
                         "name": "Ham Toast",
@@ -227,13 +265,19 @@
             "pancakes": {
                 "title": "Pancakes",
                 "items": {
-                    "classic_honey": {
-                        "name": "Classic Pancake w/ Butter and Honey",
-                        "description": "Butter and honey"
-                    },
-                    "classic_maple": {
-                        "name": "Classic Pancake w/ Maple Syrup",
-                        "description": "Butter and maple syrup"
+                    "classic": {
+                        "name": "Classic Pancake",
+                        "description": "Butter and honey or maple syrup",
+                        "variants": {
+                            "honey": {
+                                "name": "w/ Butter and Honey",
+                                "description": "Butter and honey"
+                            },
+                            "maple": {
+                                "name": "w/ Maple Syrup",
+                                "description": "Butter and maple syrup"
+                            }
+                        }
                     },
                     "nutella": {
                         "name": "Nutella Pancake",
@@ -261,7 +305,7 @@
                     },
                     "lotus": {
                         "name": "Lotus Pancake",
-                        "description": "Blueberry, raspberry, vanilla ice cream, Lotus cream and maple syrup"
+                        "description": "Blueberry, raspberry, vanilla ice cream, Lotus cream and crushed biscuit"
                     },
                     "pistachio": {
                         "name": "Pistachio Pancake",
@@ -277,13 +321,19 @@
                 "title": "Waffles",
                 "description": "Served with vanilla ice cream (except American Waffle)",
                 "items": {
-                    "classic_honey": {
-                        "name": "Classic Waffle w/ Butter and Honey",
-                        "description": "Butter and honey"
-                    },
-                    "classic_maple": {
-                        "name": "Classic Waffle w/ Maple Syrup",
-                        "description": "Butter and maple syrup"
+                    "classic": {
+                        "name": "Classic Waffle",
+                        "description": "Butter and honey or maple syrup",
+                        "variants": {
+                            "honey": {
+                                "name": "w/ Butter and Honey",
+                                "description": "Butter and honey"
+                            },
+                            "maple": {
+                                "name": "w/ Maple Syrup",
+                                "description": "Butter and maple syrup"
+                            }
+                        }
                     },
                     "nutella": {
                         "name": "Nutella Waffle",
@@ -370,13 +420,19 @@
                         "name": "Puff Croissant",
                         "description": ""
                     },
-                    "ciabatta_bread_toast_with_butter": {
+                    "ciabatta_bread_toast": {
                         "name": "Toast in Ciabatta Bread",
-                        "description": "W/ butter and oregano"
-                    },
-                    "ciabatta_bread_toast_with_jam": {
-                        "name": "Toast in Ciabatta Bread",
-                        "description": "W/ jam of choice"
+                        "description": "W/ butter or jam",
+                        "variants": {
+                            "butter": {
+                                "name": "w/ Butter and Oregano",
+                                "description": "W/ butter and oregano"
+                            },
+                            "jam": {
+                                "name": "w/ Jam of Choice",
+                                "description": "W/ jam of choice"
+                            }
+                        }
                     },
                     "mixed_toast_on_ciabatta_bread": {
                         "name": "Toastie in Ciabatta Bread",

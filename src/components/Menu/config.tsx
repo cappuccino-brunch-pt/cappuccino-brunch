@@ -48,12 +48,20 @@ import waffleNutella from "@/assets/menu/waffleNutella.jpeg";
 import wafflePistachio from "@/assets/menu/wafflePistachio.jpeg";
 import { MenuTagType } from "@/components/Menu/components/MenuTag";
 
+export interface MenuItemVariant {
+    nameKey: string;
+    descriptionKey?: string;
+    price: string;
+    image?: string;
+}
+
 export interface MenuItem {
     nameKey: string;
     descriptionKey?: string;
     price: string;
     tags?: MenuTagType[];
     image: string;
+    variants?: MenuItemVariant[];
 }
 
 interface MenuCategory {
@@ -92,13 +100,23 @@ export const FOODS_MENU: MenuCategory[] = [
                     "menu.food.to_share.items.english_muffin.description",
                 price: "3.50€",
                 image: englishMuffinManteigaDeErvas,
-            },
-            {
-                nameKey: "menu.food.to_share.items.english_muffin_gratin.name",
-                descriptionKey:
-                    "menu.food.to_share.items.english_muffin_gratin.description",
-                price: "4.00€",
-                image: "",
+                variants: [
+                    {
+                        nameKey:
+                            "menu.food.to_share.items.english_muffin.variants.normal.name",
+                        descriptionKey:
+                            "menu.food.to_share.items.english_muffin.variants.normal.description",
+                        price: "3.50€",
+                        image: englishMuffinManteigaDeErvas,
+                    },
+                    {
+                        nameKey:
+                            "menu.food.to_share.items.english_muffin.variants.gratin.name",
+                        descriptionKey:
+                            "menu.food.to_share.items.english_muffin.variants.gratin.description",
+                        price: "4.00€",
+                    },
+                ],
             },
             {
                 nameKey: "menu.food.to_share.items.caprese.name",
@@ -131,28 +149,48 @@ export const FOODS_MENU: MenuCategory[] = [
                 descriptionKey:
                     "menu.food.eggs.items.scrambled_toast.description",
                 price: "4.50€",
-                image: "",
-            },
-            {
-                nameKey: "menu.food.eggs.items.scrambled_toast_bacon.name",
-                descriptionKey:
-                    "menu.food.eggs.items.scrambled_toast_bacon.description",
-                price: "5.00€",
                 image: ovosMexidosComBacon,
+                variants: [
+                    {
+                        nameKey:
+                            "menu.food.eggs.items.scrambled_toast.variants.normal.name",
+                        descriptionKey:
+                            "menu.food.eggs.items.scrambled_toast.variants.normal.description",
+                        price: "4.50€",
+                    },
+                    {
+                        nameKey:
+                            "menu.food.eggs.items.scrambled_toast.variants.bacon.name",
+                        descriptionKey:
+                            "menu.food.eggs.items.scrambled_toast.variants.bacon.description",
+                        price: "5.00€",
+                        image: ovosMexidosComBacon,
+                    },
+                ],
             },
             {
-                nameKey: "menu.food.eggs.items.benedict_english_muffin.name",
-                descriptionKey:
-                    "menu.food.eggs.items.benedict_english_muffin.description",
+                nameKey: "menu.food.eggs.items.benedict.name",
+                descriptionKey: "menu.food.eggs.items.benedict.description",
                 price: "8.00€",
                 image: ovosBenedictEnglishMuffin,
-            },
-            {
-                nameKey: "menu.food.eggs.items.benedict_brioche.name",
-                descriptionKey:
-                    "menu.food.eggs.items.benedict_brioche.description",
-                price: "9.00€",
-                image: ovosBenedictPaoBrioche,
+                variants: [
+                    {
+                        nameKey:
+                            "menu.food.eggs.items.benedict.variants.english_muffin.name",
+                        descriptionKey:
+                            "menu.food.eggs.items.benedict.variants.english_muffin.description",
+                        price: "8.00€",
+                        image: ovosBenedictEnglishMuffin,
+                    },
+                    {
+                        nameKey:
+                            "menu.food.eggs.items.benedict.variants.brioche.name",
+                        descriptionKey:
+                            "menu.food.eggs.items.benedict.variants.brioche.description",
+                        price: "9.00€",
+                        image: ovosBenedictPaoBrioche,
+                    },
+                ],
             },
             {
                 nameKey: "menu.food.eggs.items.turkish.name",
@@ -161,20 +199,28 @@ export const FOODS_MENU: MenuCategory[] = [
                 image: ovosTurkish,
             },
             {
-                nameKey: "menu.food.eggs.items.royale_english_muffin.name",
-                descriptionKey:
-                    "menu.food.eggs.items.royale_english_muffin.description",
+                nameKey: "menu.food.eggs.items.royale.name",
+                descriptionKey: "menu.food.eggs.items.royale.description",
                 price: "9.00€",
                 tags: [MenuTagType.BEST_SELLER],
-                image: "",
-            },
-            {
-                nameKey: "menu.food.eggs.items.royale_brioche.name",
-                descriptionKey:
-                    "menu.food.eggs.items.royale_brioche.description",
-                price: "10.00€",
-                tags: [MenuTagType.BEST_SELLER],
                 image: ovosRoyalePaoBrioche,
+                variants: [
+                    {
+                        nameKey:
+                            "menu.food.eggs.items.royale.variants.english_muffin.name",
+                        descriptionKey:
+                            "menu.food.eggs.items.royale.variants.english_muffin.description",
+                        price: "9.00€",
+                    },
+                    {
+                        nameKey:
+                            "menu.food.eggs.items.royale.variants.brioche.name",
+                        descriptionKey:
+                            "menu.food.eggs.items.royale.variants.brioche.description",
+                        price: "10.00€",
+                        image: ovosRoyalePaoBrioche,
+                    },
+                ],
             },
         ],
     },
@@ -188,15 +234,24 @@ export const FOODS_MENU: MenuCategory[] = [
                 descriptionKey: "menu.food.toasts.items.cappuccino.description",
                 price: "9.00€",
                 tags: [MenuTagType.LONG_COOKING],
-                image: "",
-            },
-            {
-                nameKey: "menu.food.toasts.items.cappuccino_brioche.name",
-                descriptionKey:
-                    "menu.food.toasts.items.cappuccino_brioche.description",
-                price: "10.00€",
-                tags: [MenuTagType.LONG_COOKING],
                 image: tostaCappuccinoPaoBrioche,
+                variants: [
+                    {
+                        nameKey:
+                            "menu.food.toasts.items.cappuccino.variants.english_muffin.name",
+                        descriptionKey:
+                            "menu.food.toasts.items.cappuccino.variants.english_muffin.description",
+                        price: "9.00€",
+                    },
+                    {
+                        nameKey:
+                            "menu.food.toasts.items.cappuccino.variants.brioche.name",
+                        descriptionKey:
+                            "menu.food.toasts.items.cappuccino.variants.brioche.description",
+                        price: "10.00€",
+                        image: tostaCappuccinoPaoBrioche,
+                    },
+                ],
             },
             {
                 nameKey: "menu.food.toasts.items.campestre.name",
@@ -237,13 +292,23 @@ export const FOODS_MENU: MenuCategory[] = [
                 descriptionKey: "menu.food.toasts.items.avocado.description",
                 price: "7.00€",
                 image: tostaAbacate,
-            },
-            {
-                nameKey: "menu.food.toasts.items.avocado_salmon.name",
-                descriptionKey:
-                    "menu.food.toasts.items.avocado_salmon.description",
-                price: "8.50€",
-                image: "",
+                variants: [
+                    {
+                        nameKey:
+                            "menu.food.toasts.items.avocado.variants.normal.name",
+                        descriptionKey:
+                            "menu.food.toasts.items.avocado.variants.normal.description",
+                        price: "7.00€",
+                        image: tostaAbacate,
+                    },
+                    {
+                        nameKey:
+                            "menu.food.toasts.items.avocado.variants.salmon.name",
+                        descriptionKey:
+                            "menu.food.toasts.items.avocado.variants.salmon.description",
+                        price: "8.50€",
+                    },
+                ],
             },
             {
                 nameKey: "menu.food.toasts.items.presunto.name",
@@ -362,18 +427,27 @@ export const FOODS_MENU: MenuCategory[] = [
         labelKey: "menu.food.pancakes.title",
         items: [
             {
-                nameKey: "menu.food.pancakes.items.classic_honey.name",
-                descriptionKey:
-                    "menu.food.pancakes.items.classic_honey.description",
+                nameKey: "menu.food.pancakes.items.classic.name",
+                descriptionKey: "menu.food.pancakes.items.classic.description",
                 price: "4.50€",
-                image: "",
-            },
-            {
-                nameKey: "menu.food.pancakes.items.classic_maple.name",
-                descriptionKey:
-                    "menu.food.pancakes.items.classic_maple.description",
-                price: "5.00€",
                 image: panquecaClassicaMapleSyrup,
+                variants: [
+                    {
+                        nameKey:
+                            "menu.food.pancakes.items.classic.variants.honey.name",
+                        descriptionKey:
+                            "menu.food.pancakes.items.classic.variants.honey.description",
+                        price: "4.50€",
+                    },
+                    {
+                        nameKey:
+                            "menu.food.pancakes.items.classic.variants.maple.name",
+                        descriptionKey:
+                            "menu.food.pancakes.items.classic.variants.maple.description",
+                        price: "5.00€",
+                        image: panquecaClassicaMapleSyrup,
+                    },
+                ],
             },
             {
                 nameKey: "menu.food.pancakes.items.nutella.name",
@@ -440,18 +514,27 @@ export const FOODS_MENU: MenuCategory[] = [
         descriptionKey: "menu.food.waffles.description",
         items: [
             {
-                nameKey: "menu.food.waffles.items.classic_honey.name",
-                descriptionKey:
-                    "menu.food.waffles.items.classic_honey.description",
+                nameKey: "menu.food.waffles.items.classic.name",
+                descriptionKey: "menu.food.waffles.items.classic.description",
                 price: "4.50€",
                 image: waffleClassicoMel,
-            },
-            {
-                nameKey: "menu.food.waffles.items.classic_maple.name",
-                descriptionKey:
-                    "menu.food.waffles.items.classic_maple.description",
-                price: "5.00€",
-                image: "",
+                variants: [
+                    {
+                        nameKey:
+                            "menu.food.waffles.items.classic.variants.honey.name",
+                        descriptionKey:
+                            "menu.food.waffles.items.classic.variants.honey.description",
+                        price: "4.50€",
+                        image: waffleClassicoMel,
+                    },
+                    {
+                        nameKey:
+                            "menu.food.waffles.items.classic.variants.maple.name",
+                        descriptionKey:
+                            "menu.food.waffles.items.classic.variants.maple.description",
+                        price: "5.00€",
+                    },
+                ],
             },
             {
                 nameKey: "menu.food.waffles.items.nutella.name",
@@ -587,20 +670,27 @@ export const FOODS_MENU: MenuCategory[] = [
                 image: "",
             },
             {
-                nameKey:
-                    "menu.food.pastry.items.ciabatta_bread_toast_with_butter.name",
+                nameKey: "menu.food.pastry.items.ciabatta_bread_toast.name",
                 descriptionKey:
-                    "menu.food.pastry.items.ciabatta_bread_toast_with_butter.description",
+                    "menu.food.pastry.items.ciabatta_bread_toast.description",
                 price: "2.50€",
                 image: "",
-            },
-            {
-                nameKey:
-                    "menu.food.pastry.items.ciabatta_bread_toast_with_jam.name",
-                descriptionKey:
-                    "menu.food.pastry.items.ciabatta_bread_toast_with_jam.description",
-                price: "3.00€",
-                image: "",
+                variants: [
+                    {
+                        nameKey:
+                            "menu.food.pastry.items.ciabatta_bread_toast.variants.butter.name",
+                        descriptionKey:
+                            "menu.food.pastry.items.ciabatta_bread_toast.variants.butter.description",
+                        price: "2.50€",
+                    },
+                    {
+                        nameKey:
+                            "menu.food.pastry.items.ciabatta_bread_toast.variants.jam.name",
+                        descriptionKey:
+                            "menu.food.pastry.items.ciabatta_bread_toast.variants.jam.description",
+                        price: "3.00€",
+                    },
+                ],
             },
             {
                 nameKey:

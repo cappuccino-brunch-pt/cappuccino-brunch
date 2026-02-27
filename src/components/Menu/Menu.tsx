@@ -118,7 +118,9 @@ const Menu = () => {
                                             {t(item.nameKey)}
                                         </h3>
                                         <span className="text-sm sm:text-lg font-semibold text-cappuccino flex-shrink-0">
-                                            {item.price}
+                                            {item.variants
+                                                ? `${t("menu.price_from")} ${item.price}`
+                                                : item.price}
                                         </span>
                                     </div>
                                     {item.tags && item.tags.length > 0 && (

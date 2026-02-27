@@ -47,6 +47,8 @@
         "subtitle": "Pratos que Contam Histórias",
         "description": "Cada prato é uma obra de arte culinária, criado com ingredientes frescos e muito amor.",
         "allergies_warning": "Tens alergias ou preferências alimentares? Fala connosco!",
+        "price_from": "Desde",
+        "variants_title": "Opções disponíveis:",
 
         "food": {
             "title": "Comidas",
@@ -64,11 +66,17 @@
                 "items": {
                     "english_muffin": {
                         "name": "English Muffin",
-                        "description": "C/ manteiga de alho e ervas"
-                    },
-                    "english_muffin_gratin": {
-                        "name": "English Muffin Gratinado",
-                        "description": "C/ manteiga de alho e ervas e queijo gratinado"
+                        "description": "",
+                        "variants": {
+                            "normal": {
+                                "name": "English Muffin",
+                                "description": "C/ manteiga de alho e ervas"
+                            },
+                            "gratin": {
+                                "name": "English Muffin Gratinado",
+                                "description": "C/ manteiga de alho e ervas e queijo gratinado"
+                            }
+                        }
                     },
                     "caprese": {
                         "name": "Caprese",
@@ -89,32 +97,50 @@
                 "description": "Acompanham mix de salada e sementes variadas (excepto Ovos Turkish)",
                 "items": {
                     "scrambled_toast": {
-                        "name": "Ovos Mexidos c/ Tosta",
-                        "description": ""
+                        "name": "Ovos Mexidos",
+                        "description": "",
+                        "variants": {
+                            "normal": {
+                                "name": "c/ Tosta",
+                                "description": ""
+                            },
+                            "bacon": {
+                                "name": "c/ Tosta e Bacon",
+                                "description": ""
+                            }
+                        }
                     },
-                    "scrambled_toast_bacon": {
-                        "name": "Ovos Mexidos c/ Tosta e Bacon",
-                        "description": ""
-                    },
-                    "benedict_english_muffin": {
-                        "name": "Ovos Benedict c/ English Muffin",
-                        "description": "Manteiga de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita.  "
-                    },
-                    "benedict_brioche": {
-                        "name": "Ovos Benedict c/ Pão de Forma Brioche",
-                        "description": "Manteiga de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita.  "
+                    "benedict": {
+                        "name": "Ovos Benedict",
+                        "description": "",
+                        "variants": {
+                            "english_muffin": {
+                                "name": "c/ English Muffin",
+                                "description": "Presunto, ovo escalfado, molho holandês e cebola frita."
+                            },
+                            "brioche": {
+                                "name": "c/ Pão de Forma Brioche",
+                                "description": "Manteiga de alho e ervas, presunto, ovo escalfado, molho holandês e cebola frita."
+                            }
+                        }
                     },
                     "turkish": {
                         "name": "Ovos Turkish (Çilbir)",
                         "description": "Creme de iogurte temperado com alho, ovos escalfados e azeite aromatizado com especiarias e tosta"
                     },
-                    "royale_english_muffin": {
-                        "name": "Ovos Royale c/ English Muffin",
-                        "description": "Manteiga de alho e ervas, salmão fumado, ovos escalfados, molho holandês e cebola frita. "
-                    },
-                    "royale_brioche": {
-                        "name": "Ovos Royale c/ Pão de Forma Brioche",
-                        "description": "Manteiga de alho e ervas, salmão fumado, ovos escalfados, molho holandês e cebola frita. "
+                    "royale": {
+                        "name": "Ovos Royale",
+                        "description": "",
+                        "variants": {
+                            "english_muffin": {
+                                "name": "c/ English Muffin",
+                                "description": "Salmão fumado, ovos escalfados, molho holandês e cebola frita."
+                            },
+                            "brioche": {
+                                "name": "c/ Pão de Forma Brioche",
+                                "description": "Manteiga de alho e ervas, salmão fumado, ovos escalfados, molho holandês e cebola frita."
+                            }
+                        }
                     }
                 }
             },
@@ -124,11 +150,17 @@
                 "items": {
                     "cappuccino": {
                         "name": "Tosta Cappuccino",
-                        "description": "C/ English Muffin e manteiga de alho e ervas, bacon inglês, cogumelos, ovos escalfados, molho holandês triturado e cebola frita"
-                    },
-                    "cappuccino_brioche": {
-                        "name": "Tosta Cappuccino C/ Pão de Forma Brioche",
-                        "description": "C/ Pão de Forma Brioche e manteiga de alho e ervas, bacon inglês, cogumelos, ovos escalfados, molho holandês triturado e cebola frita"
+                        "description": "",
+                        "variants": {
+                            "english_muffin": {
+                                "name": "c/ English Muffin",
+                                "description": "Bacon inglês, cogumelos, ovos escalfados, molho holandês triturado e cebola frita"
+                            },
+                            "brioche": {
+                                "name": "c/ Pão de Forma Brioche",
+                                "description": "Manteiga de alho e ervas, bacon inglês, cogumelos, ovos escalfados, molho holandês triturado e cebola frita"
+                            }
+                        }
                     },
                     "campestre": {
                         "name": "Tosta Campestre",
@@ -148,11 +180,17 @@
                     },
                     "avocado": {
                         "name": "Tosta Abacate",
-                        "description": "Massa mãe, pasta de abacate, ovos escalfados e sementes"
-                    },
-                    "avocado_salmon": {
-                        "name": "Tosta Abacate c/ Salmão Fumado",
-                        "description": "Massa mãe, pasta de abacate, ovos escalfados, sementes e salmão fumado"
+                        "description": "",
+                        "variants": {
+                            "normal": {
+                                "name": "Tosta Abacate",
+                                "description": "Massa mãe, pasta de abacate, ovos escalfados e sementes"
+                            },
+                            "salmon": {
+                                "name": "c/ Salmão Fumado",
+                                "description": "Massa mãe, pasta de abacate, ovos escalfados, sementes e salmão fumado"
+                            }
+                        }
                     },
                     "presunto": {
                         "name": "Tosta Presunto",
@@ -227,13 +265,19 @@
             "pancakes": {
                 "title": "Panquecas",
                 "items": {
-                    "classic_honey": {
-                        "name": "Panqueca Clássica c/ Manteiga e Mel",
-                        "description": "Manteiga e mel"
-                    },
-                    "classic_maple": {
-                        "name": "Panqueca Clássica c/ Maple Syrup",
-                        "description": "Manteiga e maple syrup"
+                    "classic": {
+                        "name": "Panqueca Clássica",
+                        "description": "",
+                        "variants": {
+                            "honey": {
+                                "name": "c/ Manteiga e Mel",
+                                "description": "Manteiga e mel"
+                            },
+                            "maple": {
+                                "name": "c/ Maple Syrup",
+                                "description": "Manteiga e maple syrup"
+                            }
+                        }
                     },
                     "nutella": {
                         "name": "Panqueca Nutella",
@@ -261,7 +305,7 @@
                     },
                     "lotus": {
                         "name": "Panqueca Lotus",
-                        "description": "Mirtilo, framboesa, gelado de baunilha, creme Lotus e maple syrup"
+                        "description": "Mirtilo, framboesa, gelado de baunilha, creme Lotus e bolacha triturada"
                     },
                     "pistachio": {
                         "name": "Panqueca Pistachio",
@@ -277,13 +321,19 @@
                 "title": "Waffles",
                 "description": "Acompanham gelado de baunilha(exceto Waffle Americano)",
                 "items": {
-                    "classic_honey": {
-                        "name": "Waffle Clássico c/ Manteiga e Mel",
-                        "description": "Manteiga e mel"
-                    },
-                    "classic_maple": {
-                        "name": "Waffle Clássico c/ Maple Syrup",
-                        "description": "Manteiga e maple syrup"
+                    "classic": {
+                        "name": "Waffle Clássico",
+                        "description": "",
+                        "variants": {
+                            "honey": {
+                                "name": "c/ Manteiga e Mel",
+                                "description": "Manteiga e mel"
+                            },
+                            "maple": {
+                                "name": "c/ Maple Syrup",
+                                "description": "Manteiga e maple syrup"
+                            }
+                        }
                     },
                     "nutella": {
                         "name": "Waffle Nutella",
@@ -370,13 +420,19 @@
                         "name": "Croissant Folhado",
                         "description": ""
                     },
-                    "ciabatta_bread_toast_with_butter": {
+                    "ciabatta_bread_toast": {
                         "name": "Torrada em Pão Chapata",
-                        "description": "C/ manteiga e oregãos"
-                    },
-                    "ciabatta_bread_toast_with_jam": {
-                        "name": "Torrada em Pão Chapata",
-                        "description": "C/ geleia a escolha"
+                        "description": "",
+                        "variants": {
+                            "butter": {
+                                "name": "c/ Manteiga e Oregãos",
+                                "description": "C/ manteiga e oregãos"
+                            },
+                            "jam": {
+                                "name": "c/ Geleia à Escolha",
+                                "description": "C/ geleia à escolha"
+                            }
+                        }
                     },
                     "mixed_toast_on_ciabatta_bread": {
                         "name": "Tosta Mista em Pão Chapata",
