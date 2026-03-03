@@ -1,4 +1,5 @@
 import bowlFruta from "@/assets/menu/bowlFruta.jpeg";
+import bowlVegan from "@/assets/menu/bowlVegan.jpeg";
 import caprese from "@/assets/menu/caprese.jpeg";
 import croissantAvocado from "@/assets/menu/croissantAvocado.jpeg";
 import croissantBacon from "@/assets/menu/croissantBacon.jpeg";
@@ -37,12 +38,14 @@ import tostaBaconJam from "@/assets/menu/tostaBaconJam.jpeg";
 import tostaCampestre from "@/assets/menu/tostaCampestre.jpeg";
 import tostaCappuccinoPaoBrioche from "@/assets/menu/tostaCappuccinoPaoBrioche.jpeg";
 import tostaPresunto from "@/assets/menu/tostaPresunto.jpeg";
+import tostaSalmon from "@/assets/menu/tostaSalmao.jpeg";
 import tostaSeul from "@/assets/menu/tostaSeul.jpeg";
 import tostaTomatoJam from "@/assets/menu/tostaTomatoJam.jpeg";
 import tostaVegan from "@/assets/menu/tostaVegan.jpeg";
 import waffleAmericano from "@/assets/menu/waffleAmericano.jpeg";
 import waffleBanoffee from "@/assets/menu/waffleBanoffee.jpeg";
 import waffleClassicoMel from "@/assets/menu/waffleClassicoMel.jpeg";
+import waffleKinder from "@/assets/menu/waffleKinder.jpeg";
 import waffleLotus from "@/assets/menu/waffleLotus.jpeg";
 import waffleNutella from "@/assets/menu/waffleNutella.jpeg";
 import wafflePistachio from "@/assets/menu/wafflePistachio.jpeg";
@@ -279,7 +282,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 nameKey: "menu.food.toasts.items.salmon.name",
                 descriptionKey: "menu.food.toasts.items.salmon.description",
                 price: "8.50€",
-                image: "",
+                image: tostaSalmon,
             },
             {
                 nameKey: "menu.food.toasts.items.tomato_jam.name",
@@ -347,7 +350,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 descriptionKey: "menu.food.salad_bowls.items.vegan.description",
                 price: "7.00€",
                 tags: [MenuTagType.VEGAN],
-                image: "",
+                image: bowlVegan,
             },
         ],
     },
@@ -546,7 +549,7 @@ export const FOODS_MENU: MenuCategory[] = [
                 nameKey: "menu.food.waffles.items.kinder.name",
                 descriptionKey: "menu.food.waffles.items.kinder.description",
                 price: "6.00€",
-                image: "",
+                image: waffleKinder,
             },
             {
                 nameKey: "menu.food.waffles.items.banoffee.name",
