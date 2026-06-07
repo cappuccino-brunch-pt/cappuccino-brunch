@@ -8,7 +8,23 @@
         "about": "Sobre",
         "menu": "Menu",
         "gallery": "Galeria",
+        "vouchers": "Vouchers",
         "contact": "Contato"
+    },
+
+    "vouchers": {
+        "tag": "Ofereça uma Experiência",
+        "title": "Voucher's Cappuccino Brunch",
+        "tagline": "Ofereça um brunch inesquecível a quem mais gosta.",
+        "popular": "Mais Oferecido",
+        "new_badge": "Novo",
+        "cta_dialog": "Oferecer Voucher",
+        "cta_contact": "Falar Connosco",
+        "cta_directions": "Como Chegar",
+        "how_to_get": "Como Adquirir",
+        "step_pickup": "Levantamento presencial no nosso espaço em Braga.",
+        "step_payment": "Pagamento no ato do levantamento.",
+        "step_physical": "Recebe um voucher físico pronto a oferecer."
     },
 
     "actions": {

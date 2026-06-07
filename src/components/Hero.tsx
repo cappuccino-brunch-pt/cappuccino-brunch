@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+// import VoucherDialog from "@/components/VoucherDialog";
 import { getOpeningHoursForHeroComponent } from "@/lib/utils";
 import { Clock, Coffee, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -49,7 +50,7 @@ const Hero = () => {
 
                     {/* CTA Buttons */}
                     <div
-                        className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in"
+                        className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-16 animate-fade-in"
                         style={{ animationDelay: "0.3s" }}
                     >
                         <Button
@@ -67,6 +68,23 @@ const Hero = () => {
                         >
                             <a href="#contact">{t("actions.reserve_table")}</a>
                         </Button>
+                        {/* <VoucherDialog
+                            trigger={
+                                <Button
+                                    size="lg"
+                                    variant="outline"
+                                    className="relative rounded-full border-2 border-berry text-berry hover:bg-berry hover:text-primary-foreground px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg transition-all duration-300 w-full sm:w-auto group"
+                                >
+                                    <Gift className="w-4 h-4 mr-2 group-hover:rotate-12 transition-transform" />
+
+                                    {t("vouchers.cta_dialog")}
+
+                                    <span className="absolute -top-2 -right-2 bg-gold text-espresso text-[9px] font-bold uppercase px-1.5 py-0.5 rounded-full animate-pulse">
+                                        {t("vouchers.new_badge")}
+                                    </span>
+                                </Button>
+                            }
+                        /> */}
                     </div>
 
                     {/* Info cards */}

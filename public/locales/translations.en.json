@@ -8,7 +8,23 @@
         "about": "About",
         "menu": "Menu",
         "gallery": "Gallery",
+        "vouchers": "Vouchers",
         "contact": "Contact"
+    },
+
+    "vouchers": {
+        "tag": "Give an Experience",
+        "title": "Voucher's Cappuccino Brunch",
+        "tagline": "Give an unforgettable brunch to someone you love.",
+        "popular": "Most Gifted",
+        "new_badge": "New",
+        "cta_dialog": "Gift a Voucher",
+        "cta_contact": "Talk to Us",
+        "cta_directions": "Get Directions",
+        "how_to_get": "How to Get One",
+        "step_pickup": "In-person pickup at our space in Braga.",
+        "step_payment": "Payment on pickup.",
+        "step_physical": "You receive a physical voucher ready to gift."
     },
 
     "actions": {
